@@ -4,15 +4,17 @@ import "./Navigation.css";
 
 function Navigation() {
   return (
-    <ul>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-
-      <li>
-        <ProfileButton />
-      </li>
-    </ul>
+      <div className="nav-bar-container">
+        <NavLink to="/">
+               <img src='/public/Maytime logo Final.png'
+                    alt='Logo'
+                    className='nav-bar-left-logo'
+               />
+          </NavLink>
+          <div className="nav-bar-right-loginButton">
+            <ProfileButton />
+          </div>
+      </div>
   );
 }
 
