@@ -44,3 +44,11 @@
   margin: 10px 0; /* 调整上边距 */
   width: 50%; /* 充满父容器宽度 */
 }
+
+.login-signup-button{
+  border-radius: 40px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
