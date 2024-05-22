@@ -39,10 +39,16 @@ function ProfileButton() {
     closeMenu();
   };
 
+  const userFirstLetter = user?.username[0]?.toUpperCase();
+
   return (
-    <>
-      <button onClick={toggleMenu}>
-        <FaUserCircle />
+    <div onClick={toggleMenu}>
+      <button className="login-signup-button">
+        {userFirstLetter ? (
+          userFirstLetter
+        ) : (
+          <FaUser style={{ color: "#000000" }} />
+        )}
       </button>
       {showMenu && (
         <ul className={"profile-dropdown"} ref={ulRef}>
@@ -70,7 +76,7 @@ function ProfileButton() {
           )}
         </ul>
       )}
-    </>
+    </div>
   );
 }
 

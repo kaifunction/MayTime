@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
+
   /* padding: 10px 20px; */
-  background-color: #e3e3e3;
+  /* background-color: #e3e3e3; */
 
 }
 
@@ -20,4 +21,26 @@
 
 .nav-bar-right-loginButton{
   margin-right: 10px;
+}
+
+
+.nav-bar-left-links{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 60%;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-bar-button{
+  text-decoration: none;
+  color: black;
+}
+
+.search-bar {
+  margin: 10px 0; /* 调整上边距 */
+  width: 50%; /* 充满父容器宽度 */
 }
