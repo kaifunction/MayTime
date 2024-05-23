@@ -16,6 +16,11 @@
 .nav-bar-left-logo{
   margin: 10px 20px;
   width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.nav-bar-left-logo:hover{
+  transform: scale(1.1);
 }
 
 
@@ -29,7 +34,7 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  left: 60%;
+  left: 58%;
   gap: 20px;
   font-size: 18px;
   font-weight: bold;
@@ -51,4 +56,45 @@
   margin: 10px;
   font-size: 18px;
   font-weight: bold;
+  border-color: chartreuse;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+
+.loginButton-list{
+  margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.loginButton-list button{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-color: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginSignup-button{
+  margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nav-bar-button{
+  background-color: #ff00bb00;
+  font-weight: 600;
+  /* padding: 15px; */
+  border-radius: 20px;
+  /* color: #ff2f00; */
+  transition: transform 0.3s ease-in-out;
+}
+.nav-bar-button:hover{
+  transform: scale(1.15);
+  color: #00ccff;
+  background-color: #00000000;
 }

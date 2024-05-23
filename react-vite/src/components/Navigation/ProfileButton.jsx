@@ -51,30 +51,28 @@ function ProfileButton() {
         )}
       </button>
       {showMenu && (
-        <ul className={"profile-dropdown"} ref={ulRef}>
+        <div className={"profile-dropdown"} ref={ulRef}>
           {user ? (
-            <>
-              <li>{user.username}</li>
-              <li>{user.email}</li>
-              <li>
-                <button onClick={logout}>Log Out</button>
-              </li>
-            </>
+            <div className="loginButton-list">
+              <span>{user.username}</span><br />
+              <span>{user.email}</span><br />
+              <span><button onClick={logout} >Log Out</button></span>
+            </div>
           ) : (
-            <>
-              <OpenModalMenuItem
+            <div className="loginSignup-button">
+              <span><OpenModalMenuItem
                 itemText="Log In"
                 onItemClick={closeMenu}
                 modalComponent={<LoginFormModal />}
-              />
-              <OpenModalMenuItem
+              /></span>
+              <span><OpenModalMenuItem
                 itemText="Sign Up"
                 onItemClick={closeMenu}
                 modalComponent={<SignupFormModal />}
-              />
-            </>
+              /></span>
+            </div>
           )}
-        </ul>
+        </div>
       )}
     </div>
   );
