@@ -37,7 +37,7 @@
   left: 58%;
   gap: 20px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .nav-bar-button{
@@ -59,7 +59,13 @@
   border-color: chartreuse;
   border-width: 5px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.login-signup-button:hover{
+  transform: scale(1.1);
+}
+
 
 
 .loginButton-list{
@@ -87,7 +93,7 @@
 
 .nav-bar-button{
   background-color: #ff00bb00;
-  font-weight: 600;
+  /* font-weight: 600; */
   /* padding: 15px; */
   border-radius: 20px;
   /* color: #ff2f00; */
