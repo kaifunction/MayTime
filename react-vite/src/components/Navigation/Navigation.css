@@ -101,6 +101,6 @@
 }
 .nav-bar-button:hover{
   transform: scale(1.15);
-  color: #00ccff;
+  color: #ccff00;
   background-color: #00000000;
 }
