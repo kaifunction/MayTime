@@ -54,7 +54,7 @@ function LoginFormModal() {
           />
         </label>
         {errors.password && <p>{errors.password}</p>}
-        <button type="submit" style={{color:'white', cursor:'pointer'}}>Log In</button>
+        <button type="submit" style={{color:'white', backgroundColor:'#ff2f00', cursor:'pointer'}}>Log In</button>
       </form>
     </>
   );

@@ -47,7 +47,7 @@ function ProfileButton() {
         {userFirstLetter ? (
           userFirstLetter
         ) : (
-          <FaUser style={{ color: "#000000" }} />
+          <FaUser style={{ color: "#ff2f00" }} />
         )}
       </button>
       {showMenu && (

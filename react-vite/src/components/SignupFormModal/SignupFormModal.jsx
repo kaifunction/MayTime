@@ -87,7 +87,7 @@ function SignupFormModal() {
           />
         </label>
         {errors.confirmPassword && <p>{errors.confirmPassword}</p>}
-        <button type="submit" style={{color:'white', cursor:'pointer'}}>Sign Up</button>
+        <button type="submit" style={{color:'white', cursor:'pointer',backgroundColor:'#ff2f00'}}>Sign Up</button>
       </form>
     </>
   );
