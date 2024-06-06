@@ -32,23 +32,25 @@ function LoginFormModal() {
     <>
       <h1 style={{color:'white'}}>Log In</h1>
       <form onSubmit={handleSubmit}>
-        <label style={{color:'white', cursor:'pointer'}}>
+        <label style={{color:'white'}}>
           Email
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            style={{backgroundColor: 'black', color: 'white'}}
           />
         </label>
         {errors.email && <p>{errors.email}</p>}
-        <label style={{color:'white', cursor:'pointer'}}>
+        <label style={{color:'white'}}>
           Password
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            style={{backgroundColor: 'black', color: 'white'}}
           />
         </label>
         {errors.password && <p>{errors.password}</p>}

@@ -40,50 +40,54 @@ function SignupFormModal() {
 
   return (
     <>
-      <h1>Sign Up</h1>
+      <h1 style={{color:'white'}}>Sign Up</h1>
       {errors.server && <p>{errors.server}</p>}
       <form onSubmit={handleSubmit}>
-        <label>
+        <label style={{color:'white'}}>
           Email
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            style={{backgroundColor: 'black', color: 'white'}}
           />
         </label>
         {errors.email && <p>{errors.email}</p>}
-        <label>
+        <label style={{color:'white'}}>
           Username
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
+            style={{backgroundColor: 'black', color: 'white'}}
           />
         </label>
         {errors.username && <p>{errors.username}</p>}
-        <label>
+        <label style={{color:'white'}}>
           Password
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            style={{backgroundColor: 'black', color: 'white'}}
           />
         </label>
         {errors.password && <p>{errors.password}</p>}
-        <label>
+        <label style={{color:'white'}}>
           Confirm Password
           <input
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
+            style={{backgroundColor: 'black', color: 'white'}}
           />
         </label>
         {errors.confirmPassword && <p>{errors.confirmPassword}</p>}
-        <button type="submit">Sign Up</button>
+        <button type="submit" style={{color:'white', cursor:'pointer'}}>Sign Up</button>
       </form>
     </>
   );
