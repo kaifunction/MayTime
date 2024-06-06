@@ -7,7 +7,7 @@ function Navigation() {
       <div className="nav-bar-container">
           <div className="nav-bar-left-logo">
             <NavLink to="/">
-                  <img src='/public/Maytime logo Final Only.png'
+                  <img src='/public/Maytime logo FinalWhite.png'
                         alt='Logo'
                         className='nav-bar-left-logo'
                   />
