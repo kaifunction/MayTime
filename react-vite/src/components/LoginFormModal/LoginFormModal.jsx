@@ -30,9 +30,9 @@ function LoginFormModal() {
 
   return (
     <>
-      <h1>Log In</h1>
+      <h1 style={{color:'white'}}>Log In</h1>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label style={{color:'white', cursor:'pointer'}}>
           Email
           <input
             type="text"
@@ -42,7 +42,7 @@ function LoginFormModal() {
           />
         </label>
         {errors.email && <p>{errors.email}</p>}
-        <label>
+        <label style={{color:'white', cursor:'pointer'}}>
           Password
           <input
             type="password"
@@ -52,7 +52,7 @@ function LoginFormModal() {
           />
         </label>
         {errors.password && <p>{errors.password}</p>}
-        <button type="submit">Log In</button>
+        <button type="submit" style={{color:'white', cursor:'pointer'}}>Log In</button>
       </form>
     </>
   );

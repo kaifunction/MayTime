@@ -54,18 +54,18 @@ function ProfileButton() {
         <div className={"profile-dropdown"} ref={ulRef}>
           {user ? (
             <div className="loginButton-list">
-              <span>{user.username}</span><br />
-              <span>{user.email}</span><br />
+              <span style={{color: 'white'}}>{user.username}</span><br />
+              <span style={{color: 'white'}}>{user.email}</span><br />
               <span><button onClick={logout} >Log Out</button></span>
             </div>
           ) : (
             <div className="loginSignup-button">
-              <span><OpenModalMenuItem
+              <span  style={{color: 'white', cursor:'pointer'}}><OpenModalMenuItem
                 itemText="Log In"
                 onItemClick={closeMenu}
                 modalComponent={<LoginFormModal />}
               /></span>
-              <span><OpenModalMenuItem
+              <span  style={{color: 'white', cursor:'pointer'}}><OpenModalMenuItem
                 itemText="Sign Up"
                 onItemClick={closeMenu}
                 modalComponent={<SignupFormModal />}
