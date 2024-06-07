@@ -26,7 +26,7 @@ const HomePage = () => {
          <img src='/public/instagram.png' alt='instagram' className='instagram-logo' />
          </NavLink>
          <NavLink to={'https://www.facebook.com/maytimejewelry'} target='_blank'>
-         <img src='/public/wechat.svg' alt='wechat' className='wechat-logo' />
+         <img src='/wechat.svg' alt='wechat' className='wechat-logo' />
          </NavLink>
         </div>
         </div>
