@@ -7,7 +7,8 @@ const HomePage = () => {
      return (
      <div className="home-page-container">
      <div className="home-page-text-title">
-        <h1 style={{fontFamily: 'rockwell', letterSpacing: '5px', color:'#c2c2c2'}}><span style={{fontFamily: 'rockwell',color:'#4f0000'}}>M</span>AY<span style={{fontFamily: 'rockwell',color:'#4f0000'}}>T</span>IME</h1>
+        {/* <h1 style={{fontFamily: 'rockwell', letterSpacing: '5px', color:'#c2c2c2'}}><span style={{fontFamily: 'rockwell',color:'#4f0000'}}>M</span>AY<span style={{fontFamily: 'rockwell',color:'#4f0000'}}>T</span>IME</h1> */}
+        <h1 style={{fontFamily: 'rockwell', letterSpacing: '9px', color:'#c2c2c2'}}>MAYTIME</h1>
         <div className='text-links'>
          <div className="home-page-text">
         {/* <NavLink to={'/pin'} style={{textDecoration:'none', color:'#000000'}}> */}

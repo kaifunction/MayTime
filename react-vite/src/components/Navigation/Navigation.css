@@ -9,6 +9,10 @@
 
 }
 
+/* .active-link{
+  color: #ff2f00;
+} */
+
 .profile-dropdown {
   position: absolute;
 }
@@ -20,7 +24,7 @@
 }
 
 .nav-bar-left-logo:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 
@@ -62,17 +66,17 @@
   border-radius: 40px;
   padding: 5px 10px;
   margin: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   border-color: #ff2f00;
   color: #ff2f00;
-  border-width: 5px;
+  border-width: 4px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .login-signup-button:hover{
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 

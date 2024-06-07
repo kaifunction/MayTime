@@ -25,7 +25,10 @@ function Navigation() {
           </NavLink>
           {/* <NavLink></NavLink> */}
 
-          <NavLink to="/" style={{ textDecoration: "none" }}>
+          <NavLink
+            to="/"
+            style={{ textDecoration: "none" }}
+          >
             <div
               className="nav-bar-button"
               // onClick={() => window.alert("Feature coming soon")}
@@ -35,7 +38,10 @@ function Navigation() {
             </div>
           </NavLink>
 
-          <NavLink to="/" style={{ textDecoration: "none" }}>
+          <NavLink
+            to="/"
+            style={{ textDecoration: "none" }}
+          >
             <div
               className="nav-bar-button"
               // onClick={() => window.alert("Feature coming soon")}
@@ -45,7 +51,10 @@ function Navigation() {
             </div>
           </NavLink>
 
-          <NavLink to="/" style={{ textDecoration: "none" }}>
+          <NavLink
+            to="/"
+            style={{ textDecoration: "none" }}
+          >
             <div
               className="nav-bar-button"
               // onClick={() => window.alert("Feature coming soon")}

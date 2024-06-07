@@ -61,14 +61,26 @@
 .xiaohongshu-logo{
      width: 30px;
      height: 30px;
+     transition: transform 0.3s ease;
+}
+.xiaohongshu-logo:hover{
+     transform: scale(1.5);
 }
 
 .instagram-logo{
      width: 30px;
      height: 30px;
+     transition: transform 0.3s ease;
+}
+.instagram-logo:hover{
+     transform: scale(1.5);
 }
 
 .wechat-logo{
      width: 30px;
      height: 30px;
+     transition: transform 0.3s ease;
+}
+.wechat-logo:hover{
+     transform: scale(1.5);
 }
