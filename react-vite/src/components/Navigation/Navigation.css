@@ -68,8 +68,8 @@
   margin: 10px;
   font-size: 20px;
   font-weight: bold;
-  border-color: #ff2f00;
-  color: #ff2f00;
+  border-color: #ff6a00;
+  color: #ff6a00;
   border-width: 4px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -89,7 +89,7 @@
 }
 
 .loginButton-list button{
-  background-color: #ff2f00;
+  background-color: #ff6a00;
   color: white;
   padding: 5px;
   border-color: #ff2f00;
@@ -115,6 +115,6 @@
 }
 .nav-bar-button:hover{
   transform: scale(1.15);
-  color: #ccff00;
+  color: #ff6a00;
   background-color: #00000000;
 }

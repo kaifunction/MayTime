@@ -12,6 +12,7 @@
      font-size: 90px;
      flex-wrap: wrap;
      width: 94%;
+     z-index: -1;
 }
 
 .text-links{
@@ -31,7 +32,8 @@
 .home-page-text h1{
      color: #c2c2c2;
      z-index: 20;
-     background-color: #4f0000;
+     /* background-color: #4f0000; */
+     background: linear-gradient(to right, #ff6a00 40%, rgb(0, 0, 0) 100%);
      width: 600px;
      height: 50px;
      padding: 5px 20px;

@@ -47,16 +47,16 @@ function ProfileButton() {
         {userFirstLetter ? (
           userFirstLetter
         ) : (
-          <FaUser style={{ color: "#ff2f00" }} />
+          <FaUser style={{ color: "#ff6a00" }} />
         )}
       </button>
       {showMenu && (
         <div className={"profile-dropdown"} ref={ulRef}>
           {user ? (
             <div className="loginButton-list">
-              <span style={{color: 'white'}}>{user.username}</span><br />
-              <span style={{color: 'white'}}>{user.email}</span><br />
-              <span><button onClick={logout} >Log Out</button></span>
+              <span style={{color: '#ff6a00', zIndex:'1000'}}>{user.username}</span><br />
+              <span style={{color: '#ff6a00', zIndex:'1000'}}>{user.email}</span><br />
+              <span style={{zIndex:'1000'}}><button onClick={logout} >Log Out</button></span>
             </div>
           ) : (
             <div className="loginSignup-button">
