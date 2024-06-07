@@ -11,6 +11,7 @@
      left: 50px;
      font-size: 90px;
      flex-wrap: wrap;
+     width: 94%;
 }
 
 .text-links{
@@ -24,7 +25,7 @@
 .home-page-text {
      font-size: 20px;
      margin-left: 20px;
-     height: 413px;
+     /* height: 413px; */
 }
 
 .home-page-text h1{
@@ -50,13 +51,12 @@
 
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
-
 }
 
-.socialmedialinks > NavLink:last-child {
-     margin-right: 0; /* 最后一个链接的右边距设为0 */
-   }
+.socialmedialinks img {
+     display: block;
+     opacity: 0.5;
+}
 
 .xiaohongshu-logo{
      width: 30px;

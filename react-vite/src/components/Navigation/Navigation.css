@@ -28,13 +28,21 @@
   margin-right: 10px;
 }
 
+.nav-bar-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 100px;
+  margin-left: 20px; */
+}
+
 
 .nav-bar-left-links{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   position: absolute;
-  left: 62%;
+  left: 66%;
   gap: 40px;
   font-size: 18px;
   font-weight: 600;
