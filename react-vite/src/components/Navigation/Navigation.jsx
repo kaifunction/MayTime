@@ -26,7 +26,7 @@ function Navigation() {
           {/* <NavLink></NavLink> */}
 
           <NavLink
-            to="/"
+            to="/photos"
             style={{ textDecoration: "none" }}
           >
             <div
@@ -39,7 +39,7 @@ function Navigation() {
           </NavLink>
 
           <NavLink
-            to="/"
+            to="/about"
             style={{ textDecoration: "none" }}
           >
             <div
@@ -52,7 +52,7 @@ function Navigation() {
           </NavLink>
 
           <NavLink
-            to="/"
+            to="/contact_us"
             style={{ textDecoration: "none" }}
           >
             <div

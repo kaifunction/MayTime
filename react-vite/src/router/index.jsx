@@ -3,6 +3,8 @@ import LoginFormPage from '../components/LoginFormPage';
 import SignupFormPage from '../components/SignupFormPage';
 import HomePage from '../components/HomePage/HomePage';
 import Photos from '../components/Photos/Photo';
+import Abouts from '../components/About/About';
+import ContactUs from '../components/ContactUs';
 import Layout from './Layout';
 
 export const router = createBrowserRouter([
@@ -27,7 +29,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <div>About</div>,
+        element: <Abouts />,
+      },
+      {
+        path: "contact_us",
+        element: <ContactUs />,
       }
     ],
   },
