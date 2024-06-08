@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import LoginFormPage from '../components/LoginFormPage';
 import SignupFormPage from '../components/SignupFormPage';
 import HomePage from '../components/HomePage/HomePage';
+import Photos from '../components/Photos/Photo';
 import Layout from './Layout';
 
 export const router = createBrowserRouter([
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "photos",
-        element: <div>Photos</div>,
+        element: <Photos />,
       },
       {
         path: "about",
