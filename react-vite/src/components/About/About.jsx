@@ -1,7 +1,7 @@
 const About = () => {
      return (
           <div>
-               <h1 style={{marginTop:'100px', color:'white'}}>About</h1>
+               <h1 style={{margin:'100px 40px', color:'#ff6a00', width:'fit-content'}}>About</h1>
           </div>
      )
      }
