@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ContactUs.css";
 
 const ContactUs = () => {
   const [formData, setFromData] = useState({
@@ -21,9 +22,9 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div className="contact-us-container">
       <h1
-        style={{ margin: "100px 40px", color: "#ff6a00", width: "fit-content" }}
+        style={{ marginTop: "60px", color: "#ff6a00", width: "fit-content" }}
       >
         Contact Us
       </h1>
@@ -36,7 +37,7 @@ const ContactUs = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
-            style={{ color: "#ff6a00" }}
+            style={{ color: "#ff6a00", width: "340px", height: "40px"}}
           />
           <h2>Email</h2>
           <input
@@ -45,7 +46,7 @@ const ContactUs = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Enter your email"
-            style={{ color: "#ff6a00" }}
+            style={{ color: "#ff6a00",  width: "340px", height: "40px" }}
           />
           <h2>Message</h2>
           <textarea
@@ -53,10 +54,10 @@ const ContactUs = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Enter your message"
-            style={{ color: "#ff6a00" }}
+            style={{ color: "#ff6a00", width: "340px", height: "140px" }}
           />
         </div>
-        <button type="submit" style={{ color: "#ff6a00", margin: "40px" }}>
+        <button type="submit" style={{ color: "#ff6a00", marginLeft: "40px" }}>
           Submit
         </button>
       </form>
