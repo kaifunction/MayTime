@@ -45,7 +45,6 @@ const ContactUs = () => {
             onChange={handleChange}
             placeholder="Enter your email"
           />
-
           <h2>Message</h2>
           <textarea
             name="message"
