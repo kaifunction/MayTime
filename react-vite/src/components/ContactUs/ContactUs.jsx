@@ -29,35 +29,38 @@ const ContactUs = () => {
         Contact Us
       </h1>
       <form onSubmit={handleSubmit}>
-        <div style={{ color: "white", margin: "40px" }}>
-          <h2>Name</h2>
+        <div className="contact-us-form" style={{ color: "white", margin: "40px" }}>
+          <h3 style={{marginBottom:'10px'}}>Name</h3>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
-            style={{ color: "#ff6a00", width: "340px", height: "40px"}}
+            className="contact-us-input-name"
+            style={{ color: "#ff6a00", width: "340px", height: "40px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', paddingLeft:'10px'  }}
           />
-          <h2>Email</h2>
+          <h3 style={{marginBottom:'10px'}}>Email</h3>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="Enter your email"
-            style={{ color: "#ff6a00",  width: "340px", height: "40px" }}
+            className="contact-us-input-email"
+            style={{ color: "#ff6a00",  width: "340px", height: "40px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', paddingLeft:'10px' }}
           />
-          <h2>Message</h2>
+          <h3 style={{marginBottom:'10px'}}>Message</h3>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Enter your message"
-            style={{ color: "#ff6a00", width: "340px", height: "140px" }}
+            placeholder="Enter your message..."
+            className="contact-us-input-message"
+            style={{ color: "#ff6a00", width: "340px", height: "140px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', padding:'10px 10px'  }}
           />
         </div>
-        <button type="submit" style={{ color: "#ff6a00", marginLeft: "40px" }}>
+        <button type="submit" style={{ color: "#ff6a00", marginLeft: "40px", borderWidth: '1px', borderColor:'#ff6a00', borderRadius:'10px', padding:'5px 10px', cursor:'pointer' }}>
           Submit
         </button>
       </form>

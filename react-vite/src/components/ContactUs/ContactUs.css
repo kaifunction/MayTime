@@ -4,3 +4,17 @@
      justify-content: center;
      align-items: center;
 }
+
+.contact-us-container form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+}
+
+.contact-us-form h3{
+     margin: 0;
+     padding: 0;
+     margin-bottom: 10px;
+}
