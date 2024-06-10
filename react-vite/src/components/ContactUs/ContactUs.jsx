@@ -36,6 +36,7 @@ const ContactUs = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
+            style={{ color: "#ff6a00" }}
           />
           <h2>Email</h2>
           <input
@@ -44,6 +45,7 @@ const ContactUs = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Enter your email"
+            style={{ color: "#ff6a00" }}
           />
           <h2>Message</h2>
           <textarea
@@ -51,6 +53,7 @@ const ContactUs = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Enter your message"
+            style={{ color: "#ff6a00" }}
           />
         </div>
         <button type="submit" style={{ color: "#ff6a00", margin: "40px" }}>
