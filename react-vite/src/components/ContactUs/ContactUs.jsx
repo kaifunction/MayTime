@@ -30,7 +30,7 @@ const ContactUs = () => {
       </h1>
       <form onSubmit={handleSubmit}>
         <div className="contact-us-form" style={{ color: "white", margin: "40px" }}>
-          <h3 style={{marginBottom:'10px'}}>Name</h3>
+          <h4 style={{marginBottom:'10px', fontWeight:'normal'}}>Name</h4>
           <input
             type="text"
             name="name"
@@ -38,9 +38,9 @@ const ContactUs = () => {
             onChange={handleChange}
             placeholder="Enter your name"
             className="contact-us-input-name"
-            style={{ color: "#ff6a00", width: "340px", height: "40px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', paddingLeft:'10px'  }}
+            style={{ color: "#ff6a00", width: "345px", height: "40px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', paddingLeft:'10px'  }}
           />
-          <h3 style={{marginBottom:'10px'}}>Email</h3>
+          <h4 style={{marginBottom:'10px', fontWeight:'normal'}}>Email</h4>
           <input
             type="email"
             name="email"
@@ -48,9 +48,9 @@ const ContactUs = () => {
             onChange={handleChange}
             placeholder="Enter your email"
             className="contact-us-input-email"
-            style={{ color: "#ff6a00",  width: "340px", height: "40px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', paddingLeft:'10px' }}
+            style={{ color: "#ff6a00",  width: "345px", height: "40px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', paddingLeft:'10px' }}
           />
-          <h3 style={{marginBottom:'10px'}}>Message</h3>
+          <h4 style={{marginBottom:'10px', fontWeight:'normal'}}>Message</h4>
           <textarea
             name="message"
             value={formData.message}
