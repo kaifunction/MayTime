@@ -60,7 +60,7 @@ const ContactUs = () => {
             style={{ color: "#ff6a00", width: "340px", height: "140px", marginBottom:'30px', borderRadius:'5px', borderColor:'#ff6a00', borderWidth:'1px', padding:'10px 10px'  }}
           />
         </div>
-        <button type="submit" style={{ color: "#ff6a00", marginLeft: "40px", borderWidth: '1px', borderColor:'#ff6a00', borderRadius:'10px', padding:'5px 10px', cursor:'pointer' }}>
+        <button type="submit" style={{ color: "#ff6a00", borderWidth: '1px', borderColor:'#ff6a00', borderRadius:'10px', padding:'5px 10px', cursor:'pointer' }}>
           Submit
         </button>
       </form>
