@@ -1,4 +1,12 @@
-.contact-us-container{
+.contact-us-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 250px;
+}
+
+.contact-us-container-left{
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -17,4 +25,11 @@
      margin: 0;
      padding: 0;
      margin-bottom: 10px;
+}
+
+.contact-us-container-right {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* align-items: center; */
 }
