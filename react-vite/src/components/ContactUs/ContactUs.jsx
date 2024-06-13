@@ -23,6 +23,9 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us-container">
+      {/* <div className="background-image">
+        <img src="/public/sunnyvale-map.jpg" alt="sunnyvale map"/>
+      </div> */}
       <div className="contact-us-container-left">
         <h1
           style={{ marginTop: "60px", color: "#ff6a00", width: "fit-content" }}
