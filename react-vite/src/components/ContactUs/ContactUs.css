@@ -4,12 +4,17 @@
      justify-content: center;
      align-items: center;
      gap: 150px;
-     /* background-image: url('/public/sunnyvale-map.jpg');
-     background-position: center;
-     background-repeat: no-repeat; */
+     position: relative;
+     /* 确保伪元素正确定位 */
+     height: 100vh;
+     /* 使容器占满视口高度 */
+     width: 100%;
+     /* 使容器占满视口宽度 */
+     overflow: hidden;
+     /* 防止内容溢出容器 */
 }
 
-.contact-us-containter::before{
+.contact-us-container::before {
      content: '';
      position: absolute;
      top: 0;
@@ -21,16 +26,17 @@
      background-position: center;
      background-repeat: no-repeat;
      opacity: 0.1;
-     /* z-index: -1; */
-     /* background-color: rgba(0, 0, 0, 0.5); */
-     /* z-index: 1; */
+     background-color: rgba(0, 0, 0, 0.5);
+
 }
 
-.contact-us-container-left{
+.contact-us-container-left {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     background-color: rgba(255, 255, 255, 0.0);
+     z-index: 1;
 }
 
 .contact-us-container form {
@@ -39,18 +45,24 @@
      justify-content: center;
      align-items: center;
      width: 100%;
+     background-color: rgba(255, 255, 255, 0.0);
+     z-index: 1;
 }
 
-.contact-us-form h4{
+.contact-us-form h4 {
      margin: 0;
      padding: 0;
      margin-bottom: 10px;
+     background-color: rgba(255, 255, 255, 0.0);
+     z-index: 1;
 }
 
 .contact-us-container-right {
      display: flex;
      flex-direction: column;
      justify-content: center;
+     background-color: rgba(255, 255, 255, 0.0);
+     z-index: 1;
      /* align-items: center; */
 }
 

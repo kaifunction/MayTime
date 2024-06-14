@@ -28,14 +28,14 @@ const ContactUs = () => {
       </div> */}
       <div className="contact-us-container-left">
         <h1
-          style={{ marginTop: "60px", color: "#ff6a00", width: "fit-content" }}
+          style={{ marginTop: "0px", color: "#ff6a00", width: "fit-content" }}
         >
           Contact Us
         </h1>
         <form onSubmit={handleSubmit}>
           <div
             className="contact-us-form"
-            style={{ color: "white", margin: "40px" }}
+            style={{ color: "white", margin: "20px 40px" }}
           >
             <h4 style={{ marginBottom: "10px", fontWeight: "normal" }}>Name</h4>
             <input
@@ -116,15 +116,15 @@ const ContactUs = () => {
       <div className="contact-us-container-right">
         {/* <div className="contact-us-container-right-content"> */}
           <h3 style={{ color: "#ff6a00" }}>Contact Information</h3>
-          <p style={{ color: "white", fontSize: "16px" }}>
+          <p style={{ color: "white", fontSize: "16px", backgroundColor:'#ffffff00' }}>
             Email:
             <br />
         </p>
-        <p style={{ color: "white", fontSize: "16px" }}>
+        <p style={{ color: "white", fontSize: "16px", backgroundColor:'#ffffff00' }}>
             Phone:
             <br />
         </p>
-        <p style={{ color: "white", fontSize: "16px" }}>
+        <p style={{ color: "white", fontSize: "16px", backgroundColor:'#ffffff00' }}>
             Address:
             <br />
         </p>

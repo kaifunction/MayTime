@@ -4,7 +4,7 @@ import "./Navigation.css";
 
 function Navigation() {
   return (
-    <div className="nav-bar-container">
+    <div className="nav-bar-container" style={{backgroundColor:'#ffffff00'}}>
       <div className="nav-bar-left-logo">
         <NavLink to="/">
           <img
