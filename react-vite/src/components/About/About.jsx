@@ -31,6 +31,7 @@ const About = () => {
             cursor: "pointer",
             backgroundColor: "transparent",
             borderStyle: "solid",
+            letterSpacing: "1px",
           }}
         >
           {" "}
