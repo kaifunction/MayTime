@@ -35,7 +35,7 @@ const About = () => {
           }}
         >
           {" "}
-          PRICE
+          PRICE LIST{" "}
         </button>
       </div>
     </div>
