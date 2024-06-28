@@ -2,7 +2,7 @@ import "./About.css";
 
 const About = () => {
   const handlePDFButtonClick = () => {
-    window.open("/path/to/the/file.pdf", "_blank");
+    window.open("/public/Quotation.jpg", "_blank");
   };
   return (
     <div className="contact-us-page-container">
