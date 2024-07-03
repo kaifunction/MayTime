@@ -19,13 +19,13 @@ const HomePage = () => {
                         </div>
                         <div className='socialmedialinks' style={{backgroundColor:'rgba(0,0,0,0)'}}>
                             <NavLink to={'https://www.xiaohongshu.com/user/profile/650f8469000000001200706a'} target='_blank'>
-                                <img src='/public/xiaohongshuLOGO.png' alt='xiaohongshu' className='xiaohongshu-logo' />
+                                <img src='/public/xiaohongshuLOGO.png' alt='xiaohongshu' className='xiaohongshu-logo' style={{backgroundColor:'#ff6a00', padding:'2px', borderRadius:'10px'}}/>
                             </NavLink>
                             <NavLink to={'https://www.instagram.com/maytimejewelry/'} target='_blank'>
-                                <img src='/public/instagram.png' alt='instagram' className='instagram-logo' />
+                                <img src='/public/instagram.png' alt='instagram' className='instagram-logo' style={{backgroundColor:'#ff6a00', padding:'2px', borderRadius:'10px'}}/>
                             </NavLink>
                             <NavLink to={'https://www.facebook.com/maytimejewelry'} target='_blank'>
-                                <img src='/wechat.svg' alt='wechat' className='wechat-logo' />
+                                <img src='/wechat.svg' alt='wechat' className='wechat-logo' style={{backgroundColor:'#ff6a00', padding:'2px', borderRadius:'10px'}}/>
                             </NavLink>
                         </div>
                     </div>
