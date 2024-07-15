@@ -5,7 +5,7 @@
      position: relative;
      width: 100%;
      height: 100vh;
-     background-image: url('/public/homepage.jpg');
+     /* background-image: url('/public/homepage.jpg'); */
      background-size: cover;
      background-position: center;
      overflow: hidden;
