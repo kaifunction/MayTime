@@ -36,7 +36,7 @@ const About = () => {
         >
           PRICE LIST
         </button>
-        <p style={{color:'white', letterSpacing:'2px', fontWeight:'450', lineHeight:'25px', width:'700px', marginTop:'60px'}}>
+        <p style={{color:'white', letterSpacing:'2px', fontWeight:'450', lineHeight:'25px', width:'700px', marginTop:'60px', marginBottom:'140px'}}>
           <strong style={{color:'#ff6a00', fontSize:'18px'}}>W</strong>elcome to our photography studio, established in May 2024.
           We are dedicated to capturing life's most precious moments with a keen eye
           for detail and a passion for storytelling. Our team of professional
