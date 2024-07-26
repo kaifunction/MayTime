@@ -43,7 +43,7 @@ const About = () => {
           photographers specializes in a diverse range of photography services
           to cater to your unique needs.<br/><br/>
           <strong style={{color:'#ff6a00', fontSize:'18px'}}>O</strong>ur pet photography sessions celebrate the joy and companionship that pets bring into our lives. We create a comfortable and playful environment to capture their true personalities and the bond they share with their owners. <br/><br/>
-          For couples embarking on the beautiful journey of marriage, we offer exquisite
+          <strong style={{color:'#ff6a00', fontSize:'18px'}}>F</strong>or couples embarking on the beautiful journey of marriage, we offer exquisite
           wedding photography, both indoor and outdoor. We understand the
           significance of this special day and are committed to capturing every
           heartfelt moment, from the intimate glances to the joyous
