@@ -4,6 +4,20 @@
 
 .contact-us-page-button button{
      margin: 0px 465px;
+     color: #ff6a00;
+     border-width: 1px;
+     border-color: #ff6a00;
+     border-radius: 10px;
+     padding: 5px 10px;
+     cursor: pointer;
+     background-color: transparent;
+     border-style: solid;
+     letter-spacing: 1px;
+}
+
+.contact-us-page-button button:hover{
+     background-color: #ff6a00;
+     color: white;
 }
 
 .contact-us-page-button p{

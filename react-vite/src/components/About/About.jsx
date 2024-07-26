@@ -22,17 +22,17 @@ const About = () => {
         <button
           type="button"
           onClick={handlePDFButtonClick}
-          style={{
-            color: "#ff6a00",
-            borderWidth: "1px",
-            borderColor: "#ff6a00",
-            borderRadius: "10px",
-            padding: "5px 10px",
-            cursor: "pointer",
-            backgroundColor: "transparent",
-            borderStyle: "solid",
-            letterSpacing: "1px",
-          }}
+          // style={{
+          //   color: "#ff6a00",
+          //   borderWidth: "1px",
+          //   borderColor: "#ff6a00",
+          //   borderRadius: "10px",
+          //   padding: "5px 10px",
+          //   cursor: "pointer",
+          //   backgroundColor: "transparent",
+          //   borderStyle: "solid",
+          //   letterSpacing: "1px",
+          // }}
         >
           PRICE LIST
         </button>
