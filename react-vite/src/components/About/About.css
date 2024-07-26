@@ -23,3 +23,10 @@
 .contact-us-page-button p{
      margin: 0px 390px;
 }
+
+.error{
+     font-size: 12px;
+     color: red;
+     padding-top: 0px;
+     margin: -20px 0px 40px 0px;
+}

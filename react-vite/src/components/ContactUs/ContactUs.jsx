@@ -8,6 +8,12 @@ const ContactUs = () => {
     message: "",
   });
 
+  const [error, setError] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFromData({
@@ -16,9 +22,41 @@ const ContactUs = () => {
     });
   };
 
+  const validateForm = () => {
+    let isValid = true;
+    let tempError = { name: "", email: "", message: "" };
+
+    if (!formData.name) {
+      tempError.name = "Name is required";
+      isValid = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email) {
+      tempError.email = "Email is invalid";
+      isValid = false;
+    } else if (!emailRegex.test(formData.email)) {
+      tempError.email = "Email is invalid";
+      isValid = false;
+    }
+
+    if (!formData.message) {
+      tempError.message = "Message is required";
+      isValid = false;
+    } else if (formData.message.length > 500) {
+      tempError.message = "Message is too long";
+      isValid = false;
+    }
+
+    setError(tempError);
+    return isValid;
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    if (validateForm()) {
+      console.log(formData);
+    }
   };
 
   return (
@@ -56,6 +94,7 @@ const ContactUs = () => {
                 paddingLeft: "10px",
               }}
             />
+            {error.name && <p className="error">{error.name}</p>}
             <h4 style={{ marginBottom: "10px", fontWeight: "normal" }}>
               Email
             </h4>
@@ -77,6 +116,7 @@ const ContactUs = () => {
                 paddingLeft: "10px",
               }}
             />
+            {error.email && <p className="error">{error.email}</p>}
             <h4 style={{ marginBottom: "10px", fontWeight: "normal" }}>
               Message
             </h4>
@@ -97,6 +137,7 @@ const ContactUs = () => {
                 padding: "10px 10px",
               }}
             />
+            {error.message && <p className="error">{error.message}</p>}
           </div>
           <button
             type="submit"
