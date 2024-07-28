@@ -17,7 +17,9 @@
 
 .contact-us-page-button button:hover{
      background-color: #ff6a00;
-     color: white;
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     transform: scale(1.1);
 }
 
 .contact-us-page-button p{

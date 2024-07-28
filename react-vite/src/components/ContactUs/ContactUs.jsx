@@ -141,14 +141,6 @@ const ContactUs = () => {
           </div>
           <button
             type="submit"
-            style={{
-              color: "#ff6a00",
-              borderWidth: "1px",
-              borderColor: "#ff6a00",
-              borderRadius: "10px",
-              padding: "5px 10px",
-              cursor: "pointer",
-            }}
           >
             Submit
           </button>
