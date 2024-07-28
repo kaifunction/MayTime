@@ -27,24 +27,30 @@ const ContactUs = () => {
     let tempError = { name: "", email: "", message: "" };
 
     if (!formData.name) {
-      tempError.name = "Name is required";
+      tempError.name = "Name is required.";
+      isValid = false;
+    }  else if (formData.name.length < 2 || formData.name.length > 50) {
+      tempError.name = "Name must be between 2 and 50 characters.";
+      isValid = false;
+    } else if (!/^[a-zA-Z\s'`-]+$/.test(formData.name)) {
+      tempError.name = "Name can only contain letters and certain special characters.";
       isValid = false;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email) {
-      tempError.email = "Email is invalid";
+      tempError.email = "Email is required.";
       isValid = false;
     } else if (!emailRegex.test(formData.email)) {
-      tempError.email = "Email is invalid";
+      tempError.email = "Email is invalid.";
       isValid = false;
     }
 
     if (!formData.message) {
-      tempError.message = "Message is required";
+      tempError.message = "Message is required.";
       isValid = false;
-    } else if (formData.message.length > 500) {
-      tempError.message = "Message is too long";
+    } else if (formData.message.length < 10 || formData.message.length > 500) {
+      tempError.message = "Message must be between 10 and 500 characters.";
       isValid = false;
     }
 
