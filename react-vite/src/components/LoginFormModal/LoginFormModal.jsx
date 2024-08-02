@@ -72,7 +72,9 @@ function LoginFormModal() {
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email"
-            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px',borderColor: "#ff6a00", borderRadius: "5px",width: "340px", height: "30px",
+            borderWidth: "1px",
+            padding: "5px 10px"}}
           />
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
@@ -84,11 +86,13 @@ function LoginFormModal() {
             onChange={(e) => setPassword(e.target.value)}
             required
             placeholder="Enter your password"
-            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px',borderColor: "#ff6a00", borderRadius: "5px",width: "340px", height: "30px",
+            borderWidth: "1px",
+            padding: "5px 10px"}}
           />
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
-        <button type="submit">Log In</button>
+        <button type="submit">LOG IN</button>
       </form>
     </div>
   );

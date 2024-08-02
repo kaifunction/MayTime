@@ -81,7 +81,7 @@ const ContactUs = () => {
             className="contact-us-form"
             style={{ color: "white", margin: "20px 40px", backgroundColor:'transparent'  }}
           >
-            <h4 style={{ marginBottom: "10px", fontWeight: "normal" }}>Name</h4>
+            <h4 style={{ marginBottom: "10px", fontWeight: "normal", color:'#ff6a00'}}>NAME</h4>
             <input
               type="text"
               name="name"
@@ -101,8 +101,8 @@ const ContactUs = () => {
               }}
             />
             {error.name && <p className="error">{error.name}</p>}
-            <h4 style={{ marginBottom: "10px", fontWeight: "normal" }}>
-              Email
+            <h4 style={{ marginBottom: "10px", fontWeight: "normal", color:'#ff6a00' }}>
+              EMAIL
             </h4>
             <input
               type="email"
@@ -123,8 +123,8 @@ const ContactUs = () => {
               }}
             />
             {error.email && <p className="error">{error.email}</p>}
-            <h4 style={{ marginBottom: "10px", fontWeight: "normal" }}>
-              Message
+            <h4 style={{ marginBottom: "10px", fontWeight: "normal", color:'#ff6a00' }}>
+              MESSAGE
             </h4>
             <textarea
               name="message"
@@ -148,23 +148,23 @@ const ContactUs = () => {
           <button
             type="submit"
           >
-            Submit
+            SUBMIT
           </button>
         </form>
       </div>
       <div className="contact-us-container-right">
         {/* <div className="contact-us-container-right-content"> */}
           <h3 style={{ color: "#ff6a00", backgroundColor:'transparent' }}>Contact Information</h3>
-          <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent' }}>
-            Email:
+          <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
+            EMAIL:
             <br />
         </p>
-        <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent' }}>
-            Phone:
+        <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
+            PHONE:
             <br />
         </p>
-        <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent' }}>
-            Address:
+        <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
+            ADDRESS:
             <br />
         </p>
         </div>

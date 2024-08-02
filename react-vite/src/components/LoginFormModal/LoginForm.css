@@ -20,11 +20,11 @@
 }
 
 .login-container button{
-     color: black;
+     color: #ff6a00;
      font-weight: bold;
-     background-color: #ff6a00;
+     border-color: #ff6a00;
      cursor: pointer;
-     padding: 10px;
+     padding: 5px 10px;
      border-radius: 10px;
      width: 100%;
      height: 30px;
@@ -32,3 +32,8 @@
      justify-content: center;
      align-items: center;
 }
+
+.login-container button:hover{
+     transform: scale(1.05);
+     transition: transform 0.3s ease-in-out;
+   }

@@ -95,13 +95,19 @@ function SignupFormModal() {
     <div className="signup-container">
       <h1
         style={{
+          fontSize:'25px',
           color: "#ff6a00",
           backgroundColor: "black",
           padding: "20px 20px 20px 0",
           margin: "0px",
         }}
       >
-        <span style={{fontWeight:'bold', backgroundColor:'transparent'}}>SIGN</span> <span style={{fontWeight:'lighter', backgroundColor:'transparent'}}>UP</span>
+        <span style={{ fontWeight: "bold", backgroundColor: "transparent" }}>
+          SIGN
+        </span>{" "}
+        <span style={{ fontWeight: "lighter", backgroundColor: "transparent" }}>
+          UP
+        </span>
       </h1>
       {errors.server && (
         <p className="error" style={{ color: "#f94880" }}>
@@ -120,8 +126,12 @@ function SignupFormModal() {
             style={{
               backgroundColor: "black",
               color: "white",
-              width: "300px",
+              borderColor: "#ff6a00",
+              borderRadius: "5px",
+              width: "340px",
               height: "30px",
+              borderWidth: "1px",
+              padding: "5px 10px",
             }}
           />
         </label>
@@ -137,8 +147,12 @@ function SignupFormModal() {
             style={{
               backgroundColor: "black",
               color: "white",
-              width: "300px",
+              borderColor: "#ff6a00",
+              borderRadius: "5px",
+              width: "340px",
               height: "30px",
+              borderWidth: "1px",
+              padding: "5px 10px",
             }}
           />
         </label>
@@ -154,8 +168,12 @@ function SignupFormModal() {
             style={{
               backgroundColor: "black",
               color: "white",
-              width: "300px",
+              borderColor: "#ff6a00",
+              borderRadius: "5px",
+              width: "340px",
               height: "30px",
+              borderWidth: "1px",
+              padding: "5px 10px",
             }}
           />
         </label>
@@ -171,26 +189,19 @@ function SignupFormModal() {
             style={{
               backgroundColor: "black",
               color: "white",
-              width: "300px",
+              borderColor: "#ff6a00",
+              borderRadius: "5px",
+              width: "340px",
               height: "30px",
+              borderWidth: "1px",
+              padding: "5px 10px",
             }}
           />
         </label>
         {errors.confirmPassword && (
           <p className="error">{errors.confirmPassword}</p>
         )}
-        <button
-          type="submit"
-          style={{
-            color: "black",
-            cursor: "pointer",
-            backgroundColor: "#ff6a00",
-            padding: "10px",
-            borderRadius: "10px",
-          }}
-        >
-          Sign Up
-        </button>
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   );
