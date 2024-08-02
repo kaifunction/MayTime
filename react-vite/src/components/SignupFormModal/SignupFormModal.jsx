@@ -57,9 +57,9 @@ function SignupFormModal() {
     }
 
     if (password !== confirmPassword) {
-      return setErrors({
-        confirmPassword: "Confirm Password must be the same as the Password.",
-      });
+      tempErrors.confirmPassword =
+        "Confirm Password must be the same as the Password.";
+      isValid = false;
     }
     setErrors(tempErrors);
     return isValid;
