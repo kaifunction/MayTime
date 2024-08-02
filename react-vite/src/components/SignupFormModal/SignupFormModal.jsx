@@ -101,7 +101,7 @@ function SignupFormModal() {
           margin: "0px",
         }}
       >
-        SIGN UP
+        <span style={{fontWeight:'bold', backgroundColor:'transparent'}}>SIGN</span> <span style={{fontWeight:'lighter', backgroundColor:'transparent'}}>UP</span>
       </h1>
       {errors.server && (
         <p className="error" style={{ color: "#f94880" }}>

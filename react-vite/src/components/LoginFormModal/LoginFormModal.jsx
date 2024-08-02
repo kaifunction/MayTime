@@ -62,7 +62,7 @@ function LoginFormModal() {
 
   return (
     <div className="login-container">
-      <h1 style={{fontSize:'25px', color:'#ff6a00', backgroundColor:'black',padding:'20px 20px 20px 0', margin:'0px'}}>LOG IN</h1>
+      <h1 style={{fontSize:'25px', color:'#ff6a00', backgroundColor:'black',padding:'20px 20px 20px 0', margin:'0px'}}><span style={{fontWeight:'bold', backgroundColor:'transparent'}}>LOG</span> <span style={{fontWeight:'lighter', backgroundColor:'transparent'}}>IN</span></h1>
       <form onSubmit={handleSubmit}>
         <label style={{color:'#ff6a00', marginTop:'40px'}}>
           EMAIL
