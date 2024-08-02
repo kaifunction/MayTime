@@ -118,3 +118,9 @@
   color: #ff6a00;
   background-color: #00000000;
 }
+
+
+.loginSignup-button{
+  background-color: #ff2f00;
+  gap: 10px;
+}
