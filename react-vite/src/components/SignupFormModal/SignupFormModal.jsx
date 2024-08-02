@@ -39,57 +39,57 @@ function SignupFormModal() {
   };
 
   return (
-    <>
-      <h1 style={{color:'#ff6a00', backgroundColor:'black',padding:'20px', margin:'0px'}}>Sign Up</h1>
+    <div className="signup-container">
+      <h1 style={{color:'#ff6a00', backgroundColor:'black',padding:'20px 20px 20px 0',  margin:'0px'}}>SIGN UP</h1>
       {errors.server && <p style={{color:'#f94880'}}>{errors.server}</p>}
       <form onSubmit={handleSubmit}>
-        <label style={{color:'#ff6a00'}}>
-          Email
+        <label style={{color:'#ff6a00', marginTop:'40px'}}>
+          EMAIL
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            style={{backgroundColor: 'black', color: 'white'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
-        {errors.email && <p style={{color:'#f94880',fontSize:'12px'}}>{errors.email}</p>}
+        {errors.email && <p className="error">{errors.email}</p>}
         <label style={{color:'#ff6a00'}}>
-          Username
+          USERNAME
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
-            style={{backgroundColor: 'black', color: 'white'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
-        {errors.username && <p style={{color:'#f94880',fontSize:'12px'}}>{errors.username}</p>}
+        {errors.username && <p className="error">{errors.username}</p>}
         <label style={{color:'#ff6a00'}}>
-          Password
+          PASSWORD
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            style={{backgroundColor: 'black', color: 'white'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
-        {errors.password && <p style={{color:'#f94880'}}>{errors.password}</p>}
+        {errors.password && <p className="error">{errors.password}</p>}
         <label style={{color:'#ff6a00'}}>
-          Confirm Password
+          CONFIRM PASSWORD
           <input
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
-            style={{backgroundColor: 'black', color: 'white'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
-        {errors.confirmPassword && <p style={{color:'#f94880'}}>{errors.confirmPassword}</p>}
+        {errors.confirmPassword && <p className="error">{errors.confirmPassword}</p>}
         <button type="submit" style={{color:'black', cursor:'pointer',backgroundColor:'#ff6a00',padding:'10px', borderRadius:'10px'}}>Sign Up</button>
       </form>
-    </>
+    </div>
   );
 }
 

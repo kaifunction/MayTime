@@ -1,6 +1,8 @@
 .login-container{
      display: flex;
      flex-direction: column;
+     justify-content: center;
+     align-items: center;
 }
 
 .login-container form{
@@ -8,5 +10,25 @@
      flex-direction: column;
      /* justify-content: center; */
      align-items: start;
-     gap: 40px;
+     gap: 30px;
+}
+
+.login-container form label{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.login-container button{
+     color: black;
+     font-weight: bold;
+     background-color: #ff6a00;
+     cursor: pointer;
+     padding: 10px;
+     border-radius: 10px;
+     width: 100%;
+     height: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }

@@ -59,31 +59,31 @@ function LoginFormModal() {
 
   return (
     <div className="login-container">
-      <h1 style={{color:'#ff6a00', backgroundColor:'black',padding:'20px 20px 20px 0', margin:'0px'}}>Log In</h1>
+      <h1 style={{fontSize:'25px', color:'#ff6a00', backgroundColor:'black',padding:'20px 20px 20px 0', margin:'0px'}}>LOG IN</h1>
       <form onSubmit={handleSubmit}>
-        <label style={{color:'#ff6a00', marginTop:'60px'}}>
-          Email :
+        <label style={{color:'#ff6a00', marginTop:'40px'}}>
+          EMAIL
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            style={{backgroundColor: 'black', color: 'white', marginLeft:'20px', width:'200px'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
         <label style={{color:'#ff6a00'}}>
-          Password :
+          PASSWORD
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            style={{backgroundColor: 'black', color: 'white', marginLeft:'20px', width:'168px'}}
+            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
-        <button type="submit" style={{color:'black', backgroundColor:'#ff6a00', cursor:'pointer', padding:'10px', borderRadius:'10px'}}>Log In</button>
+        <button type="submit">Log In</button>
       </form>
     </div>
   );
