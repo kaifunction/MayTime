@@ -15,7 +15,7 @@
      /* 防止内容溢出容器 */
 }
 
-.contact-us-container::before {
+/* .contact-us-container::before {
      content: '';
      position: absolute;
      top: 0;
@@ -29,7 +29,7 @@
      opacity: 0.09;
      background-color: rgba(0, 0, 0, 0.5);
 
-}
+} */
 
 .contact-us-container-left {
      display: flex;
@@ -37,7 +37,7 @@
      justify-content: center;
      align-items: center;
      background-color: rgba(255, 255, 255, 0.0);
-     z-index: 1;
+     /* z-index: 1; */
 }
 
 .contact-us-container-left button{
@@ -63,7 +63,7 @@
      align-items: center;
      width: 100%;
      background-color: rgba(255, 255, 255, 0.0);
-     z-index: 1;
+     /* z-index: 1; */
 }
 
 .contact-us-form h4 {
@@ -79,7 +79,7 @@
      flex-direction: column;
      justify-content: center;
      background-color: rgba(255, 255, 255, 0.0);
-     z-index: 1;
+     /* z-index: 1; */
      /* align-items: center; */
 }
 
