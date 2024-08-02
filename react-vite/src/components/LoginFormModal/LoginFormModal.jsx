@@ -68,6 +68,7 @@ function LoginFormModal() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="Enter your email"
             style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
@@ -79,6 +80,7 @@ function LoginFormModal() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            placeholder="Enter your password"
             style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px'}}
           />
         </label>
