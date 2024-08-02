@@ -14,7 +14,6 @@ function LoginFormModal() {
   });
   const { closeModal } = useModal();
 
-
   const validateEP = () => {
     let isValid = true;
     let tempErrors = { email: "", password: "" };
@@ -38,8 +37,7 @@ function LoginFormModal() {
 
     setErrors(tempErrors);
     return isValid;
-
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -59,12 +57,26 @@ function LoginFormModal() {
     }
   };
 
-
   return (
     <div className="login-container">
-      <h1 style={{fontSize:'25px', color:'#ff6a00', backgroundColor:'black',padding:'20px 20px 20px 0', margin:'0px'}}><span style={{fontWeight:'bold', backgroundColor:'transparent'}}>LOG</span> <span style={{fontWeight:'lighter', backgroundColor:'transparent'}}>IN</span></h1>
+      <h1
+        style={{
+          fontSize: "25px",
+          color: "#ff6a00",
+          backgroundColor: "black",
+          padding: "20px 20px 20px 0",
+          margin: "0px",
+        }}
+      >
+        <span style={{ fontWeight: "bold"}}>
+          LOG
+        </span>{" "}
+        <span style={{ fontWeight: "lighter", backgroundColor: "transparent" }}>
+          IN
+        </span>
+      </h1>
       <form onSubmit={handleSubmit}>
-        <label style={{color:'#ff6a00', marginTop:'40px'}}>
+        <label style={{ color: "#ff6a00", marginTop: "40px" }}>
           EMAIL
           <input
             type="text"
@@ -72,13 +84,22 @@ function LoginFormModal() {
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email"
-            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px',borderColor: "#ff6a00", borderRadius: "5px",width: "340px", height: "30px",
-            borderWidth: "1px",
-            padding: "5px 10px"}}
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              width: "300px",
+              height: "30px",
+              borderColor: "#ff6a00",
+              borderRadius: "5px",
+              width: "340px",
+              height: "30px",
+              borderWidth: "1px",
+              padding: "5px 10px",
+            }}
           />
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
-        <label style={{color:'#ff6a00'}}>
+        <label style={{ color: "#ff6a00" }}>
           PASSWORD
           <input
             type="password"
@@ -86,9 +107,18 @@ function LoginFormModal() {
             onChange={(e) => setPassword(e.target.value)}
             required
             placeholder="Enter your password"
-            style={{backgroundColor: 'black', color: 'white', width:'300px', height:'30px',borderColor: "#ff6a00", borderRadius: "5px",width: "340px", height: "30px",
-            borderWidth: "1px",
-            padding: "5px 10px"}}
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              width: "300px",
+              height: "30px",
+              borderColor: "#ff6a00",
+              borderRadius: "5px",
+              width: "340px",
+              height: "30px",
+              borderWidth: "1px",
+              padding: "5px 10px",
+            }}
           />
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
