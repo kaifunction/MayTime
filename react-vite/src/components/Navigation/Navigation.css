@@ -106,6 +106,7 @@
   gap: 20px;
 }
 
+
 .nav-bar-button{
   background-color: #ff00bb00;
   color: white;
@@ -120,4 +121,18 @@
   transform: scale(1.15);
   color: #ff6a00;
   background-color: #00000000;
+}
+
+
+.two-buttons{
+  cursor: pointer;
+  background-color: #ff6a00;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.two-buttons:hover{
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
 }
