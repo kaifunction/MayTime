@@ -98,11 +98,13 @@
 }
 
 .loginSignup-button{
-  margin-left: -100px;
+  margin-left: -20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
+  align-items: end;
+  gap: 20px;
 }
-
 
 .nav-bar-button{
   background-color: #ff00bb00;
@@ -113,14 +115,9 @@
   /* color: #ff2f00; */
   transition: transform 0.3s ease-in-out;
 }
+
 .nav-bar-button:hover{
   transform: scale(1.15);
   color: #ff6a00;
   background-color: #00000000;
-}
-
-
-.loginSignup-button{
-  background-color: #ff2f00;
-  gap: 10px;
 }
