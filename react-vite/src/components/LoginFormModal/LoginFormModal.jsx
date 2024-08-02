@@ -31,6 +31,9 @@ function LoginFormModal() {
     if (!password) {
       tempErrors.password = "Password is required.";
       isValid = false;
+    } else if (password.length < 6 || password.length > 50) {
+      tempErrors.password = "Password must be between 6 and 50 characters.";
+      isValid = false;
     }
 
     setErrors(tempErrors);
