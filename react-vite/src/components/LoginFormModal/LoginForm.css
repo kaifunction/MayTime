@@ -45,7 +45,7 @@
 
 .close-modal{
      margin-top: 40px;
-     width: 50%;
+     width: 45%;
 }
 
 .close-modal p {
@@ -53,4 +53,5 @@
      cursor: pointer;
      margin-bottom: -25px;
      width: 150%;
+     font-size: 14px;
 }

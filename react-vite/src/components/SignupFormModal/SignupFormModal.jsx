@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { useModal } from "../../context/Modal";
 import { thunkSignup } from "../../redux/session";
+import OpenModalMenuItem from "../Navigation/OpenModalMenuItem";
+import LoginFormModal from "../LoginFormModal";
 import "./SignupForm.css";
 
 function SignupFormModal() {
@@ -17,6 +19,32 @@ function SignupFormModal() {
     confirmPassword: "",
   });
   const { closeModal } = useModal();
+  const [showMenu, setShowMenu] = useState(false);
+
+  const ulRef = useRef();
+
+  const toggleMenu = (e) => {
+    e.stopPropagation(); // Keep from bubbling up to document and triggering closeMenu
+    setShowMenu(!showMenu);
+  };
+
+  useEffect(() => {
+    if (!showMenu) return;
+
+    const closeMenu = (e) => {
+      if (ulRef.current && !ulRef.current.contains(e.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("click", closeMenu);
+
+    return () => document.removeEventListener("click", closeMenu);
+
+  }, [showMenu]);
+
+  const closeMenu = () => setShowMenu(false);
+
 
   const validateEP = () => {
     let isValid = true;
@@ -202,6 +230,14 @@ function SignupFormModal() {
           <p className="error">{errors.confirmPassword}</p>
         )}
         <button type="submit">Sign Up</button>
+        <div onClick={toggleMenu} className="close-modal">
+          <p>Already have an account?</p>
+          <OpenModalMenuItem
+            itemText="Log In"
+            onItemClick={closeMenu}
+            modalComponent={<LoginFormModal />}
+          />
+        </div>
       </form>
     </div>
   );
