@@ -3,20 +3,24 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     padding: 120px 220px;
+     /* background-color: #ffffff; */
 }
 
 .login-container form{
      display: flex;
      flex-direction: column;
-     /* justify-content: center; */
-     align-items: start;
+     justify-content: center;
+     align-items: center;
      gap: 30px;
+     /* background-color: #ffffff; */
 }
 
 .login-container form label{
      display: flex;
      flex-direction: column;
      gap: 10px;
+     /* background-color: #ffffff; */
 }
 
 .login-container button{
@@ -38,3 +42,15 @@
      transform: scale(1.05);
      transition: transform 0.3s ease-in-out;
    }
+
+.close-modal{
+     margin-top: 40px;
+     width: 50%;
+}
+
+.close-modal p {
+     color: #ffffff70;
+     cursor: pointer;
+     margin-bottom: -20px;
+     width: 150%;
+}

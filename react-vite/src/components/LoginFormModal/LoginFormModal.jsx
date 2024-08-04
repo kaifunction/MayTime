@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { thunkLogin } from "../../redux/session";
 import { useDispatch } from "react-redux";
 import { useModal } from "../../context/Modal";
+import OpenModalMenuItem from "../Navigation/OpenModalMenuItem";
+import SignupFormModal from "../SignupFormModal";
 import "./LoginForm.css";
 
 function LoginFormModal() {
@@ -13,6 +15,30 @@ function LoginFormModal() {
     password: "",
   });
   const { closeModal } = useModal();
+  const [showMenu, setShowMenu] = useState(false);
+
+  const ulRef = useRef();
+
+  const toggleMenu = (e) => {
+    e.stopPropagation(); // Keep from bubbling up to document and triggering closeMenu
+    setShowMenu(!showMenu);
+  };
+
+  useEffect(() => {
+    if (!showMenu) return;
+
+    const closeMenu = (e) => {
+      if (ulRef.current && !ulRef.current.contains(e.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("click", closeMenu);
+
+    return () => document.removeEventListener("click", closeMenu);
+  }, [showMenu]);
+
+  const closeMenu = () => setShowMenu(false);
 
   const validateEP = () => {
     let isValid = true;
@@ -68,9 +94,7 @@ function LoginFormModal() {
           margin: "0px",
         }}
       >
-        <span style={{ fontWeight: "bold"}}>
-          LOG
-        </span>{" "}
+        <span style={{ fontWeight: "bold" }}>LOG</span>{" "}
         <span style={{ fontWeight: "lighter", backgroundColor: "transparent" }}>
           IN
         </span>
@@ -123,6 +147,14 @@ function LoginFormModal() {
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
         <button type="submit">LOG IN</button>
+        <div onClick={toggleMenu} className="close-modal">
+          <p>Don't have an account?</p>
+          <OpenModalMenuItem
+            itemText="Sign Up"
+            onItemClick={closeMenu}
+            modalComponent={<SignupFormModal />}
+          />
+        </div>
       </form>
     </div>
   );
