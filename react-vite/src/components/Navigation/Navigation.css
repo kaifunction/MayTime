@@ -99,7 +99,7 @@
 
 .loginSignup-button{
   /* background-color: aliceblue; */
-  margin-left: -50px;
+  margin-left: -80px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -146,6 +146,7 @@
   justify-content: center;
   background-color: transparent;
 }
+
 
 .two-buttons:hover{
   transform: scale(1.1);

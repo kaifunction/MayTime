@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FaUser } from "react-icons/fa";
+import { FaUser, FaSignInAlt, FaUserPlus } from "react-icons/fa";
 import { thunkLogout } from "../../redux/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
@@ -55,22 +55,40 @@ function ProfileButton() {
         <div className={"profile-dropdown"} ref={ulRef}>
           {user ? (
             <div className="loginButton-list">
-              <span style={{color: '#ff6a00', zIndex:'1000'}}>{user.username}</span><br />
-              <span style={{color: '#ff6a00', zIndex:'1000'}}>{user.email}</span><br />
-              <span style={{zIndex:'1000'}}><button onClick={logout} >Log Out</button></span>
+              <span style={{ color: "#ff6a00", zIndex: "1000" }}>
+                {user.username}
+              </span>
+              <br />
+              <span style={{ color: "#ff6a00", zIndex: "1000" }}>
+                {user.email}
+              </span>
+              <br />
+              <span style={{ zIndex: "1000" }}>
+                <button onClick={logout}>Log Out</button>
+              </span>
             </div>
           ) : (
             <div className="loginSignup-button">
-              <span><OpenModalMenuItem
-                itemText="LOG IN"
-                onItemClick={closeMenu}
-                modalComponent={<LoginFormModal />}
-              />
-              <OpenModalMenuItem
-                itemText="SIGN UP"
-                onItemClick={closeMenu}
-                modalComponent={<SignupFormModal />}
-              /></span>
+              <span>
+                <div style={{backgroundColor:'transparent', display:'flex', flexDirection:'row', alignItems:'center', gap:'1px', marginLeft:'10px'}} className="icons">
+                  <FaSignInAlt style={{ color: "#ff6a00", backgroundColor: "transparent"  }} />
+                  <OpenModalMenuItem
+                    itemText="LOG IN"
+                    onItemClick={closeMenu}
+                    modalComponent={<LoginFormModal />}
+                  />
+                </div>
+                <div style={{backgroundColor:'transparent', display:'flex', flexDirection:'row', alignItems:'center', gap:'1px', marginLeft:'10px'}} className="icons">
+                  <FaUserPlus
+                    style={{ color: "#ff6a00", backgroundColor: "transparent" }}
+                  />
+                  <OpenModalMenuItem
+                    itemText="SIGN UP"
+                    onItemClick={closeMenu}
+                    modalComponent={<SignupFormModal />}
+                  />
+                </div>
+              </span>
             </div>
           )}
         </div>
