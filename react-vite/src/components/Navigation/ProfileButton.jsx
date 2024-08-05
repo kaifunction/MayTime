@@ -61,13 +61,13 @@ function ProfileButton() {
             </div>
           ) : (
             <div className="loginSignup-button">
-              <span  style={{color: 'white', cursor:'pointer', zIndex:'10000'}}><OpenModalMenuItem
-                itemText="Log In"
+              <span><OpenModalMenuItem
+                itemText="LOG IN"
                 onItemClick={closeMenu}
                 modalComponent={<LoginFormModal />}
-              /></span>
-              <span  style={{color: 'white', cursor:'pointer', zIndex:'10000'}}><OpenModalMenuItem
-                itemText="Sign Up"
+              />
+              <OpenModalMenuItem
+                itemText="SIGN UP"
                 onItemClick={closeMenu}
                 modalComponent={<SignupFormModal />}
               /></span>

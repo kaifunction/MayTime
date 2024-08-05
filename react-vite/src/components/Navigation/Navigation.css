@@ -98,14 +98,24 @@
 }
 
 .loginSignup-button{
-  margin-left: -20px;
+  /* background-color: aliceblue; */
+  margin-left: -50px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  /* border: 1px solid #ff6a00; */
 }
 
+.loginSignup-button span{
+  background-color: #ffffff20;
+  font-size: 18px;
+  z-index: 10000;
+  padding: 5px;
+  border-radius: 20px;
+}
 
 .nav-bar-button{
   background-color: #ff00bb00;
@@ -132,6 +142,9 @@
   font-weight: bold;
   border-radius: 8px;
   width: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
 }
 
 .two-buttons:hover{
