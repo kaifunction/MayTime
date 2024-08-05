@@ -55,16 +55,16 @@ function ProfileButton() {
         <div className={"profile-dropdown"} ref={ulRef}>
           {user ? (
             <div className="loginButton-list">
-              <span style={{ color: "#ff6a00", zIndex: "1000" }}>
+              <span style={{ color: "#ff6a00", zIndex: "1000"}}>
                 {user.username}
               </span>
               <br />
-              <span style={{ color: "#ff6a00", zIndex: "1000" }}>
+              <span style={{ color: "#ff6a00", zIndex: "1000",backgroundColor:'transparent' }}>
                 {user.email}
               </span>
               <br />
-              <span style={{ zIndex: "1000" }}>
-                <button onClick={logout}>Log Out</button>
+              <span style={{ zIndex: "1000", backgroundColor:'transparent' }}>
+                <button onClick={logout} style={{color:'black', fontWeight:'bold', marginTop:'5px'}}>LOG OUT</button>
               </span>
             </div>
           ) : (

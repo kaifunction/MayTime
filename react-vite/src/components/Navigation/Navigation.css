@@ -82,19 +82,27 @@
 
 
 .loginButton-list{
-  margin-left: -100px;
+  margin-left: -60px;
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
+  align-items: end;
+  gap: 1px;
+  margin-top: 20px;
+  background-color: #ffffff;
 }
 
 .loginButton-list button{
   background-color: #ff6a00;
   color: white;
   padding: 5px;
-  border-color: #ff2f00;
+  border-color: #ff6a00;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.loginButton-list button:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .loginSignup-button{
