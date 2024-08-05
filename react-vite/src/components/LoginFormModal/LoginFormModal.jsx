@@ -153,6 +153,7 @@ function LoginFormModal() {
             itemText="Sign Up"
             onItemClick={closeMenu}
             modalComponent={<SignupFormModal />}
+            className="two-buttons"
           />
         </div>
       </form>
