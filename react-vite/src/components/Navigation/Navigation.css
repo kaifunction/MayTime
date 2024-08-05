@@ -99,7 +99,7 @@
 
 .loginSignup-button{
   /* background-color: aliceblue; */
-  margin-left: -80px;
+  margin-left: -100px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -139,6 +139,7 @@
   color: #ff6a00;
   border-color: #ff6a00;
   padding: 5px 10px;
+  margin: 10px;
   font-weight: bold;
   border-radius: 8px;
   width: 80px;
