@@ -45,8 +45,9 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  left: 66%;
+  margin-right: 40px;
+  /* position: absolute;
+  left: 66%; */
   gap: 40px;
   font-size: 18px;
   font-weight: 600;
@@ -83,7 +84,7 @@
 
 
 .loginButton-list{
-  margin-left: -60px;
+  margin-left: -40px;
   display: flex;
   flex-direction: column;
   align-items: end;
