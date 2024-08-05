@@ -66,9 +66,9 @@
 .login-signup-button{
   border-radius: 20px;
   width: 70px;
-  padding: 1px 8px;
-  /* margin: 10px; */
-  font-size: 20px;
+  padding: 2px 8px;
+  margin-right: 20px;
+  font-size: 18px;
   font-weight: bold;
   border-color: #ff6a00;
   color: #ff6a00;
@@ -82,14 +82,13 @@
 }
 
 
-
 .loginButton-list{
   margin-left: -40px;
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 1px;
-  margin-top: 20px;
+  margin-top: 30px;
   /* padding: 10px 0px 10px 10px; */
   /* background-color: #ffffff50; */
 }
