@@ -89,7 +89,7 @@
   align-items: end;
   gap: 1px;
   margin-top: 20px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .loginButton-list button{
