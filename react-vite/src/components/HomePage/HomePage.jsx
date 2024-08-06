@@ -5,22 +5,22 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="home-page-container">
+    <div className="home-page-container" style={{backgroundColor:'transparent'}}>
       <div className="overlay">
         <div className="home-page-text-title">
           <h1
             style={{
               fontFamily: "rockwell",
               letterSpacing: "5px",
-              color: "#c2c2c2",
-              backgroundColor: "rgba(0,0,0,0)",
+              color: "#ffffff",
+              // backgroundColor: "rgba(0,0,0,0)",
             }}
           >
             <span
               style={{
                 fontFamily: "rockwell",
                 color: "#ff6a00 ",
-                backgroundColor: "rgba(0,0,0,0)",
+                // backgroundColor: "rgba(0,0,0,0)",
               }}
             >
               M
@@ -30,7 +30,7 @@ const HomePage = () => {
               style={{
                 fontFamily: "rockwell",
                 color: "#ff6a00",
-                backgroundColor: "rgba(0,0,0,0)",
+                // backgroundColor: "rgba(0,0,0,0)",
               }}
             >
               T
@@ -39,19 +39,19 @@ const HomePage = () => {
           </h1>
           <div
             className="text-links"
-            style={{ backgroundColor: "rgba(0,0,0,0)" }}
+            // style={{ backgroundColor: "rgba(0,0,0,0)" }}
           >
             <div
               className="home-page-text"
-              style={{ backgroundColor: "rgba(0,0,0,0)" }}
+              // style={{ backgroundColor: "rgba(0,0,0,0)" }}
             >
               <h1>Unleash Your</h1>
               <h2
                 style={{
                   paddingLeft: "20px",
                   marginTop: "-20px",
-                  color: "#c2c2c2",
-                  backgroundColor: "rgba(0,0,0,0)",
+                  color: "#ffffff",
+                  // backgroundColor: "rgba(0,0,0,0)",
                 }}
               >
                 Creative Exploration.
@@ -59,7 +59,7 @@ const HomePage = () => {
             </div>
             <div
               className="socialmedialinks"
-              style={{ backgroundColor: "rgba(0,0,0,0)" }}
+              // style={{ backgroundColor: "rgba(0,0,0,0)" }}
             >
               <NavLink
                 to={
