@@ -4,7 +4,7 @@
   align-items: center;
   margin: -8px;
   padding: 20px;
-  background-color: #003749;
+  background-color: #00374b;
   /* padding: 10px 20px; */
 
 }
@@ -30,6 +30,7 @@
 
 .nav-bar-right-loginButton{
   margin-right: 10px;
+  color: #00374b;
 }
 
 .nav-bar-left{
@@ -71,6 +72,7 @@
   font-size: 18px;
   font-weight: bold;
   border-color: #ff6a00;
+  background-color: #00374b;
   color: #ff6a00;
   border-width: 1px;
   cursor: pointer;

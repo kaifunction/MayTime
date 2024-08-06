@@ -5,22 +5,22 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <div className="nav-bar-container">
-      <div className="nav-bar-left-logo" style={{backgroundColor: '#000000'}}>
-        <NavLink to="/" style={{backgroundColor: '#000000'}}>
+      <div className="nav-bar-left-logo" style={{backgroundColor: '#00374b'}}>
+        <NavLink to="/" style={{backgroundColor: '#00374b'}}>
           <img
             src="/public/Maytime logo FinalWhite.png"
             alt="Logo"
             className="nav-bar-left-logo"
-            style={{backgroundColor: '#000000'}}
+            style={{backgroundColor: '#00374b'}}
           />
         </NavLink>
       </div>
-      <div className="nav-bar-left"  style={{backgroundColor: '#000000'}}>
-        <div className="nav-bar-left-links" style={{backgroundColor: '#000000'}}>
+      <div className="nav-bar-left"  style={{backgroundColor: '#00374b'}}>
+        <div className="nav-bar-left-links" style={{backgroundColor: '#00374b'}}>
           <NavLink
             to="/"
             className="nav-bar-button"
-            style={{ textDecoration: "none", backgroundColor: '#000000' }}
+            style={{ textDecoration: "none", backgroundColor: '#00374b' }}
           >
             Home
           </NavLink>
@@ -28,7 +28,7 @@ function Navigation() {
 
           <NavLink
             to="/photos"
-            style={{ textDecoration: "none", backgroundColor: '#000000'  }}
+            style={{ textDecoration: "none", backgroundColor: '#00374b'  }}
           >
             <div
               className="nav-bar-button"
@@ -41,7 +41,7 @@ function Navigation() {
 
           <NavLink
             to="/about"
-            style={{ textDecoration: "none", backgroundColor: '#000000'  }}
+            style={{ textDecoration: "none", backgroundColor: '#00374b'  }}
           >
             <div
               className="nav-bar-button"
@@ -54,7 +54,7 @@ function Navigation() {
 
           <NavLink
             to="/contact_us"
-            style={{ textDecoration: "none", backgroundColor: '#000000'  }}
+            style={{ textDecoration: "none", backgroundColor: '#00374b'  }}
           >
             <div
               className="nav-bar-button"
