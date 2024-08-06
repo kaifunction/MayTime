@@ -4,22 +4,23 @@ import "./Navigation.css";
 
 function Navigation() {
   return (
-    <div className="nav-bar-container" style={{backgroundColor:'transparent'}}>
-      <div className="nav-bar-left-logo">
-        <NavLink to="/">
+    <div className="nav-bar-container">
+      <div className="nav-bar-left-logo" style={{backgroundColor: '#000000'}}>
+        <NavLink to="/" style={{backgroundColor: '#000000'}}>
           <img
             src="/public/Maytime logo FinalWhite.png"
             alt="Logo"
             className="nav-bar-left-logo"
+            style={{backgroundColor: '#000000'}}
           />
         </NavLink>
       </div>
-      <div className="nav-bar-left">
-        <div className="nav-bar-left-links">
+      <div className="nav-bar-left"  style={{backgroundColor: '#000000'}}>
+        <div className="nav-bar-left-links" style={{backgroundColor: '#000000'}}>
           <NavLink
             to="/"
             className="nav-bar-button"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", backgroundColor: '#000000' }}
           >
             Home
           </NavLink>
@@ -27,7 +28,7 @@ function Navigation() {
 
           <NavLink
             to="/photos"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", backgroundColor: '#000000'  }}
           >
             <div
               className="nav-bar-button"
@@ -40,7 +41,7 @@ function Navigation() {
 
           <NavLink
             to="/about"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", backgroundColor: '#000000'  }}
           >
             <div
               className="nav-bar-button"
@@ -53,7 +54,7 @@ function Navigation() {
 
           <NavLink
             to="/contact_us"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", backgroundColor: '#000000'  }}
           >
             <div
               className="nav-bar-button"
