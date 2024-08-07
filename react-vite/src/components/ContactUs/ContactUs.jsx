@@ -157,7 +157,7 @@ const ContactUs = () => {
       </div>
       <div className="contact-us-container-right">
         {/* <div className="contact-us-container-right-content"> */}
-          <h3 style={{ color: "#ff6a00", backgroundColor:'transparent' }}>Contact Information</h3>
+          <h3 style={{ color: "#ff6a00", backgroundColor:'transparent' }}>Contact Information:</h3>
           <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00', letterSpacing:'1px' }}>
             EMAIL / <span style={{color:'white'}}>/ fengkai@gmail.com</span>
             <br />
