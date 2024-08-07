@@ -89,7 +89,7 @@ function LoginFormModal() {
         style={{
           fontSize: "25px",
           color: "#ff6a00",
-          backgroundColor: "#00374b",
+          backgroundColor: "#00202c",
           padding: "20px 20px 20px 0",
           margin: "0px",
         }}
@@ -109,7 +109,7 @@ function LoginFormModal() {
             required
             placeholder="Enter your email"
             style={{
-              backgroundColor: "#00374b",
+              backgroundColor: "#00202c",
               color: "white",
               width: "300px",
               height: "30px",
@@ -132,7 +132,7 @@ function LoginFormModal() {
             required
             placeholder="Enter your password"
             style={{
-              backgroundColor: "#00374b",
+              backgroundColor: "#00202c",
               color: "white",
               width: "300px",
               height: "30px",

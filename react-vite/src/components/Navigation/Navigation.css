@@ -10,7 +10,6 @@
   /* border-bottom: 9px solid #ff6a00; */
   /* background-color: hsl(196, 100%, 15%); */
   /* padding: 10px 20px; */
-
 }
 
 /* .active-link{
@@ -34,7 +33,7 @@
 
 .nav-bar-right-loginButton{
   margin-right: 10px;
-  color: #00374b;
+  color: #00202c;
 }
 
 .nav-bar-left{
@@ -76,7 +75,7 @@
   font-size: 18px;
   font-weight: bold;
   border-color: #ff6a00;
-  background-color: #00374b;
+  background-color: #00202c;
   color: #ff6a00;
   border-width: 1px;
   cursor: pointer;
