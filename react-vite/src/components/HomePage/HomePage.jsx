@@ -45,16 +45,17 @@ const HomePage = () => {
               className="home-page-text"
               // style={{ backgroundColor: "rgba(0,0,0,0)" }}
             >
-              <h1>Unleash Your</h1>
+              <h1 style={{letterSpacing:'1px'}}>PRESERVE MEMORIES</h1>
               <h2
                 style={{
                   paddingLeft: "20px",
-                  marginTop: "-20px",
+                  marginTop: "-10px",
                   color: "#ffffff",
+                  letterSpacing: "1px",
                   // backgroundColor: "rgba(0,0,0,0)",
                 }}
               >
-                Creative Exploration.
+                CAPTURE BEAUTY<span style={{color: "#ff6a00"}}>.</span>
               </h2>
             </div>
             <div
