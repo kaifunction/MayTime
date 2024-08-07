@@ -110,6 +110,7 @@ function LoginFormModal() {
             placeholder="Enter your email"
             style={{
               backgroundColor: "#00202c",
+              fontWeight: '550',
               color: "white",
               width: "300px",
               height: "30px",
@@ -133,6 +134,7 @@ function LoginFormModal() {
             placeholder="Enter your password"
             style={{
               backgroundColor: "#00202c",
+              fontWeight: '550',
               color: "white",
               width: "300px",
               height: "30px",

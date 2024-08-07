@@ -153,6 +153,7 @@ function SignupFormModal() {
             placeholder="Enter your email"
             style={{
               backgroundColor: "#00202c",
+              fontWeight: '550',
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
@@ -174,6 +175,7 @@ function SignupFormModal() {
             placeholder="Enter your username"
             style={{
               backgroundColor: "#00202c",
+              fontWeight: '550',
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
@@ -195,6 +197,7 @@ function SignupFormModal() {
             placeholder="Enter your password"
             style={{
               backgroundColor: "#00202c",
+              fontWeight: '550',
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
@@ -216,6 +219,7 @@ function SignupFormModal() {
             placeholder="Enter your password again"
             style={{
               backgroundColor: "#00202c",
+              fontWeight: '550',
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
