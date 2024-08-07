@@ -40,7 +40,7 @@ function Navigation() {
           </NavLink>
 
           <NavLink
-            to="/about"
+            to="/about_us"
             style={{ textDecoration: "none", backgroundColor: '#00202c'  }}
           >
             <div
