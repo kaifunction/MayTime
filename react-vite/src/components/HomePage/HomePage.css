@@ -3,16 +3,16 @@
      flex-direction: column;
      /* margin-left: 30px; */
      position: relative;
-     margin-left: -10px;
+     /* margin-left: -10px; */
      /* margin-top: -84px; */
      /* width: 110%; */
-     height: 81vh;
-     background-image: url('/public/homepage3.jpeg');
-     background-size: cover;
-     background-position: center;
+     height: 100vh;
+     /* background-image: url('/public/homepage3.jpeg'); */
+     /* background-size: cover;
+     background-position: center; */
      overflow: hidden;
      margin: -8px;
-     padding: 20px;
+     /* padding: 20px; */
      border-left: 3px solid #ff6a00;
      border-right: 3px solid #ff6a00;
      border-bottom: 3px solid #ff6a00;
@@ -22,7 +22,7 @@
      top: 0;
      left: 0;
      width: 100%;
-     height: 100%;
+     height: 90vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
