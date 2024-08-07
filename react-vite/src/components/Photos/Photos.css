@@ -1,3 +1,13 @@
+.photo-container{
+     height: 81vh;
+     margin: -8px;
+     padding: 20px;
+     border-left: 3px solid #ff6a00;
+     border-right: 3px solid #ff6a00;
+     border-bottom: 3px solid #ff6a00;
+}
+
+
 .photo-container h1 {
      margin: 40px 465px 20px 465px;
 }

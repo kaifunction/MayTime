@@ -9,10 +9,15 @@
      height: 89vh;
      /* height: 100%; */
      /* 使容器占满视口高度 */
-     width: 100%;
+     /* width: 98%; */
      /* 使容器占满视口宽度 */
      overflow: hidden;
      /* 防止内容溢出容器 */
+     margin: -8px;
+     padding: 20px;
+     border-left: 3px solid #ff6a00;
+     border-right: 3px solid #ff6a00;
+     border-bottom: 3px solid #ff6a00;
 }
 
 /* .contact-us-container::before {

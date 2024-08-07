@@ -4,10 +4,10 @@
   align-items: center;
   margin: -8px;
   padding: 20px;
-  border-top: 5px solid #ff6a0050;
-  /* border-left: 2px solid #ff6a00;
-  border-right: 2px solid #ff6a00; */
-  border-bottom: 15px solid #ff6a0050;
+  border-top: 3px solid #ff6a00;
+  border-left: 3px solid #ff6a00;
+  border-right: 3px solid #ff6a00;
+  /* border-bottom: 9px solid #ff6a00; */
   /* background-color: hsl(196, 100%, 15%); */
   /* padding: 10px 20px; */
 

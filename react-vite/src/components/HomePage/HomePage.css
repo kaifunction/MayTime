@@ -5,12 +5,17 @@
      position: relative;
      margin-left: -10px;
      /* margin-top: -84px; */
-     width: 110%;
-     height: 160vh;
+     /* width: 110%; */
+     height: 81vh;
      background-image: url('/public/homepage3.jpeg');
      background-size: cover;
      background-position: center;
      overflow: hidden;
+     margin: -8px;
+     padding: 20px;
+     border-left: 3px solid #ff6a00;
+     border-right: 3px solid #ff6a00;
+     border-bottom: 3px solid #ff6a00;
 }
 .overlay {
      position: absolute;
