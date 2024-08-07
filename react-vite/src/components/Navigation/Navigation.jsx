@@ -48,7 +48,7 @@ function Navigation() {
               // onClick={() => window.alert("Feature coming soon")}
               style={{ cursor: "pointer" }}
             >
-              About
+              About Us
             </div>
           </NavLink>
 

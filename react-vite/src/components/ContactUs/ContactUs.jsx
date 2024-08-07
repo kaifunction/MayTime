@@ -91,6 +91,7 @@ const ContactUs = () => {
               className="contact-us-input-name"
               style={{
                 color: "#ff6a00",
+                fontWeight: '550',
                 width: "345px",
                 height: "40px",
                 marginBottom: "30px",
@@ -113,6 +114,7 @@ const ContactUs = () => {
               className="contact-us-input-email"
               style={{
                 color: "#ff6a00",
+                fontWeight: '550',
                 width: "345px",
                 height: "40px",
                 marginBottom: "30px",
@@ -134,6 +136,7 @@ const ContactUs = () => {
               className="contact-us-input-message"
               style={{
                 color: "#ff6a00",
+                fontWeight: '550',
                 width: "340px",
                 height: "140px",
                 marginBottom: "30px",
@@ -155,16 +158,16 @@ const ContactUs = () => {
       <div className="contact-us-container-right">
         {/* <div className="contact-us-container-right-content"> */}
           <h3 style={{ color: "#ff6a00", backgroundColor:'transparent' }}>Contact Information</h3>
-          <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
-            EMAIL:
+          <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00', letterSpacing:'1px' }}>
+            EMAIL / <span style={{color:'white'}}>/ fengkai@gmail.com</span>
             <br />
         </p>
         <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
-            PHONE:
+            PHONE / <span style={{color:'white'}}>/ 1231231234</span>
             <br />
         </p>
         <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
-            ADDRESS:
+            ADDRESS / <span style={{color:'white'}}>/ Sunnyvale</span>
             <br />
         </p>
         </div>
