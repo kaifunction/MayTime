@@ -7,11 +7,11 @@
 }
 
 .contact-us-page-container h1{
-     margin: 55px 465px 20px 450px;
+     margin: 55px 465px 20px 420px;
 }
 
 .contact-us-page-button button{
-     margin: 0px 465px;
+     margin: 0px 420px -10px 420px;
      color: #ff6a00;
      border-width: 1px;
      border-color: #ff6a00;
@@ -31,5 +31,5 @@
 }
 
 .contact-us-page-button p{
-     margin: 0px 390px;
+     margin: 0px 350px;
 }
