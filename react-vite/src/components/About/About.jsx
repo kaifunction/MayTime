@@ -43,6 +43,7 @@ const About = () => {
           <strong style={{color:'#ff6a00', fontSize:'18px'}}>A</strong>t our studio, we believe in creating not just photographs but cherished memories that you can treasure for a lifetime. Let us be a part of your story and help you capture the moments that matter most.
         </p>
       </div>
+
     </div>
   );
 };
