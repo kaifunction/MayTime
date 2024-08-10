@@ -29,11 +29,12 @@ const ContactUs = () => {
     if (!formData.name) {
       tempError.name = "Name is required.";
       isValid = false;
-    }  else if (formData.name.length < 2 || formData.name.length > 50) {
+    } else if (formData.name.length < 2 || formData.name.length > 50) {
       tempError.name = "Name must be between 2 and 50 characters.";
       isValid = false;
     } else if (!/^[a-zA-Z\s'`-]+$/.test(formData.name)) {
-      tempError.name = "Name can only contain letters and certain special characters.";
+      tempError.name =
+        "Name can only contain letters and certain special characters.";
       isValid = false;
     }
 
@@ -56,7 +57,7 @@ const ContactUs = () => {
 
     setError(tempError);
     return isValid;
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -72,16 +73,40 @@ const ContactUs = () => {
       </div> */}
       <div className="contact-us-container-left">
         <h1
-          style={{ marginTop: "0px", color: "#ff6a00", width: "fit-content", backgroundColor:'transparent' }}
+          style={{
+            marginTop: "0px",
+            color: "#ff6a00",
+            width: "fit-content",
+            backgroundColor: "transparent",
+          }}
         >
-          <span style={{fontWeight:'bold', backgroundColor:'transparent' }}>CONTACT</span> <span style={{fontWeight:'lighter', backgroundColor:'transparent' }}>US</span>
+          <span style={{ fontWeight: "bold", backgroundColor: "transparent" }}>
+            CONTACT
+          </span>{" "}
+          <span
+            style={{ fontWeight: "lighter", backgroundColor: "transparent" }}
+          >
+            US
+          </span>
         </h1>
         <form onSubmit={handleSubmit}>
           <div
             className="contact-us-form"
-            style={{ color: "white", margin: "20px 40px", backgroundColor:'transparent'  }}
+            style={{
+              color: "white",
+              margin: "20px 40px",
+              backgroundColor: "transparent",
+            }}
           >
-            <h4 style={{ marginBottom: "10px", fontWeight: "normal", color:'#ff6a00'}}>NAME</h4>
+            <h4
+              style={{
+                marginBottom: "10px",
+                fontWeight: "normal",
+                color: "#ff6a00",
+              }}
+            >
+              NAME
+            </h4>
             <input
               type="text"
               name="name"
@@ -91,7 +116,7 @@ const ContactUs = () => {
               className="contact-us-input-name"
               style={{
                 color: "#ff6a00",
-                fontWeight: '550',
+                fontWeight: "550",
                 width: "345px",
                 height: "40px",
                 marginBottom: "30px",
@@ -102,7 +127,13 @@ const ContactUs = () => {
               }}
             />
             {error.name && <p className="error">{error.name}</p>}
-            <h4 style={{ marginBottom: "10px", fontWeight: "normal", color:'#ff6a00' }}>
+            <h4
+              style={{
+                marginBottom: "10px",
+                fontWeight: "normal",
+                color: "#ff6a00",
+              }}
+            >
               EMAIL
             </h4>
             <input
@@ -114,7 +145,7 @@ const ContactUs = () => {
               className="contact-us-input-email"
               style={{
                 color: "#ff6a00",
-                fontWeight: '550',
+                fontWeight: "550",
                 width: "345px",
                 height: "40px",
                 marginBottom: "30px",
@@ -125,7 +156,13 @@ const ContactUs = () => {
               }}
             />
             {error.email && <p className="error">{error.email}</p>}
-            <h4 style={{ marginBottom: "10px", fontWeight: "normal", color:'#ff6a00' }}>
+            <h4
+              style={{
+                marginBottom: "10px",
+                fontWeight: "normal",
+                color: "#ff6a00",
+              }}
+            >
               MESSAGE
             </h4>
             <textarea
@@ -136,7 +173,7 @@ const ContactUs = () => {
               className="contact-us-input-message"
               style={{
                 color: "#ff6a00",
-                fontWeight: '550',
+                fontWeight: "550",
                 width: "340px",
                 height: "140px",
                 marginBottom: "30px",
@@ -148,29 +185,49 @@ const ContactUs = () => {
             />
             {error.message && <p className="error">{error.message}</p>}
           </div>
-          <button
-            type="submit"
-          >
-            SUBMIT
-          </button>
+          <button type="submit">SUBMIT</button>
         </form>
       </div>
       <div className="contact-us-container-right">
         {/* <div className="contact-us-container-right-content"> */}
-          <h3 style={{ color: "#ff6a00", backgroundColor:'transparent' }}>Contact Information:</h3>
-          <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00', letterSpacing:'1px' }}>
-            EMAIL / <span style={{color:'white'}}>/ fengkai@gmail.com</span>
-            <br />
+        <h3 style={{ color: "#ff6a00", backgroundColor: "transparent" }}>
+          Contact Information:
+        </h3>
+        <p
+          style={{
+            color: "white",
+            fontSize: "16px",
+            backgroundColor: "transparent",
+            color: "#ff6a00",
+            letterSpacing: "1px",
+          }}
+        >
+          EMAIL / <span style={{ color: "white" }}>/ fengkai@gmail.com</span>
+          <br />
         </p>
-        <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
-            PHONE / <span style={{color:'white'}}>/ 1231231234</span>
-            <br />
+        <p
+          style={{
+            color: "white",
+            fontSize: "16px",
+            backgroundColor: "transparent",
+            color: "#ff6a00",
+          }}
+        >
+          PHONE / <span style={{ color: "white" }}>/ 1231231234</span>
+          <br />
         </p>
-        <p style={{ color: "white", fontSize: "16px", backgroundColor:'transparent', color:'#ff6a00' }}>
-            ADDRESS / <span style={{color:'white'}}>/ Sunnyvale</span>
-            <br />
+        <p
+          style={{
+            color: "white",
+            fontSize: "16px",
+            backgroundColor: "transparent",
+            color: "#ff6a00",
+          }}
+        >
+          ADDRESS / <span style={{ color: "white" }}>/ Sunnyvale</span>
+          <br />
         </p>
-        </div>
+      </div>
       {/* </div> */}
     </div>
   );
