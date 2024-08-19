@@ -228,7 +228,6 @@ const ContactUs = () => {
           <br />
         </p>
       </div>
-      {/* </div> */}
     </div>
   );
 };
