@@ -195,7 +195,7 @@ const ContactUs = () => {
         </h3>
         <p
           style={{
-            color: "white",
+            // color: "white",
             fontSize: "16px",
             backgroundColor: "transparent",
             color: "#ff6a00",
@@ -207,7 +207,7 @@ const ContactUs = () => {
         </p>
         <p
           style={{
-            color: "white",
+            // color: "white",
             fontSize: "16px",
             backgroundColor: "transparent",
             color: "#ff6a00",
@@ -218,7 +218,7 @@ const ContactUs = () => {
         </p>
         <p
           style={{
-            color: "white",
+            // color: "white",
             fontSize: "16px",
             backgroundColor: "transparent",
             color: "#ff6a00",

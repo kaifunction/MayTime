@@ -112,8 +112,8 @@ function LoginFormModal() {
               backgroundColor: "#00202c",
               fontWeight: '550',
               color: "white",
-              width: "300px",
-              height: "30px",
+              // width: "300px",
+              // height: "30px",
               borderColor: "#ff6a00",
               borderRadius: "5px",
               width: "340px",
@@ -136,8 +136,8 @@ function LoginFormModal() {
               backgroundColor: "#00202c",
               fontWeight: '550',
               color: "white",
-              width: "300px",
-              height: "30px",
+              // width: "300px",
+              // height: "30px",
               borderColor: "#ff6a00",
               borderRadius: "5px",
               width: "340px",
@@ -150,7 +150,7 @@ function LoginFormModal() {
         {errors.password && <p className="error">{errors.password}</p>}
         <button type="submit">LOG IN</button>
         <div onClick={toggleMenu} className="close-modal">
-          <p>Don't have an account?</p>
+          <p>Don&apos;t have an account?</p>
           <OpenModalMenuItem
             itemText="Sign Up"
             onItemClick={closeMenu}
