@@ -89,7 +89,6 @@ function ProfileButton() {
                   />
                 </div>
               </span>
-
             </div>
           )}
         </div>
