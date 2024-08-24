@@ -158,6 +158,7 @@ function LoginFormModal() {
             className="two-buttons"
           />
         </div>
+
       </form>
     </div>
   );
