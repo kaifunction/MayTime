@@ -71,7 +71,7 @@ function ProfileButton() {
             <div className="loginSignup-button">
               <span>
                 <div style={{backgroundColor:'transparent', display:'flex', flexDirection:'row', alignItems:'center', gap:'1px', marginLeft:'10px'}} className="icons">
-                  <FaSignInAlt style={{ color: "#ff6a00", backgroundColor: "transparent"  }} />
+                  <FaSignInAlt style={{ color: "#ff6a00", backgroundColor: "transparent" }} />
                   <OpenModalMenuItem
                     itemText="LOG IN"
                     onItemClick={closeMenu}
