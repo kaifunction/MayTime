@@ -88,7 +88,6 @@ function ProfileButton() {
                     modalComponent={<SignupFormModal />}
                   />
                 </div>
-
               </span>
             </div>
           )}
