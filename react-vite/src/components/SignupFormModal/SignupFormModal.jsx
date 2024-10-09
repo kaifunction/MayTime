@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { useModal } from "../../context/Modal";
 import { thunkSignup } from "../../redux/session";
 import OpenModalMenuItem from "../Navigation/OpenModalMenuItem";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import LoginFormModal from "../LoginFormModal";
 import "./SignupForm.css";
 
@@ -20,6 +21,7 @@ function SignupFormModal() {
   });
   const { closeModal } = useModal();
   const [showMenu, setShowMenu] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const ulRef = useRef();
 
@@ -190,7 +192,7 @@ function SignupFormModal() {
         <label style={{ color: "#ff6a00" }}>
           PASSWORD
           <input
-            type="password"
+            type={showPassword ? 'text' : 'password'}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -207,12 +209,25 @@ function SignupFormModal() {
               padding: "5px 10px",
             }}
           />
+          {showPassword ? (
+            <FaEyeSlash
+              onClick={() =>
+              setShowPassword(false)}
+              style={{position: 'absolute', top: '475px', left:'550px', cursor:'pointer'}}
+            />
+          ): (
+            <FaEye
+              onClick={() =>
+              setShowPassword(true)}
+              style={{position: 'absolute', top: '475px', left:'550px', cursor:'pointer'}}
+              />
+          )}
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
         <label style={{ color: "#ff6a00" }}>
           CONFIRM PASSWORD
           <input
-            type="password"
+            type={showPassword ? 'text' : 'password'}
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
@@ -229,6 +244,19 @@ function SignupFormModal() {
               padding: "5px 10px",
             }}
           />
+          {showPassword ? (
+            <FaEyeSlash
+              onClick={() =>
+              setShowPassword(false)}
+              style={{position: 'absolute', top: '575px', left:'550px', cursor:'pointer'}}
+            />
+          ): (
+            <FaEye
+              onClick={() =>
+              setShowPassword(true)}
+              style={{position: 'absolute', top: '575px', left:'550px', cursor:'pointer'}}
+              />
+          )}
         </label>
         {errors.confirmPassword && (
           <p className="error">{errors.confirmPassword}</p>
