@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useModal } from "../../context/Modal";
 import OpenModalMenuItem from "../Navigation/OpenModalMenuItem";
 import SignupFormModal from "../SignupFormModal";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./LoginForm.css";
 
 function LoginFormModal() {
@@ -16,6 +17,7 @@ function LoginFormModal() {
   });
   const { closeModal } = useModal();
   const [showMenu, setShowMenu] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const ulRef = useRef();
 
@@ -125,7 +127,7 @@ function LoginFormModal() {
         <label style={{ color: "#ff6a00" }}>
           PASSWORD
           <input
-            type="password"
+            type={showPassword ? 'text' : 'password'}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -142,6 +144,19 @@ function LoginFormModal() {
               padding: "5px 10px",
             }}
           />
+          {showPassword ? (
+            <FaEyeSlash
+              onClick={() =>
+              setShowPassword(false)}
+              style={{position: 'absolute', top: '375px', left:'600px', cursor:'pointer'}}
+            />
+          ) : (
+            <FaEye
+              onClick={() =>
+              setShowPassword(true)}
+              style={{position: 'absolute', top: '375px', left:'600px', cursor:'pointer'}}
+              />
+          )}
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
         <button type="submit">LOG IN</button>
