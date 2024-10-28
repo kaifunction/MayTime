@@ -36,6 +36,7 @@
      align-items: center;
 }
 
+
 .signup-container button:hover{
      transform: scale(1.05);
      transition: transform 0.3s ease-in-out;
