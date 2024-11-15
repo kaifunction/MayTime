@@ -202,7 +202,7 @@ const ContactUs = () => {
             letterSpacing: "1px",
           }}
         >
-          <span style={{ fontWeight:'bold' }}>EMAIL / </span><span style={{ color: "white" }}>/ fengkai@gmail.com</span>
+          <span style={{ fontWeight:'bold' }}>EMAIL / </span><span style={{ color: "white" }}>/ maytimestudio@gmail.com</span>
           <br />
         </p>
         <p
