@@ -213,7 +213,7 @@ const ContactUs = () => {
             color: "#ff6a00",
           }}
         >
-          <span style={{ fontWeight:'bold' }}>PHONE/</span> <span style={{ color: "white", letterSpacing:'2px'  }}>/ 1231231234</span>
+          <span style={{ fontWeight:'bold' }}>PHONE /</span> <span style={{ color: "white", letterSpacing:'2px'  }}>/ 1231231234</span>
           <br />
         </p>
         <p
