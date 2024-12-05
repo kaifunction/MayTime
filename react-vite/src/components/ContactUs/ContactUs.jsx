@@ -205,7 +205,17 @@ const ContactUs = () => {
             letterSpacing: "1px",
           }}
         >
-          <span style={{ fontWeight:'bold' }}>EMAIL / </span><span style={{ color: "white", letterSpacing:'2px' }}>/ maytimestudio@gmail.com</span>
+          <span style={{ fontWeight: "bold" }}>EMAIL / </span>
+          <a
+            href="mailto:maytimestudio@gmail.com"
+            style={{
+              color: "white",
+              textDecoration: "none",
+              letterSpacing: "2px",
+            }}
+          >
+            / maytimestudio@gmail.com
+          </a>
           <br />
         </p>
         <p
@@ -216,7 +226,10 @@ const ContactUs = () => {
             color: "#ff6a00",
           }}
         >
-          <span style={{ fontWeight:'bold' }}>PHONE /</span> <span style={{ color: "white", letterSpacing:'2px'  }}>/ 1231231234</span>
+          <span style={{ fontWeight: "bold" }}>PHONE /</span>{" "}
+          <span style={{ color: "white", letterSpacing: "2px" }}>
+            / 1231231234
+          </span>
           <br />
         </p>
         <p
@@ -227,7 +240,10 @@ const ContactUs = () => {
             color: "#ff6a00",
           }}
         >
-          <span style={{ fontWeight:'bold' }}>ADDRESS /</span> <span style={{ color: "white", letterSpacing:'2px' }}>/ Sunnyvale CA</span>
+          <span style={{ fontWeight: "bold" }}>ADDRESS /</span>{" "}
+          <span style={{ color: "white", letterSpacing: "2px" }}>
+            / Sunnyvale CA
+          </span>
           <br />
         </p>
       </div>
