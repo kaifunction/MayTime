@@ -81,7 +81,6 @@ const ContactUs = () => {
             color: "#ff6a00",
             width: "fit-content",
             backgroundColor: "transparent",
-            letterSpacing: "1px",
           }}
         >
           <span style={{ fontWeight: "bold", backgroundColor: "transparent" }}>
