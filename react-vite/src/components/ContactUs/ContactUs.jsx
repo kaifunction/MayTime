@@ -57,6 +57,7 @@ const ContactUs = () => {
       tempError.message = "Message can only contain letters and numbers.";
       isValid = false;
     }
+
     setError(tempError);
     return isValid;
   };
