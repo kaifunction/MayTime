@@ -53,8 +53,10 @@ const ContactUs = () => {
     } else if (formData.message.length < 10 || formData.message.length > 500) {
       tempError.message = "Message must be between 10 and 500 characters.";
       isValid = false;
+    } else if (!/^[a-zA-Z0-9\s.,!?']+$/.test(formData.message)) {
+      tempError.message = "Message can only contain letters and numbers.";
+      isValid = false;
     }
-
     setError(tempError);
     return isValid;
   };
