@@ -95,7 +95,6 @@ function ProfileButton() {
       )}
     </div>
   );
-
 }
 
 export default ProfileButton;
