@@ -12,11 +12,15 @@ def seed_users():
         username='bobbie', email='bobbie@aa.io', password='password')
     gina = User(
         username='gina', email='mantaoxu2@gmail.com', password='yidaoshi')
+    kai = User(
+        username='kai', email='kaifeng@gmail.com', password='password'
+    )
 
     db.session.add(demo)
     db.session.add(marnie)
     db.session.add(bobbie)
     db.session.add(gina)
+    db.session.add(kai)
     db.session.commit()
 
 
