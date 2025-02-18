@@ -69,7 +69,7 @@ const HomePage = () => {
                 target="_blank"
               >
                 <img
-                  src="/public/xiaohongshuLOGO.png"
+                  src="/xiaohongshuLOGO.png"
                   alt="xiaohongshu"
                   className="xiaohongshu-logo"
                   style={{
@@ -84,7 +84,7 @@ const HomePage = () => {
                 target="_blank"
               >
                 <img
-                  src="/public/instagram.png"
+                  src="/instagram.png"
                   alt="instagram"
                   className="instagram-logo"
                   style={{

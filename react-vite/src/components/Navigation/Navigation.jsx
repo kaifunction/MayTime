@@ -8,7 +8,7 @@ function Navigation() {
       <div className="nav-bar-left-logo" style={{backgroundColor: '#00202c'}}>
         <NavLink to="/" style={{backgroundColor: '#00202c'}}>
           <img
-            src="/public/Maytime logo FinalWhite.png"
+            src="/MaytimelogoFinalWhite.png"
             alt="Logo"
             className="nav-bar-left-logo"
             style={{backgroundColor: '#00202c'}}
