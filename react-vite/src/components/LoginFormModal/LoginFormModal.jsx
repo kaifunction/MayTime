@@ -161,7 +161,7 @@ function LoginFormModal() {
         {errors.password && <p className="error">{errors.password}</p>}
         <button type="submit">LOG IN</button>
         <div onClick={toggleMenu} className="close-modal">
-          <p>Forgot your password?</p>
+          {/* <p style={{marginRight:'5px'}}>Forgot your password? </p> */}
           <br/>
           <p>Don&apos;t have an account?</p>
           <OpenModalMenuItem
