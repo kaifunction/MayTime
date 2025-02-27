@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
+import MaytimeLogo from "/public/MaytimelogoFinalWhite.png";
 import "./Navigation.css";
 
 function Navigation() {
@@ -8,7 +9,7 @@ function Navigation() {
       <div className="nav-bar-left-logo" style={{backgroundColor: '#00202c'}}>
         <NavLink to="/" style={{backgroundColor: '#00202c'}}>
           <img
-            src="/MaytimelogoFinalWhite.png"
+            src={MaytimeLogo}
             alt="Logo"
             className="nav-bar-left-logo"
             style={{backgroundColor: '#00202c'}}
