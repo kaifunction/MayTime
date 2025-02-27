@@ -1,6 +1,8 @@
 // import { NavLink } from 'react-router-dom';
 // import {IoIosArrowForward} from 'react-icons/io'
 import { NavLink } from "react-router-dom";
+import xiaohongshuLogo from "/public/xiaohongshuLOGO.png";
+import instagramLogo from "/public/instagram.png";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -69,7 +71,7 @@ const HomePage = () => {
                 target="_blank"
               >
                 <img
-                  src="/xiaohongshuLOGO.png"
+                  src={xiaohongshuLogo}
                   alt="xiaohongshu"
                   className="xiaohongshu-logo"
                   style={{
@@ -84,7 +86,7 @@ const HomePage = () => {
                 target="_blank"
               >
                 <img
-                  src="/instagram.png"
+                  src={instagramLogo}
                   alt="instagram"
                   className="instagram-logo"
                   style={{
