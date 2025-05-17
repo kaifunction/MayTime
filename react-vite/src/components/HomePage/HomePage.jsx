@@ -1,8 +1,8 @@
 // import { NavLink } from 'react-router-dom';
 // import {IoIosArrowForward} from 'react-icons/io'
 import { NavLink } from "react-router-dom";
-import xiaohongshuLogo from "/public/xiaohongshuLOGO.png";
-import instagramLogo from "/public/instagram.png";
+import xiaohongshuLogo from "../../assets/xiaohongshuLOGO.png";
+import instagramLogo from "../../assets/Instagram.png";
 import "./HomePage.css";
 
 const HomePage = () => {

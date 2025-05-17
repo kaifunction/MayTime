@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
-import MaytimeLogo from "/public/MaytimelogoFinalWhite.png";
+import MaytimeLogo from "../../assets/MaytimelogoFinalWhite.png";
 import "./Navigation.css";
 
 function Navigation() {
@@ -51,6 +51,13 @@ function Navigation() {
             >
               About Us
             </div>
+          </NavLink>
+
+          <NavLink to="/reservation" style={{ textDecoration: "none", backgroundColor: '#00202c' }}>
+          <div className="nav-bar-button"
+          style={{cursor:"pointer"}}>
+            Reservation
+          </div>
           </NavLink>
 
           <NavLink
