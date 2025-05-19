@@ -5,6 +5,7 @@ import HomePage from '../components/HomePage/HomePage';
 import Photos from '../components/Photos/Photo';
 import Abouts from '../components/About/About';
 import Reservation from '../components/Reservation/Reservation'
+import Confirm from '../components/Confirm';
 import ContactUs from '../components/ContactUs';
 import Layout from './Layout';
 
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path:"reservation",
         element: <Reservation />
+      },
+      {
+        path:"confirm",
+        element: <Confirm />
       },
       {
         path: "contact_us",
