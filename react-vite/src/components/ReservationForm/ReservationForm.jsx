@@ -37,6 +37,9 @@ function ReservationForm() {
                <h3 className="form-h1">
                     Form
                </h3>
+               <button type="submit" className="form-submit">
+                    Submit
+               </button>
           </form>
      )
 }
