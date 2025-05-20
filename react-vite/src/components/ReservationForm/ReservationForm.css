@@ -1,7 +1,119 @@
-.form-h1{
-     font-weight: bold;
-     background-color: #ffffff00;
+form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+     margin-top: 5rem;
+}
+
+.form-group {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.reserve-form-group {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.form-label {
      color: #ff6a00;
-     width: fit-content;
-     margin: 0px 350px;
+     font-size: 1.1rem;
+     font-weight: 300;
+     margin-bottom: -10px;
+}
+
+
+.form-input {
+     width: 282px;
+     height: 35px;
+     border-radius: 5px;
+     color: rgb(119, 119, 119);
+     border: 1px solid #ff6a00;
+     padding: 0 10px;
+     margin-bottom: 1rem;
+     font-size: .9rem;
+}
+
+.form-select {
+     width: 305px;
+     height: 35px;
+     border-radius: 5px;
+     border: 1px solid #ff6a00;
+     color: rgb(119, 119, 119);
+     padding: 0 10px;
+     font-size: 1rem;
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff6a00'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     background-position: right 10px center;
+     background-size: 16px;
+}
+
+.form-textarea {
+     width: 38rem;
+     height: 100px;
+     border-radius: 5px;
+     color: rgb(119, 119, 119);
+     border: 1px solid #ff6a00;
+     padding: 10px;
+     font-size: 1rem;
+}
+
+.full-width {
+     grid-column: span 2;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+     outline: none;
+     /* 去除默认的外边框 */
+     border-color: greenyellow;
+     box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+     /* 可选：添加淡红色外发光效果 */
+}
+
+input.input-error,
+textarea.input-error,
+select.input-error {
+     border-color: red !important;
+}
+
+.form-select.input-error {
+     border: 1px solid red !important;
+}
+
+.form-error {
+     color: red;
+     margin-top: -20px;
+     margin-bottom: 15px;
+}
+
+.time-error{
+     margin-top: 0px;
+}
+
+.form-submit-button {
+     margin: 50px 420px 50px 420px;
+     color: #ff6a00;
+     border-width: 1px;
+     border-color: #ff6a00;
+     border-radius: 10px;
+     padding: 10px 50px;
+     cursor: pointer;
+     background-color: transparent;
+     border-style: solid;
+     letter-spacing: 1px;
+}
+
+.form-submit-button:hover {
+     background-color: #ff6a00;
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     transform: scale(1.1);
 }
