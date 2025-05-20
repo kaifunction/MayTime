@@ -79,44 +79,42 @@ const ContactUs = () => {
           US
         </span>
       </h1>
-      <div className="contact-us-container-left">
-        <form onSubmit={handleSubmit}>
-          <div className="contact-us-form">
-            <div className="contact-us-form-group">
-              <label className="contact-us-label" htmlFor="res-name">
-                Name<span style={{ color: "red" }}> *</span>
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="res-name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Enter your name"
-                className="contact-us-input"
-              />
-              {error.name && <p className="error">{error.name}</p>}
-            </div>
+      <form onSubmit={handleSubmit}>
+        <div className="contact-us-form">
+          <div className="contact-us-form-group">
+            <label className="contact-us-label" htmlFor="res-name">
+              Name<span style={{ color: "red" }}> *</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="res-name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="contact-us-input"
+            />
+            {error.name && <p className="error">{error.name}</p>}
+          </div>
 
-            <div className="contact-us-form-group">
-              <label className="contact-us-label" htmlFor="res-email">
-                Email<span style={{ color: "red" }}> *</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="res-email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Enter your email"
-                className="contact-us-input"
-              />
-              {error.email && <p className="error">{error.email}</p>}
-            </div>
+          <div className="contact-us-form-group">
+            <label className="contact-us-label" htmlFor="res-email">
+              Email<span style={{ color: "red" }}> *</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="res-email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="contact-us-input"
+            />
+            {error.email && <p className="error">{error.email}</p>}
+          </div>
 
-            <div className="contact-us-form-group contact-us-full-width">
-            <label htmlFor="res-message" className="contact-us-label"
-            >
+          <div className="contact-us-form-group contact-us-full-width">
+            <label htmlFor="res-message" className="contact-us-label">
               Message<span style={{ color: "red" }}> *</span>
             </label>
             <textarea
@@ -128,11 +126,12 @@ const ContactUs = () => {
               className="contact-us-input-message"
             />
             {error.message && <p className="error">{error.message}</p>}
-            </div>
           </div>
-          <button type="submit" className="contact-us-button">SUBMIT</button>
-        </form>
-      </div>
+        </div>
+        <button type="submit" className="contact-us-button">
+          Submit
+        </button>
+      </form>
       <div className="contact-us-contact-info">
         {/* <div className="contact-us-container-right-content"> */}
         <h3 style={{ color: "#ff6a00", backgroundColor: "transparent" }}>

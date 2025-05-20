@@ -114,6 +114,6 @@ select.input-error {
 .form-submit-button:hover {
      background-color: #ff6a00;
      color: rgb(0, 0, 0);
-     font-weight: bold;
-     transform: scale(1.1);
+     font-weight: 600;
+     transform: scale(1);
 }
