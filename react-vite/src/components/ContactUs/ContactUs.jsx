@@ -104,11 +104,11 @@ const ContactUs = () => {
             <h4
               style={{
                 marginBottom: "10px",
-                fontWeight: "normal",
+                fontWeight: "300",
                 color: "#ff6a00",
               }}
             >
-              NAME
+              Name<span style={{ color: "red" }}> *</span>
             </h4>
             <input
               type="text"
@@ -126,6 +126,7 @@ const ContactUs = () => {
                 borderRadius: "5px",
                 borderColor: "#ff6a00",
                 borderWidth: "1px",
+                borderStyle: "solid",
                 paddingLeft: "10px",
               }}
             />
@@ -133,11 +134,11 @@ const ContactUs = () => {
             <h4
               style={{
                 marginBottom: "10px",
-                fontWeight: "normal",
+                fontWeight: "300",
                 color: "#ff6a00",
               }}
             >
-              EMAIL
+              Email<span style={{ color: "red" }}> *</span>
             </h4>
             <input
               type="email"
@@ -155,6 +156,7 @@ const ContactUs = () => {
                 borderRadius: "5px",
                 borderColor: "#ff6a00",
                 borderWidth: "1px",
+                borderStyle: "solid",
                 paddingLeft: "10px",
               }}
             />
@@ -162,11 +164,11 @@ const ContactUs = () => {
             <h4
               style={{
                 marginBottom: "10px",
-                fontWeight: "normal",
+                fontWeight: "300",
                 color: "#ff6a00",
               }}
             >
-              MESSAGE
+              Message<span style={{ color: "red" }}> *</span>
             </h4>
             <textarea
               name="message"
@@ -183,6 +185,7 @@ const ContactUs = () => {
                 borderRadius: "5px",
                 borderColor: "#ff6a00",
                 borderWidth: "1px",
+                borderStyle: "solid",
                 padding: "10px 10px",
               }}
             />

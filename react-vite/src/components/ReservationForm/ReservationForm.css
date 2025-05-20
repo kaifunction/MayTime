@@ -1,4 +1,4 @@
-form {
+.reservation-form {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -20,15 +20,15 @@ form {
 
 .form-label {
      color: #ff6a00;
-     font-size: 1.1rem;
+     font-size: 1rem;
      font-weight: 300;
-     margin-bottom: -10px;
+     margin-bottom: -5px;
 }
 
 
 .form-input {
-     width: 282px;
-     height: 35px;
+     width: 345px;
+     height: 40px;
      border-radius: 5px;
      color: rgb(119, 119, 119);
      border: 1px solid #ff6a00;
@@ -38,8 +38,8 @@ form {
 }
 
 .form-select {
-     width: 305px;
-     height: 35px;
+     width: 370px;
+     height: 42px;
      border-radius: 5px;
      border: 1px solid #ff6a00;
      color: rgb(119, 119, 119);
@@ -55,7 +55,7 @@ form {
 }
 
 .form-textarea {
-     width: 38rem;
+     width: 46rem;
      height: 100px;
      border-radius: 5px;
      color: rgb(119, 119, 119);

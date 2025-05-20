@@ -36,7 +36,7 @@ function Reservation() {
   return (
     <div className="reservation-page-container">
       <h1 className="reservation-title-h1">
-        <span style={{ fontWeight: "bold" }}>RESERVATION A SESSION</span>
+        <span style={{ fontWeight: "bold" }}>RESERVE</span>{" "}<span style={{ fontWeight: "lighter" }}>A SESSION</span>
       </h1>
       <ReservationForm
         availableTimes={availableTimes}

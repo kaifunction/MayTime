@@ -45,7 +45,7 @@ function ReservationForm(props) {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} className="reservation-form">
       {/* <h3 className="form-h1">
                Reserve a Session
                </h3> */}
@@ -60,7 +60,7 @@ function ReservationForm(props) {
             type="text"
             name="name"
             id="res-name"
-            placeholder="Name"
+            placeholder="Enter your name"
             value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -76,11 +76,11 @@ function ReservationForm(props) {
             Email<span style={{ color: "red" }}> *</span>
           </label>
           <input
-            className={`form-input ${formik.touched.name && formik.errors.name ? 'input-error' : ''}`}
+            className={`form-input ${formik.touched.email && formik.errors.email ? 'input-error' : ''}`}
             type="email"
             name="email"
             id="res-email"
-            placeholder="Email"
+            placeholder="Enter your email"
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -100,7 +100,7 @@ function ReservationForm(props) {
             type="text"
             id="phone"
             name="phone"
-            placeholder="Phone Number"
+            placeholder="Enter your phone number"
             value={formik.values.phone}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
