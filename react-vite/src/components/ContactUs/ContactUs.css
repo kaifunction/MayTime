@@ -1,18 +1,10 @@
 .contact-us-container {
      display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     gap: 50px;
+     flex-direction: column;
+     /* justify-content: center; */
+     /* align-items: center; */
+     gap: 0px;
      position: relative;
-     /* 确保伪元素正确定位 */
-     height: 85vh;
-     /* height: 100%; */
-     /* 使容器占满视口高度 */
-     /* width: 98%; */
-     /* 使容器占满视口宽度 */
-     overflow: hidden;
-     /* 防止内容溢出容器 */
      margin: -8px;
      padding: 0px;
      border-left: 3px solid #ff6a00;
@@ -36,26 +28,42 @@
 
 } */
 
-.contact-us-container-left {
-     margin-left: 100px;
-     margin-top: 6px;
+.contact-us-h1{
+     margin: 75px 405px 20px 440px;
+     color: #ff6a00;
+}
+
+.contact-us-form{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.contact-us-form-group{
      display: flex;
      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     background-color: rgba(255, 255, 255, 0.0);
-     /* z-index: 1; */
+     gap: 1rem;
 }
 
-.contact-us-container-left h1{
-     position: relative;
-     right: 50px;
-}
 
-.contact-us-container-left form{
+.contact-us-form{
      position: relative;
      right: 45px;
      bottom: 4px;
+     color: white;
+     margin: 20px 40px;
+     background-color: transparent
+}
+
+.contact-us-label{
+     color: #ff6a00;
+     font-size: 1rem;
+     font-weight: 300;
+     margin-bottom: -5px;
+}
+
+.contact-us-full-width{
+     grid-column: span 2;
 }
 
 .contact-us-container-left button {
@@ -84,19 +92,36 @@
      /* z-index: 1; */
 }
 
-.contact-us-form h4 {
-     margin: 0;
-     padding: 0;
-     margin-bottom: 10px;
-     background-color: rgba(255, 255, 255, 0.0);
-     z-index: 1;
+.contact-us-input{
+     color: #ff6a00;
+     font-weight: 550;
+     width: 345px;
+     height: 40px;
+     margin-bottom: 30px;
+     border: 1px solid #ff6a00;
+     border-radius: 5px;
+     padding-left: 10px;
 }
 
-.contact-us-container-right {
+.contact-us-input-message{
+     color: #ff6a00;
+     font-weight: 550;
+     width: 720px;
+     height: 140px;
+     margin-bottom: 30px;
+     border-radius: 5px;
+     border: 1px solid #ff6a00;
+     padding: 10px 10px;
+}
+
+.contact-us-contact-info {
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
      justify-content: center;
+     align-items:center;
      background-color: rgba(255, 255, 255, 0.0);
+     gap: 2rem;
+     margin: 1rem 0 8.2rem 0;
      /* z-index: 1; */
      /* align-items: center; */
 }
@@ -109,6 +134,25 @@
      background-color: transparent;
 }
 
+.contact-us-button{
+     margin: 10px 420px 50px 420px;
+     color: #ff6a00;
+     border-width: 1px;
+     border-color: #ff6a00;
+     border-radius: 10px;
+     padding: 10px 50px;
+     cursor: pointer;
+     background-color: transparent;
+     border-style: solid;
+     letter-spacing: 1px;
+}
+
+.contact-us-button:hover {
+     background-color: #ff6a00;
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     transform: scale(1.1);
+}
 
 /* .contact-us-container-right img {
      width: 100%;

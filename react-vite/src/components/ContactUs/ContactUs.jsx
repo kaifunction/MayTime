@@ -71,130 +71,69 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us-container">
-      {/* <div className="background-image">
-        <img src="/public/sunnyvale-map.jpg" alt="sunnyvale map"/>
-      </div> */}
+      <h1 className="contact-us-h1">
+        <span style={{ fontWeight: "bold", backgroundColor: "transparent" }}>
+          CONTACT
+        </span>{" "}
+        <span style={{ fontWeight: "lighter", backgroundColor: "transparent" }}>
+          US
+        </span>
+      </h1>
       <div className="contact-us-container-left">
-        <h1
-          style={{
-            marginTop: "0px",
-            color: "#ff6a00",
-            width: "fit-content",
-            backgroundColor: "transparent",
-          }}
-        >
-          <span style={{ fontWeight: "bold", backgroundColor: "transparent" }}>
-            CONTACT
-          </span>{" "}
-          <span
-            style={{ fontWeight: "lighter", backgroundColor: "transparent" }}
-          >
-            US
-          </span>
-        </h1>
         <form onSubmit={handleSubmit}>
-          <div
-            className="contact-us-form"
-            style={{
-              color: "white",
-              margin: "20px 40px",
-              backgroundColor: "transparent",
-            }}
-          >
-            <h4
-              style={{
-                marginBottom: "10px",
-                fontWeight: "300",
-                color: "#ff6a00",
-              }}
-            >
-              Name<span style={{ color: "red" }}> *</span>
-            </h4>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              className="contact-us-input-name"
-              style={{
-                color: "#ff6a00",
-                fontWeight: "550",
-                width: "345px",
-                height: "40px",
-                marginBottom: "30px",
-                borderRadius: "5px",
-                borderColor: "#ff6a00",
-                borderWidth: "1px",
-                borderStyle: "solid",
-                paddingLeft: "10px",
-              }}
-            />
-            {error.name && <p className="error">{error.name}</p>}
-            <h4
-              style={{
-                marginBottom: "10px",
-                fontWeight: "300",
-                color: "#ff6a00",
-              }}
-            >
-              Email<span style={{ color: "red" }}> *</span>
-            </h4>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              className="contact-us-input-email"
-              style={{
-                color: "#ff6a00",
-                fontWeight: "550",
-                width: "345px",
-                height: "40px",
-                marginBottom: "30px",
-                borderRadius: "5px",
-                borderColor: "#ff6a00",
-                borderWidth: "1px",
-                borderStyle: "solid",
-                paddingLeft: "10px",
-              }}
-            />
-            {error.email && <p className="error">{error.email}</p>}
-            <h4
-              style={{
-                marginBottom: "10px",
-                fontWeight: "300",
-                color: "#ff6a00",
-              }}
+          <div className="contact-us-form">
+            <div className="contact-us-form-group">
+              <label className="contact-us-label" htmlFor="res-name">
+                Name<span style={{ color: "red" }}> *</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="res-name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Enter your name"
+                className="contact-us-input"
+              />
+              {error.name && <p className="error">{error.name}</p>}
+            </div>
+
+            <div className="contact-us-form-group">
+              <label className="contact-us-label" htmlFor="res-email">
+                Email<span style={{ color: "red" }}> *</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="res-email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Enter your email"
+                className="contact-us-input"
+              />
+              {error.email && <p className="error">{error.email}</p>}
+            </div>
+
+            <div className="contact-us-form-group contact-us-full-width">
+            <label htmlFor="res-message" className="contact-us-label"
             >
               Message<span style={{ color: "red" }}> *</span>
-            </h4>
+            </label>
             <textarea
               name="message"
+              id="res-message"
               value={formData.message}
               onChange={handleChange}
               placeholder="Enter your message..."
               className="contact-us-input-message"
-              style={{
-                color: "#ff6a00",
-                fontWeight: "550",
-                width: "340px",
-                height: "140px",
-                marginBottom: "30px",
-                borderRadius: "5px",
-                borderColor: "#ff6a00",
-                borderWidth: "1px",
-                borderStyle: "solid",
-                padding: "10px 10px",
-              }}
             />
             {error.message && <p className="error">{error.message}</p>}
+            </div>
           </div>
-          <button type="submit">SUBMIT</button>
+          <button type="submit" className="contact-us-button">SUBMIT</button>
         </form>
       </div>
-      <div className="contact-us-container-right">
+      <div className="contact-us-contact-info">
         {/* <div className="contact-us-container-right-content"> */}
         <h3 style={{ color: "#ff6a00", backgroundColor: "transparent" }}>
           Contact Information:
@@ -205,7 +144,7 @@ const ContactUs = () => {
             fontSize: "16px",
             backgroundColor: "transparent",
             color: "#ff6a00",
-            letterSpacing: "1px",
+            letterSpacing: ".7px",
           }}
         >
           <span style={{ fontWeight: "bold" }}>EMAIL / </span>

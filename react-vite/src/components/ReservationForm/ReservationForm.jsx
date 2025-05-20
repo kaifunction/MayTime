@@ -145,7 +145,7 @@ function ReservationForm(props) {
           >
             <option value="" disabled hidden>
               {" "}
-              Please Select a Time
+              Please select a time
             </option>
             {props.availableTimes.map((t) => (
               <option key={t} value={t}>
@@ -168,7 +168,7 @@ function ReservationForm(props) {
             type="text"
             name="guests"
             id="guests"
-            placeholder="How many Guests"
+            placeholder="How many guests"
             value={formik.values.guests}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -181,12 +181,12 @@ function ReservationForm(props) {
         {/* message */}
         <div className="reserve-form-group full-width">
           <label htmlFor="message" className="form-label">
-            Special Requests
+            Special requests
           </label>
           <textarea
             name="message"
             id="message"
-            placeholder="Special Requests"
+            placeholder="Enter your special requests..."
             className="form-textarea"
             value={formik.values.message}
             onChange={formik.handleChange}
