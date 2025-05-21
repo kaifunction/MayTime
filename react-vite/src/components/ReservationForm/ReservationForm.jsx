@@ -39,8 +39,12 @@ function ReservationForm(props) {
       message: Yup.string().max(500, "Must be 500 characters or less."),
     }),
 
-    onSubmit: () => {
-      navigator("/confirm");
+    onSubmit: (values) => {
+      navigator("/confirm", {
+          state:{
+               reservationData: values,
+          }
+      });
     },
   });
 
