@@ -58,12 +58,14 @@ function Confirm() {
         </div>
       </div>
       <div className="confirm-button-container">
-        <button className="confirmed-button modify-but">
-          Modify Reservation
-        </button>
-        <button className="confirmed-button cancel-but">
-          Cancel Reservation
-        </button>
+        <div className="confirm-button-group">
+          <button className="confirmed-button modify-but">
+            Modify Reservation
+          </button>
+          <button className="confirmed-button cancel-but">
+            Cancel Reservation
+          </button>
+        </div>
         <button onClick={backToHome} className="confirm-page-button">
           Back to Home
         </button>
