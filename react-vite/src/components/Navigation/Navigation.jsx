@@ -6,71 +6,36 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <div className="nav-bar-container">
-      <div className="nav-bar-left-logo" style={{backgroundColor: '#00202c'}}>
-        <NavLink to="/" style={{backgroundColor: '#00202c'}}>
+      <div className="nav-bar-left-logo" style={{ backgroundColor: "#00202c" }}>
+        <NavLink to="/" style={{ backgroundColor: "#00202c" }}>
           <img
             src={MaytimeLogo}
             alt="Logo"
             className="nav-bar-left-logo"
-            style={{backgroundColor: '#00202c'}}
+            style={{ backgroundColor: "#00202c" }}
           />
         </NavLink>
       </div>
-      <div className="nav-bar-left"  style={{backgroundColor: '#00202c'}}>
-        <div className="nav-bar-left-links" style={{backgroundColor: '#00202c'}}>
-          <NavLink
-            to="/"
-            className="nav-bar-button"
-            style={{ textDecoration: "none", backgroundColor: '#00202c' }}
-          >
+      <div className="nav-bar-left">
+        <div className="nav-bar-left-links">
+          <NavLink to="/" className="nav-bar-button">
             Home
           </NavLink>
-          {/* <NavLink></NavLink> */}
 
-          <NavLink
-            to="/photos"
-            style={{ textDecoration: "none", backgroundColor: '#00202c'  }}
-          >
-            <div
-              className="nav-bar-button"
-              // onClick={() => window.alert("Feature coming soon")}
-              style={{ cursor: "pointer" }}
-            >
-              Photos
-            </div>
+          <NavLink to="/photos" className="nav-bar-button">
+            <div>Photos</div>
           </NavLink>
 
-          <NavLink
-            to="/about_us"
-            style={{ textDecoration: "none", backgroundColor: '#00202c'  }}
-          >
-            <div
-              className="nav-bar-button"
-              // onClick={() => window.alert("Feature coming soon")}
-              style={{ cursor: "pointer" }}
-            >
-              About Us
-            </div>
+          <NavLink to="/about_us" className="nav-bar-button">
+            <div>About Us</div>
           </NavLink>
 
-          <NavLink to="/reservation" style={{ textDecoration: "none", backgroundColor: '#00202c' }}>
-          <div className="nav-bar-button"
-          style={{cursor:"pointer"}}>
-            Reservation
-          </div>
+          <NavLink to="/reservation" className="nav-bar-button">
+            <div>Reservation</div>
           </NavLink>
 
-          <NavLink
-            to="/contact_us"
-            style={{ textDecoration: "none", backgroundColor: '#00202c'  }}
-          >
-            <div
-              className="nav-bar-button"
-              // onClick={() => window.alert("Feature coming soon")}
-              style={{ cursor: "pointer" }}
-            >
-              Contact Us
-            </div>
+          <NavLink to="/contact_us" className="nav-bar-button">
+            <div>Contact Us</div>
           </NavLink>
         </div>
 

@@ -1,4 +1,4 @@
-.nav-bar-container{
+.nav-bar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,36 +20,38 @@
   position: absolute;
 }
 
-.nav-bar-left-logo{
+.nav-bar-left-logo {
   margin: 10px 20px;
   width: 40px;
   transition: transform 0.3s ease;
 }
 
-.nav-bar-left-logo:hover{
+.nav-bar-left-logo:hover {
   transform: scale(1.2);
 }
 
 
-.nav-bar-right-loginButton{
+.nav-bar-right-loginButton {
   margin-right: 10px;
   color: #00202c;
 }
 
-.nav-bar-left{
+.nav-bar-left {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #00202c;
   /* gap: 100px;
   margin-left: 20px; */
 }
 
 
-.nav-bar-left-links{
+.nav-bar-left-links {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   margin-right: 40px;
+  background-color: #00202c;
   /* position: absolute;
   left: 66%; */
   gap: 40px;
@@ -57,17 +59,23 @@
   font-weight: 600;
 }
 
-.nav-bar-button{
+
+.nav-bar-button {
   text-decoration: none;
+  background-color: #00202c;
+  font-weight: 300;
   color: black;
+  cursor: pointer;
 }
 
 .search-bar {
-  margin: 10px 0; /* 调整上边距 */
-  width: 50%; /* 充满父容器宽度 */
+  margin: 10px 0;
+  /* 调整上边距 */
+  width: 50%;
+  /* 充满父容器宽度 */
 }
 
-.login-signup-button{
+.login-signup-button {
   border-radius: 20px;
   width: 70px;
   padding: 2px 8px;
@@ -82,12 +90,12 @@
   transition: transform 0.3s ease;
 }
 
-.login-signup-button:hover{
+.login-signup-button:hover {
   border-width: 3px;
   transform: scale(1.1);
 }
 
-.loginButton-list{
+.loginButton-list {
   margin-left: -135px;
   display: flex;
   flex-direction: column;
@@ -98,7 +106,7 @@
   /* background-color: #ffffff50; */
 }
 
-.loginButton-list button{
+.loginButton-list button {
   background-color: #ff6a00;
   color: white;
   padding: 5px;
@@ -107,12 +115,12 @@
   cursor: pointer;
 }
 
-.loginButton-list button:hover{
+.loginButton-list button:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
-.loginSignup-button{
+.loginSignup-button {
   /* background-color: aliceblue; */
   margin-left: -100px;
   margin-top: 10px;
@@ -124,7 +132,7 @@
   /* border: 1px solid #ff6a00; */
 }
 
-.loginSignup-button span{
+.loginSignup-button span {
   background-color: #ffffff20;
   font-size: 18px;
   z-index: 10000;
@@ -132,7 +140,7 @@
   border-radius: 20px;
 }
 
-.nav-bar-button{
+.nav-bar-button {
   background-color: #ff00bb00;
   color: white;
   /* font-weight: 600; */
@@ -142,13 +150,13 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.nav-bar-button:hover{
+.nav-bar-button:hover {
   transform: scale(1.15);
   color: #ff6a00;
   background-color: #00000000;
 }
 
-.two-buttons{
+.two-buttons {
   cursor: pointer;
   color: #ff6a00;
   border-color: #ff6a00;
@@ -162,7 +170,7 @@
   background-color: transparent;
 }
 
-.two-buttons:hover{
+.two-buttons:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
