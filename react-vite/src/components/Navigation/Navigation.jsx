@@ -6,13 +6,12 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <div className="nav-bar-container">
-      <div className="nav-bar-left-logo" style={{ backgroundColor: "#00202c" }}>
-        <NavLink to="/" style={{ backgroundColor: "#00202c" }}>
+      <div className="nav-bar-left-logo">
+        <NavLink to="/">
           <img
             src={MaytimeLogo}
             alt="Logo"
             className="nav-bar-left-logo"
-            style={{ backgroundColor: "#00202c" }}
           />
         </NavLink>
       </div>
