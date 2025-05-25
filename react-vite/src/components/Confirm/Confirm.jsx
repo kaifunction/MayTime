@@ -34,7 +34,26 @@ function Confirm() {
       },
     });
     if (result.isConfirmed) {
-      navigate("");
+     setTimeout(() => {
+        Swal.fire({
+          title: "Reservation Cancelled",
+          text: "Your reservation has been cancelled successfully.",
+          icon: "success",
+          customClass: {
+            popup: "reserve-popup", // 弹窗本体
+            icon: "reserve-icon", // 图标
+            title: "reserve-title", // 标题
+            confirmButton: "reserve-confirm-btn", // 确认按钮
+            htmlContainer: "reserve-content", // 内容文本
+          },
+        });
+      }
+      , 500);
+      // Clear the reservation data from localStorage
+      localStorage.removeItem("reservationData");
+      // Redirect to the home page
+
+      navigate("/");
     }
   };
 

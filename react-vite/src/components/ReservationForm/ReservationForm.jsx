@@ -41,9 +41,9 @@ function ReservationForm(props) {
 
     onSubmit: (values) => {
       navigator("/confirm", {
-          state:{
-               reservationData: values,
-          }
+        state: {
+          reservationData: values,
+        },
       });
     },
   });
@@ -60,11 +60,13 @@ function ReservationForm(props) {
             Name<span style={{ color: "red" }}> *</span>
           </label>
           <input
-            className={`form-input ${formik.touched.name && formik.errors.name ? 'input-error' : ''}`}
+            className={`form-input ${
+              formik.touched.name && formik.errors.name ? "input-error" : ""
+            }`}
             type="text"
             name="name"
             id="res-name"
-            placeholder="Enter your name"
+            placeholder="Enter your name（请输入姓名）"
             value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -80,11 +82,13 @@ function ReservationForm(props) {
             Email<span style={{ color: "red" }}> *</span>
           </label>
           <input
-            className={`form-input ${formik.touched.email && formik.errors.email ? 'input-error' : ''}`}
+            className={`form-input ${
+              formik.touched.email && formik.errors.email ? "input-error" : ""
+            }`}
             type="email"
             name="email"
             id="res-email"
-            placeholder="Enter your email"
+            placeholder="Enter your email（请输入邮箱）"
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -100,11 +104,13 @@ function ReservationForm(props) {
             Phone<span style={{ color: "red" }}> *</span>
           </label>
           <input
-            className={`form-input ${formik.touched.phone && formik.errors.phone ? 'input-error' : ''}`}
+            className={`form-input ${
+              formik.touched.phone && formik.errors.phone ? "input-error" : ""
+            }`}
             type="text"
             id="phone"
             name="phone"
-            placeholder="Enter your phone number"
+            placeholder="Enter your phone number（请输入电话号码）"
             value={formik.values.phone}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -118,15 +124,23 @@ function ReservationForm(props) {
         <div className="reserve-form-group">
           <label htmlFor="res-date" className="form-label">
             Choose date<span style={{ color: "red" }}> *</span>
+            {/* <span className="form-hint">（请选择预约日期）</span> */}
           </label>
           <input
-            className={`form-input ${formik.touched.date && formik.errors.date ? 'input-error' : ''}`}
-            type="date"
+            className={`form-input ${
+              formik.touched.date && formik.errors.date ? "input-error" : ""
+            }`}
+            type="text"
             name="date"
             id="res-date"
+            placeholder="Choose date（请选择预约日期）"
+            onFocus={(e) => (e.target.type = "date")}
+            onBlur={(e) => {
+              if (!e.target.value) e.target.type = "text";
+              formik.handleBlur(e);
+            }}
             value={formik.values.date}
             onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
           />
           {formik.touched.date && formik.errors.date ? (
             <div className="form-error">{formik.errors.date}</div>
@@ -139,7 +153,9 @@ function ReservationForm(props) {
             Choose time<span style={{ color: "red" }}> *</span>
           </label>
           <select
-            className={`form-select ${formik.touched.time && formik.errors.time ? 'input-error' : ''}`}
+            className={`form-select ${
+              formik.touched.time && formik.errors.time ? "input-error" : ""
+            }`}
             type="select"
             id="res-time"
             name="time"
@@ -149,7 +165,7 @@ function ReservationForm(props) {
           >
             <option value="" disabled hidden>
               {" "}
-              Please select a time
+              Please select a time（请选择时间）{" "}
             </option>
             {props.availableTimes.map((t) => (
               <option key={t} value={t}>
@@ -168,11 +184,13 @@ function ReservationForm(props) {
             Number of guests<span style={{ color: "red" }}> *</span>
           </label>
           <input
-            className={`form-input ${formik.touched.guests && formik.errors.guests ? 'input-error' : ''}`}
+            className={`form-input ${
+              formik.touched.guests && formik.errors.guests ? "input-error" : ""
+            }`}
             type="text"
             name="guests"
             id="guests"
-            placeholder="How many guests"
+            placeholder="How many guests（请输入人数）"
             value={formik.values.guests}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -190,7 +208,7 @@ function ReservationForm(props) {
           <textarea
             name="message"
             id="message"
-            placeholder="Enter your special requests..."
+            placeholder="Enter your special requests...（请输入特殊要求）"
             className="form-textarea"
             value={formik.values.message}
             onChange={formik.handleChange}
