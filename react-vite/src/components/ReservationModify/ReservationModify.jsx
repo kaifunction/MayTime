@@ -73,8 +73,8 @@ function ReservationModify() {
           Please Modify Your Reservation
           {/* {console.log("=======>", reservationData)} */}
         </h1>
-      <div className="modity-form-container">
-        <div className="modity-form-group">
+      <div className="modify-form-container">
+        <div className="modify-form-group">
           {/* name */}
           <label htmlFor="res-name" className="form-label">
             Name<span style={{ color: "red" }}> *</span>
@@ -97,7 +97,7 @@ function ReservationModify() {
         </div>
 
         {/* email */}
-        <div className="modity-form-group">
+        <div className="modify-form-group">
           <label htmlFor="res-email" className="form-label">
             Email<span style={{ color: "red" }}> *</span>
           </label>
@@ -119,7 +119,7 @@ function ReservationModify() {
         </div>
 
         {/* phone */}
-        <div className="modity-form-group">
+        <div className="modify-form-group">
           <label htmlFor="phone" className="form-label">
             Phone<span style={{ color: "red" }}> *</span>
           </label>
@@ -141,7 +141,7 @@ function ReservationModify() {
         </div>
 
         {/* date */}
-        <div className="modity-form-group">
+        <div className="modify-form-group">
           <label htmlFor="res-date" className="form-label">
             Choose date<span style={{ color: "red" }}> *</span>
             {/* <span className="form-hint">（请选择预约日期）</span> */}
@@ -168,7 +168,7 @@ function ReservationModify() {
         </div>
 
         {/* time */}
-        <div className="modity-form-group">
+        <div className="modify-form-group">
           <label htmlFor="res-time" className="form-label">
             Choose time<span style={{ color: "red" }}> *</span>
           </label>
@@ -199,7 +199,7 @@ function ReservationModify() {
         </div>
 
         {/* Guests */}
-        <div className="modity-form-group">
+        <div className="modify-form-group">
         <label htmlFor="guests" className="form-label">
             Number of guests<span style={{ color: "red" }}> *</span>
           </label>
@@ -221,7 +221,7 @@ function ReservationModify() {
         </div>
 
         {/* message */}
-        <div className="modity-form-group full-width">
+        <div className="modify-form-group full-width">
         <label htmlFor="message" className="form-label">
             Special requests
           </label>
@@ -236,7 +236,7 @@ function ReservationModify() {
           />
         </div>
       </div>
-      <button type="submit" className="form-submit-button">
+      <button type="submit" className="modifyform-submit-button">
         Submit
       </button>
     </form>
