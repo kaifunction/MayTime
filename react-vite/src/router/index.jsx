@@ -5,6 +5,7 @@ import HomePage from '../components/HomePage/HomePage';
 import Photos from '../components/Photos/Photo';
 import Abouts from '../components/About/About';
 import Reservation from '../components/Reservation/Reservation'
+import ReservationModify from '../components/ReservationModify/ReservationModify';
 import Confirm from '../components/Confirm';
 import ContactUs from '../components/ContactUs';
 import Layout from './Layout';
@@ -44,7 +45,12 @@ export const router = createBrowserRouter([
       {
         path: "contact_us",
         element: <ContactUs />,
-      }
+      },
+      {
+        path: "reservation_modify",
+        element: <ReservationModify />
+      },
+
     ],
   },
 ]);

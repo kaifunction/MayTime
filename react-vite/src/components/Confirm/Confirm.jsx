@@ -32,9 +32,14 @@ function Confirm() {
     });
     if (modifyReservationresult.isConfirmed) {
       if (reservationData) {
-        navigate("/reservation", { state: { reservationData } });
+        navigate("/reservation_modify", {
+          state: {
+            reservationData,
+          //   availableTimes: availableTimes,
+          },
+        });
       } else {
-        navigate("/reservation");
+        navigate("/reservation_modify");
       }
     }
   };
