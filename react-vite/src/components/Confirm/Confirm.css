@@ -52,13 +52,25 @@
      font-weight: 500;
 }
 
-.details-info{
+.details-info {
      font-weight: 200;
+     word-wrap: break-word;
+     /* 自动换行 */
+     white-space: pre-wrap;
+     /* 保留换行与空格，允许换行 */
+     max-width: 90%;
 }
+
+/* .details-name{
+     display: flex;
+     flex-wrap: wrap;
+} */
 
 .details-message-full-width {
      grid-column: span 2;
-     width: 90%;
+     /* width: 100%; */
+     display: flex;
+     flex-wrap: wrap;
 }
 
 .confirm-button-container {
@@ -67,7 +79,7 @@
      gap: 1rem;
 }
 
-.confirm-button-group{
+.confirm-button-group {
      gap: 1rem;
 }
 
@@ -127,3 +139,78 @@
      font-weight: 500;
      transform: scale(1);
 } */
+
+.reserve-popup{
+     border-radius: 20px;
+     width: 30rem;
+     background-color: #ff6a00;
+}
+
+.reserve-icon {
+     width: 4rem;
+     height: 4rem;
+     color: #F4CE14;
+     background-color:#495E57 !important
+}
+
+.swal2-icon-content{
+     background-color: #495E57;
+     width: 2rem;
+     height: 3rem;
+}
+
+.reserve-title {
+     color: #F4CE14;
+     font-size: 3rem;
+     background-color: #ff6a00;
+}
+
+.swal2-html-container {
+     color: #F4CE14 !important;
+     background-color: #ff6a00;
+     font-size: 1.2rem !important;
+}
+
+.swal2-actions{
+     position: relative;
+     left: 1rem;
+     background-color: #ff6a00;
+}
+
+.reserve-cancel-btn {
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.reserve-cancel-btn:hover {
+     background-color: #e2b839;
+     color: #EDEFEE;
+     transition: background-color 0.3s ease;
+}
+
+.reserve-confirm-btn{
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}

@@ -1,13 +1,45 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import "./Confirm.css";
 
 function Confirm() {
-  const navigator = useNavigate();
+  const navigate = useNavigate();
   const location = useLocation();
   const { reservationData } = location.state || {};
 
+  const modifyReservation = () => {
+    if (reservationData) {
+      navigate("/reservation", { state: { reservationData } });
+    } else {
+      navigate("/reservation");
+    }
+  };
+
+  const cancelReservation = async (e) => {
+    e.preventDefault();
+    const result = await Swal.fire({
+      title: "Are you sure?",
+      text: "Do you want to cancel this reservation?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Yes, cancel it!",
+      cancelButtonText: "No, keep it",
+      customClass: {
+        popup: "reserve-popup", // 弹窗本体
+        icon: "reserve-icon", // 图标
+        title: "reserve-title", // 标题
+        confirmButton: "reserve-confirm-btn", // 确认按钮
+        cancelButton: "reserve-cancel-btn", // 取消按钮
+        htmlContainer: "reserve-content", // 内容文本
+      },
+    });
+    if (result.isConfirmed) {
+      navigate("");
+    }
+  };
+
   const backToHome = () => {
-    navigator("/");
+    navigate("/");
   };
 
   return (
@@ -19,32 +51,32 @@ function Confirm() {
         </h1>
         <div className="details-info-container">
           {/* name */}
-          <p>
+          <p className="details-name">
             <span className="details-title">Name:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.name}</span>
           </p>
           {/* email */}
-          <p>
+          <p className="details-name">
             <span className="details-title">Email:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.email}</span>
           </p>
           {/* phone */}
-          <p>
+          <p className="details-name">
             <span className="details-title">Phone:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.phone}</span>
           </p>
           {/* date */}
-          <p>
+          <p className="details-name">
             <span className="details-title">Date:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.date}</span>
           </p>
           {/* time */}
-          <p>
+          <p className="details-name">
             <span className="details-title">Time:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.time}</span>
           </p>
           {/* guests */}
-          <p>
+          <p className="details-name">
             <span className="details-title">Guests:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.guests}</span>
           </p>
@@ -59,10 +91,16 @@ function Confirm() {
       </div>
       <div className="confirm-button-container">
         <div className="confirm-button-group">
-          <button className="confirmed-button modify-but">
+          <button
+            className="confirmed-button modify-but"
+            onClick={modifyReservation}
+          >
             Modify Reservation
           </button>
-          <button className="confirmed-button cancel-but">
+          <button
+            className="confirmed-button cancel-but"
+            onClick={cancelReservation}
+          >
             Cancel Reservation
           </button>
         </div>
