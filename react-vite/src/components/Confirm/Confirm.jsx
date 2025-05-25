@@ -12,17 +12,36 @@ function Confirm() {
     <MdCheckCircle className="swal-custom-icon" color="#ff6a00" />
   ); // size 可改大点，color 是绿色成功色
 
-  const modifyReservation = () => {
-    if (reservationData) {
-      navigate("/reservation", { state: { reservationData } });
-    } else {
-      navigate("/reservation");
+  const modifyReservation = async (e) => {
+    e.preventDefault();
+    const modifyReservationresult = await Swal.fire({
+      title: "Modify Reservation",
+      text: "Do you want to modify this reservation?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Yes, modify it!",
+      cancelButtonText: "No, keep it",
+      customClass: {
+        popup: "modify-popup", // 弹窗本体
+        icon: "modify-icon", // 图标
+        title: "modify-title", // 标题
+        confirmButton: "modify-confirm-btn", // 确认按钮
+        cancelButton: "modify-cancel-btn", // 取消按钮
+        htmlContainer: "modify-content", // 内容文本
+      },
+    });
+    if (modifyReservationresult.isConfirmed) {
+      if (reservationData) {
+        navigate("/reservation", { state: { reservationData } });
+      } else {
+        navigate("/reservation");
+      }
     }
   };
 
   const cancelReservation = async (e) => {
     e.preventDefault();
-    const result = await Swal.fire({
+    const cancelReservationresult = await Swal.fire({
       title: "Are you sure?",
       text: "Do you want to cancel this reservation?",
       icon: "question",
@@ -38,7 +57,7 @@ function Confirm() {
         htmlContainer: "reserve-content", // 内容文本
       },
     });
-    if (result.isConfirmed) {
+    if (cancelReservationresult.isConfirmed) {
       setTimeout(() => {
         Swal.fire({
           title: "Reservation Cancelled",
@@ -64,9 +83,9 @@ function Confirm() {
 
   const backToHome = async (e) => {
     e.preventDefault();
-    const result = await Swal.fire({
+    const backToHomeresult = await Swal.fire({
       title: "Back to Home",
-      text: "Your Reservation is confirmed. Do you want to go back to the home page?",
+      text: "Your reservation has been confirmed. Do you want to go back to the home page?",
       icon: "question",
       showCancelButton: true,
       confirmButtonText: "Yes, go back",
@@ -80,7 +99,7 @@ function Confirm() {
         htmlContainer: "back-content", // 内容文本
       },
     });
-    if (result.isConfirmed) {
+    if (backToHomeresult.isConfirmed) {
       // Clear the reservation data from localStorage
       navigate("/");
       localStorage.removeItem("reservationData");

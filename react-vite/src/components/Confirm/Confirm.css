@@ -140,6 +140,7 @@
      transform: scale(1);
 } */
 
+/* cancel reservation button */
 .reserve-popup{
      position: relative;
      top: 2rem;
@@ -241,6 +242,7 @@
      transition: background-color 0.3s ease;
 }
 
+/* Cancel confirmed */
 .cancel-popup{
      position: relative;
      /* top: 1rem; */
@@ -292,6 +294,74 @@
 }
 
 
+/* Modify Button */
+.modify-popup{
+     position: relative;
+     top: 2rem;
+     border-radius: 20px;
+     width: 40rem;
+     border: 4px solid #ff6a00;
+     background-color: #00202c;
+}
+
+.modify-icon{
+     width: 4rem;
+     height: 4rem;
+     color: #F4CE14;
+     background-color:#00202c !important
+}
+
+.modify-title{
+     color: #F4CE14;
+     font-size: 3rem;
+     font-weight: 300;
+     background-color: #00202c;
+}
+
+.modify-confirm-btn{
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.modify-confirm-btn:hover{
+     background-color: #ff6a00;
+     color: #00202c;
+     transition: background-color 0.3s ease;
+}
+
+.modify-cancel-btn{
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.modify-cancel-btn:hover{
+     background-color: #e2b839;
+     color: #00202c;
+     transition: background-color 0.3s ease;
+}
+
 .back-popup{
      position: relative;
      top: 2rem;
@@ -301,6 +371,7 @@
      background-color: #00202c;
 }
 
+/* Back to Home button */
 .back-icon{
      width: 4rem;
      height: 4rem;
