@@ -164,6 +164,20 @@
      height: 3rem;
 }
 
+/* .swal2-icon.swal2-success {
+     display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 5em !important;
+  height: 5em !important;
+  margin: 1.25em auto !important;
+   }
+
+   .swal2-success-line-tip,
+.swal2-success-line-long {
+  display: block !important;
+} */
+
 .reserve-title {
      color: #F4CE14;
      font-size: 3rem;
@@ -201,7 +215,7 @@
 
 .reserve-cancel-btn:hover {
      background-color: #e2b839;
-     color: #EDEFEE;
+     color: #00202c;
      transition: background-color 0.3s ease;
 }
 
@@ -218,5 +232,129 @@
      border-radius: 5px;
      cursor: pointer;
      padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.reserve-confirm-btn:hover{
+     background-color: #ff6a00;
+     color: #00202c;
+     transition: background-color 0.3s ease;
+}
+
+.cancel-popup{
+     position: relative;
+     /* top: 1rem; */
+     border-radius: 20px;
+     width: 30rem;
+     border: 4px solid #ff6a00;
+     background-color: #00202c;
+}
+
+.cancel-icon{
+     width: 4rem;
+     height: 4rem;
+     color: #F4CE14;
+     background-color:#00202c
+}
+
+.swal-custom-icon {
+     width: 5rem;
+     height: 5rem;
+   }
+
+.cancel-title{
+     color: #F4CE14;
+     font-size: 2rem;
+     font-weight: 300;
+     background-color: #00202c;
+}
+
+.cancel-confirm-btn{
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.cancel-confirm-btn:hover{
+     background-color: #ff6a00;
+     color: #00202c;
+     transition: background-color 0.3s ease;
+}
+
+
+.back-popup{
+     position: relative;
+     top: 2rem;
+     border-radius: 20px;
+     width: 30rem;
+     border: 4px solid #ff6a00;
+     background-color: #00202c;
+}
+
+.back-icon{
+     width: 4rem;
+     height: 4rem;
+     color: #F4CE14;
+     background-color:#00202c !important
+}
+
+.back-title{
+     color: #F4CE14;
+     font-size: 3rem;
+     font-weight: 300;
+     background-color: #00202c;
+}
+
+.back-confirm-btn{
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.back-confirm-btn:hover{
+     background-color: #ff6a00;
+     color: #00202c;
+     transition: background-color 0.3s ease;
+}
+
+.back-cancel-btn{
+     font-size: 1rem;
+     font-weight: 300;
+     width: 120px;
+     height: 35px;
+     background-color: #495E57;
+     color: #F4CE14;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     margin: 40px 20px 45px 0;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0;
+     transition: background-color 0.3s ease;
+}
+
+.back-cancel-btn:hover{
+     background-color: #e2b839;
+     color: #00202c;
      transition: background-color 0.3s ease;
 }

@@ -1,11 +1,16 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { MdCheckCircle } from "react-icons/md";
+import { renderToString } from "react-dom/server";
 import "./Confirm.css";
 
 function Confirm() {
   const navigate = useNavigate();
   const location = useLocation();
   const { reservationData } = location.state || {};
+  const iconHtml = renderToString(
+    <MdCheckCircle className="swal-custom-icon" color="#ff6a00" />
+  ); // size 可改大点，color 是绿色成功色
 
   const modifyReservation = () => {
     if (reservationData) {
@@ -34,21 +39,21 @@ function Confirm() {
       },
     });
     if (result.isConfirmed) {
-     setTimeout(() => {
+      setTimeout(() => {
         Swal.fire({
           title: "Reservation Cancelled",
           text: "Your reservation has been cancelled successfully.",
-          icon: "success",
+          // icon: "info",
+          iconHtml: iconHtml, // 使用渲染后的图标HTML
           customClass: {
-            popup: "reserve-popup", // 弹窗本体
-            icon: "reserve-icon", // 图标
-            title: "reserve-title", // 标题
-            confirmButton: "reserve-confirm-btn", // 确认按钮
-            htmlContainer: "reserve-content", // 内容文本
+            popup: "cancel-popup", // 弹窗本体
+            icon: "cancel-icon",
+            title: "cancel-title", // 标题
+            confirmButton: "cancel-confirm-btn", // 确认按钮
+            htmlContainer: "cancel-content", // 内容文本
           },
         });
-      }
-      , 500);
+      }, 500);
       // Clear the reservation data from localStorage
       localStorage.removeItem("reservationData");
       // Redirect to the home page
@@ -57,8 +62,29 @@ function Confirm() {
     }
   };
 
-  const backToHome = () => {
-    navigate("/");
+  const backToHome = async (e) => {
+    e.preventDefault();
+    const result = await Swal.fire({
+      title: "Back to Home",
+      text: "Your Reservation is confirmed. Do you want to go back to the home page?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Yes, go back",
+      cancelButtonText: "No, stay here",
+      customClass: {
+        popup: "back-popup", // 弹窗本体
+        icon: "back-icon", // 图标
+        title: "back-title", // 标题
+        confirmButton: "back-confirm-btn", // 确认按钮
+        cancelButton: "back-cancel-btn", // 取消按钮
+        htmlContainer: "back-content", // 内容文本
+      },
+    });
+    if (result.isConfirmed) {
+      // Clear the reservation data from localStorage
+      navigate("/");
+      localStorage.removeItem("reservationData");
+    }
   };
 
   return (
