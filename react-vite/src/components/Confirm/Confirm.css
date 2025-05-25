@@ -38,20 +38,27 @@
 
 
 .details-info-container {
+     position: relative;
+     left: 3rem;
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     gap: 1rem 2rem;
+     gap: 1rem 5rem;
      color: #ff6a00;
      font-size: 1rem;
      width: 100%;
 }
 
 .details-title {
-     font-weight: 700;
+     font-weight: 500;
+}
+
+.details-info{
+     font-weight: 200;
 }
 
 .details-message-full-width {
      grid-column: span 2;
+     width: 90%;
 }
 
 .confirm-button-container {
@@ -81,13 +88,15 @@
 }
 
 .cancel-but {
-     margin-left: 1rem;
+     margin-left: 3rem;
      color: #8f8f8f;
      border-color: #8f8f8f;
 }
 
 .cancel-but:hover {
-     border-color: #ff6a00;
+     color: #ff6a00;
+     background-color: #8f8f8f;
+     border-color: #8f8f8f;
 }
 
 .confirm-page-button {
