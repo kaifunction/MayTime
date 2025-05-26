@@ -22,6 +22,7 @@ function SignupFormModal() {
   const { closeModal } = useModal();
   const [showMenu, setShowMenu] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const ulRef = useRef();
 
@@ -42,11 +43,9 @@ function SignupFormModal() {
     document.addEventListener("click", closeMenu);
 
     return () => document.removeEventListener("click", closeMenu);
-
   }, [showMenu]);
 
   const closeMenu = () => setShowMenu(false);
-
 
   const validateEP = () => {
     let isValid = true;
@@ -125,7 +124,7 @@ function SignupFormModal() {
     <div className="signup-container">
       <h1
         style={{
-          fontSize:'25px',
+          fontSize: "25px",
           color: "#ff6a00",
           backgroundColor: "#00202c",
           padding: "20px 20px 20px 0",
@@ -155,7 +154,7 @@ function SignupFormModal() {
             placeholder="Enter your email"
             style={{
               backgroundColor: "#00202c",
-              fontWeight: '550',
+              fontWeight: "550",
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
@@ -177,7 +176,7 @@ function SignupFormModal() {
             placeholder="Enter your username"
             style={{
               backgroundColor: "#00202c",
-              fontWeight: '550',
+              fontWeight: "550",
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
@@ -191,72 +190,96 @@ function SignupFormModal() {
         {errors.username && <p className="error">{errors.username}</p>}
         <label style={{ color: "#ff6a00" }}>
           PASSWORD
-          <input
-            type={showPassword ? 'text' : 'password'}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            placeholder="Enter your password"
-            style={{
-              backgroundColor: "#00202c",
-              fontWeight: '550',
-              color: "white",
-              borderColor: "#ff6a00",
-              borderRadius: "5px",
-              width: "340px",
-              height: "30px",
-              borderWidth: "1px",
-              padding: "5px 10px",
-            }}
-          />
-          {showPassword ? (
-            <FaEyeSlash
-              onClick={() =>
-              setShowPassword(false)}
-              style={{position: 'absolute', top: '475px', left:'550px', cursor:'pointer'}}
+          <div style={{ position: "relative" }}>
+            <input
+              type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              placeholder="Enter your password"
+              style={{
+                backgroundColor: "#00202c",
+                fontWeight: "550",
+                color: "white",
+                borderColor: "#ff6a00",
+                borderRadius: "5px",
+                width: "340px",
+                height: "30px",
+                borderWidth: "1px",
+                padding: "5px 10px",
+              }}
             />
-          ): (
-            <FaEye
-              onClick={() =>
-              setShowPassword(true)}
-              style={{position: 'absolute', top: '475px', left:'550px', cursor:'pointer'}}
+            {showPassword ? (
+              <FaEyeSlash
+                onClick={() => setShowPassword(false)}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "10px",
+                  cursor: "pointer",
+                  color: "#ff6a00",
+                }}
               />
-          )}
+            ) : (
+              <FaEye
+                onClick={() => setShowPassword(true)}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "10px",
+                  cursor: "pointer",
+                  color: "#ff6a00",
+                }}
+              />
+            )}
+          </div>
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
         <label style={{ color: "#ff6a00" }}>
           CONFIRM PASSWORD
-          <input
-            type={showPassword ? 'text' : 'password'}
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-            placeholder="Enter your password again"
-            style={{
-              backgroundColor: "#00202c",
-              fontWeight: '550',
-              color: "white",
-              borderColor: "#ff6a00",
-              borderRadius: "5px",
-              width: "340px",
-              height: "30px",
-              borderWidth: "1px",
-              padding: "5px 10px",
-            }}
-          />
-          {showPassword ? (
-            <FaEyeSlash
-              onClick={() =>
-              setShowPassword(false)}
-              style={{position: 'absolute', top: '575px', left:'550px', cursor:'pointer'}}
+          <div style={{ position: "relative" }}>
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              placeholder="Enter your password again"
+              style={{
+                backgroundColor: "#00202c",
+                fontWeight: "550",
+                color: "white",
+                borderColor: "#ff6a00",
+                borderRadius: "5px",
+                width: "340px",
+                height: "30px",
+                borderWidth: "1px",
+                padding: "5px 10px",
+              }}
             />
-          ): (
-            <FaEye
-              onClick={() =>
-              setShowPassword(true)}
-              style={{position: 'absolute', top: '575px', left:'550px', cursor:'pointer'}}
+            {showConfirmPassword ? (
+              <FaEyeSlash
+                onClick={() => setShowConfirmPassword(false)}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "10px",
+                  cursor: "pointer",
+                  color: "#ff6a00",
+                }}
               />
-          )}
+            ) : (
+              <FaEye
+                onClick={() => setShowConfirmPassword(true)}
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "10px",
+                  cursor: "pointer",
+                  color: "#ff6a00",
+                }}
+              />
+            )}
+          </div>
         </label>
         {errors.confirmPassword && (
           <p className="error">{errors.confirmPassword}</p>

@@ -112,7 +112,7 @@ function LoginFormModal() {
             placeholder="Enter your email"
             style={{
               backgroundColor: "#00202c",
-              fontWeight: '550',
+              fontWeight: "550",
               color: "white",
               borderColor: "#ff6a00",
               borderRadius: "5px",
@@ -126,43 +126,58 @@ function LoginFormModal() {
         {errors.email && <p className="error">{errors.email}</p>}
         <label style={{ color: "#ff6a00" }}>
           PASSWORD
-          <input
-            type={showPassword ? 'text' : 'password'}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            placeholder="Enter your password"
-            style={{
-              backgroundColor: "#00202c",
-              fontWeight: '550',
-              color: "white",
-              borderColor: "#ff6a00",
-              borderRadius: "5px",
-              width: "340px",
-              height: "30px",
-              borderWidth: "1px",
-              padding: "5px 10px",
-            }}
-          />
-          {showPassword ? (
-            <FaEyeSlash
-              onClick={() =>
-              setShowPassword(false)}
-              style={{position: 'absolute', top: '375px', left:'600px', cursor:'pointer'}}
+          <div style={{ position: "relative", width: "360px" }}>
+            <input
+              type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              placeholder="Enter your password"
+              style={{
+                backgroundColor: "#00202c",
+                fontWeight: "550",
+                color: "white",
+                borderColor: "#ff6a00",
+                borderRadius: "5px",
+                width: "100%",
+                height: "41px",
+                borderWidth: "1px",
+                padding: "5px 35px 5px 10px", // 注意右边 padding 预留给图标
+                boxSizing: "border-box",
+              }}
             />
-          ) : (
-            <FaEye
-              onClick={() =>
-              setShowPassword(true)}
-              style={{position: 'absolute', top: '375px', left:'600px', cursor:'pointer'}}
+            {showPassword ? (
+              <FaEyeSlash
+                onClick={() => setShowPassword(false)}
+                style={{
+                  position: "absolute",
+                  right: "10px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  cursor: "pointer",
+                  color: "#ff6a00",
+                }}
               />
-          )}
+            ) : (
+              <FaEye
+                onClick={() => setShowPassword(true)}
+                style={{
+                  position: "absolute",
+                  right: "10px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  cursor: "pointer",
+                  color: "#ff6a00",
+                }}
+              />
+            )}
+          </div>
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
         <button type="submit">LOG IN</button>
         <div onClick={toggleMenu} className="close-modal">
           {/* <p style={{marginRight:'5px'}}>Forgot your password? </p> */}
-          <br/>
+          <br />
           <p>Don&apos;t have an account?</p>
           <OpenModalMenuItem
             itemText="Sign Up"
@@ -171,7 +186,6 @@ function LoginFormModal() {
             className="two-buttons"
           />
         </div>
-
       </form>
     </div>
   );
