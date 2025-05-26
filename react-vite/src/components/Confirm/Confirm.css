@@ -181,7 +181,7 @@
 
 .reserve-title {
      color: #F4CE14;
-     font-size: 3rem;
+     font-size: 2rem;
      font-weight: 300;
      background-color: #00202c;
 }
@@ -299,7 +299,7 @@
      position: relative;
      top: 2rem;
      border-radius: 20px;
-     width: 40rem;
+     width: 30rem;
      border: 4px solid #ff6a00;
      background-color: #00202c;
 }
@@ -313,7 +313,7 @@
 
 .modify-title{
      color: #F4CE14;
-     font-size: 3rem;
+     font-size: 2rem;
      font-weight: 300;
      background-color: #00202c;
 }
@@ -381,7 +381,7 @@
 
 .back-title{
      color: #F4CE14;
-     font-size: 3rem;
+     font-size: 2rem;
      font-weight: 300;
      background-color: #00202c;
 }

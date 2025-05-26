@@ -70,7 +70,7 @@ function ReservationModify() {
   return (
     <form onSubmit={formik.handleSubmit} className="modify-reservation-form">
         <h1 className="modify-h1">
-          Please Modify Your Reservation
+          Modify Your Reservation
           {/* {console.log("=======>", reservationData)} */}
         </h1>
       <div className="modify-form-container">
