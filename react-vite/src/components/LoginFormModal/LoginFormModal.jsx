@@ -103,13 +103,15 @@ function LoginFormModal() {
       </h1>
       <form onSubmit={handleSubmit}>
         <label style={{ color: "#ff6a00", marginTop: "40px" }}>
-          EMAIL
+          <span style={{ display: "inline" }}>
+            Email&nbsp;<span style={{ color: "red" }}>*</span>
+          </span>
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            placeholder="Enter your email"
+            placeholder="Enter your email（请输入邮箱）"
             style={{
               backgroundColor: "#00202c",
               fontWeight: "550",
@@ -125,14 +127,16 @@ function LoginFormModal() {
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
         <label style={{ color: "#ff6a00" }}>
-          PASSWORD
+          <span style={{ display: "inline" }}>
+            Password&nbsp;<span style={{ color: "red" }}>*</span>
+          </span>
           <div style={{ position: "relative", width: "360px" }}>
             <input
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              placeholder="Enter your password"
+              placeholder="Enter your password（请输入密码）"
               style={{
                 backgroundColor: "#00202c",
                 fontWeight: "550",

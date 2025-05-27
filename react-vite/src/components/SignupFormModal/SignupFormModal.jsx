@@ -145,13 +145,15 @@ function SignupFormModal() {
       )}
       <form onSubmit={handleSubmit}>
         <label style={{ color: "#ff6a00", marginTop: "40px" }}>
-          EMAIL
+          <span style={{ display: "inline" }}>
+            Email &nbsp;<span style={{ color: "red" }}>*</span>
+          </span>
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            placeholder="Enter your email"
+            placeholder="Enter your email（请输入邮箱）"
             style={{
               backgroundColor: "#00202c",
               fontWeight: "550",
@@ -167,13 +169,15 @@ function SignupFormModal() {
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
         <label style={{ color: "#ff6a00" }}>
-          USERNAME
+          <span style={{display: "inline" }}>
+          Username&nbsp;<span style={{ color: "red" }}>*</span>
+          </span>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
-            placeholder="Enter your username"
+            placeholder="Enter your username（请输入用户名）"
             style={{
               backgroundColor: "#00202c",
               fontWeight: "550",
@@ -189,14 +193,16 @@ function SignupFormModal() {
         </label>
         {errors.username && <p className="error">{errors.username}</p>}
         <label style={{ color: "#ff6a00" }}>
-          PASSWORD
+          <span style={{ display: "inline" }}>
+          Password&nbsp;<span style={{ color: "red" }}>*</span>
+          </span>
           <div style={{ position: "relative" }}>
             <input
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              placeholder="Enter your password"
+              placeholder="Enter your password（请输入密码）"
               style={{
                 backgroundColor: "#00202c",
                 fontWeight: "550",
@@ -236,14 +242,16 @@ function SignupFormModal() {
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
         <label style={{ color: "#ff6a00" }}>
-          CONFIRM PASSWORD
+          <span style={{ display: "inline" }}>
+          Confirm Password&nbsp;<span style={{ color: "red" }}>*</span>
+          </span>
           <div style={{ position: "relative" }}>
             <input
               type={showConfirmPassword ? "text" : "password"}
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
-              placeholder="Enter your password again"
+              placeholder="Enter your password again（请再次输入密码）"
               style={{
                 backgroundColor: "#00202c",
                 fontWeight: "550",
