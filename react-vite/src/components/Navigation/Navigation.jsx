@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
 import MaytimeLogo from "../../assets/MaytimelogoFinalWhite.png";
+import NavButton from "../NavButton/NavButton";
 import "./Navigation.css";
 
 function Navigation() {
@@ -17,7 +18,7 @@ function Navigation() {
       </div>
       <div className="nav-bar-left">
         <div className="nav-bar-left-links">
-          <NavLink to="/" className="nav-bar-button">
+          {/* <NavLink to="/" className="nav-bar-button">
             Home
           </NavLink>
 
@@ -35,7 +36,12 @@ function Navigation() {
 
           <NavLink to="/contact_us" className="nav-bar-button">
             <div>Contact Us</div>
-          </NavLink>
+          </NavLink> */}
+          <NavButton to="/" label="Home" />
+          <NavButton to="/photos" label="Photos" />
+          <NavButton to="/about_us" label="About Us" />
+          <NavButton to="/reservation" label="Reservation" />
+          <NavButton to="/contact_us" label="Contact Us" />
         </div>
 
         <div className="nav-bar-right-loginButton">

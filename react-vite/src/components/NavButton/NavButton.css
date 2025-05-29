@@ -1,0 +1,220 @@
+.button-box{
+     line-height: 16px;
+     cursor: pointer;
+     border: none;
+     box-sizing: border-box;
+     text-align: center;
+     display: inline-block;
+     position: relative;
+}
+
+/* .button-box.has-animation {
+     opacity: 0;
+     -webkit-transition: translateY(0px);
+     transform: translateY(0px);
+} */
+
+.text-align-center .button-box, .text-align-center.button-box {
+     margin-left:10px;
+     margin-right:10px;
+     text-align:center;
+}
+
+.text-align-center.button-box {
+     display: flex;
+     margin:auto
+}
+
+.button-content .submit-box {
+     color:#fff;
+}
+
+.clapat-button-wrap {
+     display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     left:0;
+     right:0;
+     min-width:50px;
+     height:60px;
+     color:#000;
+}
+
+.light-content .clapat-button-wrap, .dark-section .clapat-button-wrap {
+     color:#fff;
+}
+
+.light-content .light-section .clapat-button-wrap {
+     color:#000;
+}
+
+.clapat-button-wrap.circle {
+     min-width:104px;
+     height:104px;
+}
+
+.text-align-center .clapat-button-wrap {
+     margin:0 auto;
+}
+
+.clapat-button {
+     opacity:1;
+}
+
+.button-border {
+     height: 50px;
+     width: 10px;
+     /* border: solid 1px #ff6a00; */
+     background-color:#000;
+     color:#ff6a00;
+     border-radius: 5px;
+     cursor:pointer;
+     font-size: 16px;
+     font-weight: 300;
+     line-height:50px;
+     overflow: hidden;
+     text-align:center;
+     box-sizing:initial;
+}
+
+.button-box.has-animation .button-border {
+     width: 135px;
+}
+
+.disable-cursor .button-border {
+     -webkit-transition : border 0.2s ease-out;
+     transition : border 0.2s ease-out;
+}
+
+.light-content .button-border, .dark-section .button-border {
+     border: solid 2px currentColor;
+     background-color:currentColor;
+}
+
+.light-content .light-section .button-border {
+     border: solid 2px currentColor;
+     background-color:currentColor;
+}
+
+.light-content .button-border a, .dark-section .button-border a {
+     color:#000;
+}
+
+.light-content .light-section .button-border a {
+     color:#fff;
+}
+
+.button-border:not(.outline) a {
+     color:#ffffff!important; /* 文字的颜色 */
+}
+
+.light-content .button-border:not(.outline) a, .dark-section .button-border:not(.outline) a {
+     color:#000!important;
+}
+
+.light-content .light-section .button-border:not(.outline) a {
+     color:#fff!important;
+}
+
+.button-border.rounded {
+     border-radius: 30px;
+}
+
+.button-border.outline {
+     border: solid 2px currentColor;
+     color:currentColor;
+     background-color:transparent;
+}
+
+.light-content .button-border.outline, .dark-section .button-border.outline {
+     border: solid 2px currentColor;
+     color:currentColor;
+     background-color:transparent;
+}
+
+.light-content .light-section .button-border.outline {
+     border: solid 2px currentColor;
+     background-color:transparent;
+}
+
+.clapat-button a {
+     position: relative;
+     display: block;
+     height: 100%;
+}
+
+.button-box.has-animation .clapat-button a {
+     opacity:0;
+     white-space: nowrap;
+     transition: opacity 0.5s ease 0.5s;
+     -webkit-transition: opacity 0.5s ease 0.5s;
+}
+
+.button-box.animated .clapat-button a {
+     opacity: 1;
+}
+
+.light-content .button-border.outline a, .dark-section .button-border.outline a {
+     color:#fff;
+}
+
+.light-content .light-section .button-border.outline a {
+     color:#000;
+}
+
+.dark-content .light-section .button-border a {
+     color:#fff;
+}
+
+.dark-content .light-section .button-border.outline a {
+     color:#000;
+}
+
+.circle .button-border {
+     border-radius: 100px;
+     height: 100px;
+     width: 100px;
+}
+
+.button-border span {
+     position: relative;
+     display: inline-block;
+     -webkit-transition: -webkit-transform 0.2s;
+     transition: transform 0.2s;
+     width: auto;
+     text-align: center;
+     transform-origin: 100% 0%;
+     padding: 0 10px;
+     letter-spacing: 0.5px;
+}
+
+.button-border span::before {
+     position: absolute;
+     width: 100%;
+     top: 100%;
+     left: 0;
+     content: attr(data-hover);
+     text-align: center;
+}
+
+.clapat-button:hover .button-border span {
+     -webkit-transform: translateY(-100%);
+     transform: translateY(-100%);
+     transform-origin: 0% 0%;
+     color: #ff6a00; /* 鼠标悬浮后控制文字的颜色 */
+}
+
+.clapat-button-wrap.circle:hover .button-border {
+     border: solid 2px transparent;
+}
+
+.clapat-button-wrap.circle .button-border input, .clapat-button-wrap.circle .button-border a {
+     height: 100px;
+     width: 100px;
+     line-height: 100px;
+     text-align: center;
+     padding: 0;
+     font-size: 12px;
+     cursor:pointer;
+}
