@@ -78,6 +78,10 @@
      box-sizing:initial;
 }
 
+/* .button-border a {
+     margin-right: -40px;
+   } */
+
 .button-box.has-animation .button-border {
      width: 135px;
 }
