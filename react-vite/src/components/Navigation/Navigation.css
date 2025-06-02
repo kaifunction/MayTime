@@ -93,19 +93,21 @@
   padding: 2px 8px;
   margin-right: 20px;
   font-size: 18px;
-  font-weight: bold;
-  border: 1px solid #ff6a00;
+  font-weight: 500;
+  border: 1px solid #ffffff;
   background-color: #00202c;
   color: #ff6a00;
   cursor: pointer;
   transition: transform 0.3s ease;
-  box-shadow: inset 0 0 10px 2px rgba(255, 106, 0, 0.5);
+  box-shadow: inset 0 0 10px 2px #ffffff70;
 }
 
 
 .login-signup-button:hover {
-  border-width: 1.5px;
+  border: 1.5px solid #ff6a00;
+  /* color: #ff6a00; */
   transform: scale(1.1);
+  box-shadow: inset 0 0 10px 2px #ff6a00;
 }
 
 .loginButton-list {
