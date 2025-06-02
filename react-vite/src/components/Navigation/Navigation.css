@@ -78,6 +78,13 @@
   /* 充满父容器宽度 */
 }
 
+.logout-button{
+  color: black;
+  background-color: #00202c;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
 .login-signup-button {
   border-radius: 20px;
   width: 70px;
@@ -106,7 +113,7 @@
   gap: 1px;
   margin-top: 30px;
   /* padding: 10px 0px 10px 10px; */
-  background-color: #ffffff50;
+  /* background-color: #ffffff50; */
 }
 
 .loginButton-list button {
@@ -141,6 +148,19 @@
   z-index: 10000;
   padding: 5px;
   border-radius: 20px;
+}
+
+.icons{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 0px; */
+  margin-left: 20px;
+}
+
+.icons-login{
+  letter-spacing: 1px;
 }
 
 .nav-bar-button {

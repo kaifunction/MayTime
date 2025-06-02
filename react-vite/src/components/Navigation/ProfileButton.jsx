@@ -56,9 +56,13 @@ function ProfileButton() {
           {user ? (
             <div className="loginButton-list">
               <span
-                style={{ color: "#ff6a00", zIndex: "1000", fontWeight: "bold" }}
+                style={{
+                  color: "#ff6a00",
+                  zIndex: "1000",
+                  fontWeight: "bold",
+                }}
               >
-                {user.username.toUpperCase()}
+                {user?.username.toUpperCase()}
               </span>
               <br />
               <span
@@ -68,18 +72,11 @@ function ProfileButton() {
                   letterSpacing: "0.5px",
                 }}
               >
-                {user.email}
+                {user?.email}
               </span>
               <br />
               <span style={{ zIndex: "1000" }}>
-                <button
-                  onClick={logout}
-                  style={{
-                    color: "black",
-                    fontWeight: "bold",
-                    marginTop: "5px",
-                  }}
-                >
+                <button onClick={logout} className="logout-button">
                   LOG OUT
                 </button>
               </span>
@@ -87,42 +84,22 @@ function ProfileButton() {
           ) : (
             <div className="loginSignup-button">
               <span>
-                <div
-                  style={{
-                    backgroundColor: "transparent",
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: "1px",
-                    marginLeft: "10px",
-                  }}
-                  className="icons"
-                >
+                <div className="icons icons-login">
                   <FaSignInAlt
                     style={{ color: "#ff6a00", backgroundColor: "transparent" }}
                   />
                   <OpenModalMenuItem
-                    itemText="LOG IN"
+                    itemText="Log In"
                     onItemClick={closeMenu}
                     modalComponent={<LoginFormModal />}
                   />
                 </div>
-                <div
-                  style={{
-                    backgroundColor: "transparent",
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: "1px",
-                    marginLeft: "10px",
-                  }}
-                  className="icons"
-                >
+                <div className="icons icons-signup">
                   <FaUserPlus
                     style={{ color: "#ff6a00", backgroundColor: "transparent" }}
                   />
                   <OpenModalMenuItem
-                    itemText="SIGN UP"
+                    itemText="Sign Up"
                     onItemClick={closeMenu}
                     modalComponent={<SignupFormModal />}
                   />
@@ -133,9 +110,7 @@ function ProfileButton() {
         </div>
       )}
     </div>
-
   );
 }
-
 
 export default ProfileButton;
