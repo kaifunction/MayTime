@@ -34,30 +34,31 @@
 }
 
 
-.nav-bar-right-loginButton {
+.nav-bar-profile {
   margin-right: 10px;
   color: #00202c;
 }
 
-.nav-bar-left {
+/* .nav-bar-left {
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #00202c;
-  /* gap: 100px;
-  margin-left: 20px; */
-}
+
+} */
 
 
-.nav-bar-left-links {
-  box-sizing: border-box;
+.nav-bar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  flex-direction: row;
-  margin-right: 40px;
+  gap: 70px;
   background-color: #00202c;
+  z-index: 0;
   /* position: absolute;
   left: 66%; */
-  gap: 40px;
+  /* gap: 40px; */
   font-size: 18px;
   font-weight: 600;
 }
@@ -216,4 +217,13 @@
 .two-buttons:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .nav-bar-center {
+    flex-direction: column;
+    position: static;
+    transform: none;
+  }
 }
