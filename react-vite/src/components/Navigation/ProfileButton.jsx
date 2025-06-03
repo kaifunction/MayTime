@@ -40,7 +40,9 @@ function ProfileButton() {
     closeMenu();
   };
 
-  const userFirstLetter = user?.username[0]?.toUpperCase();
+  const userFirstLetter = user?.username
+  ?.split(' ')[0]
+  ?.charAt(0).toUpperCase() + user?.username?.split(' ')[0]?.slice(1);
 
   return (
     <div onClick={toggleMenu}>
@@ -48,7 +50,7 @@ function ProfileButton() {
         {userFirstLetter ? (
           userFirstLetter
         ) : (
-          <FaUser style={{ color: "#ff6a00", marginTop: "4px" }} />
+          <FaUser className="fauser"/>
         )}
       </button>
       {showMenu && (
