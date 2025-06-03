@@ -1,4 +1,4 @@
-.home-page-container{
+.home-page-container {
      display: flex;
      flex-direction: column;
      /* margin-left: 30px; */
@@ -17,6 +17,7 @@
      border-right: 3px solid #ff6a00;
      border-bottom: 3px solid #ff6a00;
 }
+
 .overlay {
      position: absolute;
      top: 0;
@@ -29,35 +30,54 @@
      align-items: center;
      color: white;
      /* background-color: rgba(0, 0, 0, 0.8); 可选: 提高文字可读性 */
- }
+}
 
 .home-page-text-title {
      background-color: rgba(0, 0, 0, 0.0);
      position: absolute;
      top: 20px;
      left: 50px;
-     font-size: 90px;
      flex-wrap: wrap;
      width: 94%;
      /* z-index: -1; */
 }
 
+.maytime-centered-title {
+     position: absolute;
+     top: 150%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+}
 
-/* .homepage-image{
-     width: 100%;
-     height: 300px;
-     z-index: -10;
-     position: sticky;
-     top: 0px;
-     right: 100px;
+.home-page-maytime-title {
+     font-family: rockwell;
+     letter-spacing: 10px;
+     color: #ffffff;
+     font-size: 10rem;
+     margin: 0;
+     display: flex;
+     flex-direction: row;
+}
 
-} */
+.home-page-maytime-title p{
+     font-size: 2rem;
+     letter-spacing: 1px;
 
-.text-links{
+}
+
+.home-page-maytime-title span {
+     font-family: rockwell;
+     color: #ff6a00;
+}
+
+.text-links {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      align-content: center;
+     position: relative;
+     top: 33rem;
 }
 
 .home-page-text {
@@ -66,7 +86,7 @@
      /* height: 413px; */
 }
 
-.home-page-text h1{
+.home-page-text h1 {
      color: #00202c;
      z-index: 20;
      background: linear-gradient(to right, #ff6a00 40%, rgba(0, 0, 0, 0) 100%);
@@ -76,46 +96,58 @@
      border-radius: 20px;
 }
 
-.socialmedialinks{
+.home-page-text h2 {
+     padding-left: 20px;
+     margin-top: -10px;
+     color: #ffffff;
+     letter-spacing: 1px;
+}
+
+.socialmedialinks {
      display: flex;
      flex-direction: row;
      gap: 20px;
      margin-left: 20px;
+     position: relative;
+     top: 7rem;
 }
 
-.socialmedialinks{
+/* .socialmedialinks {
      display: flex;
      flex-direction: column;
-}
+} */
 
 .socialmedialinks img {
      display: block;
      opacity: 0.6;
 }
 
-.xiaohongshu-logo{
+.xiaohongshu-logo {
      width: 30px;
      height: 30px;
      transition: transform 0.3s ease;
 }
-.xiaohongshu-logo:hover{
+
+.xiaohongshu-logo:hover {
      transform: scale(1.5);
 }
 
-.instagram-logo{
+.instagram-logo {
      width: 30px;
      height: 30px;
      transition: transform 0.3s ease;
 }
-.instagram-logo:hover{
+
+.instagram-logo:hover {
      transform: scale(1.5);
 }
 
-.wechat-logo{
+.wechat-logo {
      width: 30px;
      height: 30px;
      transition: transform 0.3s ease;
 }
-.wechat-logo:hover{
+
+.wechat-logo:hover {
      transform: scale(1.5);
 }

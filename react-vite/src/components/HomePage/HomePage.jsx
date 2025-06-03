@@ -7,63 +7,27 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="home-page-container" style={{backgroundColor:'transparent'}}>
+    <div
+      className="home-page-container"
+      style={{ backgroundColor: "transparent" }}
+    >
       <div className="overlay">
         <div className="home-page-text-title">
-          <h1
-            style={{
-              fontFamily: "rockwell",
-              letterSpacing: "5px",
-              color: "#ffffff",
-              // backgroundColor: "rgba(0,0,0,0)",
-            }}
-          >
-            <span
-              style={{
-                fontFamily: "rockwell",
-                color: "#ff6a00 ",
-                // backgroundColor: "rgba(0,0,0,0)",
-              }}
-            >
-              M
-            </span>
-            AY
-            <span
-              style={{
-                fontFamily: "rockwell",
-                color: "#ff6a00",
-                // backgroundColor: "rgba(0,0,0,0)",
-              }}
-            >
-              T
-            </span>
-            IME
-          </h1>
-          <div
-            className="text-links"
-            // style={{ backgroundColor: "rgba(0,0,0,0)" }}
-          >
-            <div
-              className="home-page-text"
-              // style={{ backgroundColor: "rgba(0,0,0,0)" }}
-            >
-              <h1 style={{letterSpacing:'1px'}}>PRESERVE MEMORIES</h1>
-              <h2
-                style={{
-                  paddingLeft: "20px",
-                  marginTop: "-10px",
-                  color: "#ffffff",
-                  letterSpacing: "1px",
-                  // backgroundColor: "rgba(0,0,0,0)",
-                }}
-              >
-                CAPTURE BEAUTY<span style={{color: "#ff6a00"}}>.</span>
+          <div className="maytime-centered-title">
+            <h1 className="home-page-maytime-title">
+              {/* <p>photography</p> */}
+              <span>M</span>AY<span>T</span>IME
+              {/* <p>studio</p> */}
+            </h1>
+          </div>
+          <div className="text-links">
+            <div className="home-page-text">
+              <h1 style={{ letterSpacing: "1px" }}>PRESERVE MEMORIES</h1>
+              <h2>
+                CAPTURE BEAUTY<span style={{ color: "#ff6a00" }}>.</span>
               </h2>
             </div>
-            <div
-              className="socialmedialinks"
-              // style={{ backgroundColor: "rgba(0,0,0,0)" }}
-            >
+            <div className="socialmedialinks">
               <NavLink
                 to={
                   "https://www.xiaohongshu.com/user/profile/650f8469000000001200706a"
