@@ -2,16 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -8px;
-  padding: 20px;
-  border-top: 3px solid #ff6a00;
-  border-left: 3px solid #ff6a00;
-  border-right: 3px solid #ff6a00;
   /* border-bottom: 9px solid #ff6a00; */
   /* background-color: hsl(196, 100%, 15%); */
   /* padding: 10px 20px; */
   /* background-color: #ff6a00; */
 }
+/* Navigation border */
+/* .nav-bar-container {
+  margin: -8px;
+  padding: 20px;
+  border-top: 3px solid #ff6a00;
+  border-left: 3px solid #ff6a00;
+  border-right: 3px solid #ff6a00;
+} */
 
 /* .active-link{
   color: #ff2f00;
@@ -79,7 +82,7 @@
   /* 充满父容器宽度 */
 }
 
-.logout-button{
+.logout-button {
   color: black;
   background-color: #00202c;
   font-weight: bold;
@@ -115,13 +118,13 @@
   box-shadow: inset 0 0 0px 0px #ffffff;
 }
 
-.fauser{
+.fauser {
   color: #ff6a00;
   background-color: #00202c;
   margin-top: 4px;
 }
 
-.login-signup-button:hover .fauser{
+.login-signup-button:hover .fauser {
   background-color: #ffffff;
   color: #00202c;
 }
@@ -171,7 +174,7 @@
   border-radius: 20px;
 }
 
-.icons{
+.icons {
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -180,7 +183,7 @@
   margin-left: 20px;
 }
 
-.icons-login{
+.icons-login {
   letter-spacing: 1px;
 }
 

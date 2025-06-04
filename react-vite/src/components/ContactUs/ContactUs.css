@@ -5,12 +5,15 @@
      /* align-items: center; */
      gap: 0px;
      position: relative;
+}
+
+/* .contact-us-container{
      margin: -8px;
      padding: 0px;
      border-left: 3px solid #ff6a00;
      border-right: 3px solid #ff6a00;
      border-bottom: 3px solid #ff6a00;
-}
+} */
 
 /* .contact-us-container::before {
      content: '';
@@ -29,7 +32,7 @@
 } */
 
 .contact-us-h1 {
-     margin: 75px 405px 20px 440px;
+     margin: 55px 405px 20px 425px;
      color: #ff6a00;
 }
 

@@ -11,12 +11,14 @@
      /* background-size: cover;
      background-position: center; */
      overflow: hidden;
+}
+
+/* .home-page-container{
      margin: -8px;
-     /* padding: 20px; */
      border-left: 3px solid #ff6a00;
      border-right: 3px solid #ff6a00;
      border-bottom: 3px solid #ff6a00;
-}
+} */
 
 .overlay {
      position: absolute;
