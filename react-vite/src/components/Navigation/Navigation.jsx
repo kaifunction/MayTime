@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
-import MaytimeLogo from "../../assets/MaytimelogoFinalWhite.png";
+import MaytimeLogo from "../../assets/Maytime logo Final Only.png";
 import NavButton from "../NavButton/NavButton";
 import "./Navigation.css";
 
