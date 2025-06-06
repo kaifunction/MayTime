@@ -3,10 +3,12 @@
      background-color: aquamarine;
      z-index: -1000;
 } */
-*{
+* {
      font-family: 'Montserrat', sans-serif;
-     /* background: linear-gradient(to right, rgba(255, 126, 95, 0.7), rgba(254, 180, 123, 0.7)); */
-     background-color: #00202c;
+     background-color: #c0dfff;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
 
 /* Path: react-vite/src/components/Navigation/Navigation.css */

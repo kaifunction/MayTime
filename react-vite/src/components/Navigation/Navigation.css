@@ -39,7 +39,7 @@
 
 .nav-bar-profile {
   margin-right: 10px;
-  color: #00202c;
+  color: #c0dfff;
 }
 
 /* .nav-bar-left {
@@ -57,7 +57,8 @@
   transform: translateX(-50%);
   display: flex;
   gap: 70px;
-  background-color: #00202c;
+  color: #F564A9;
+  background-color: #c0dfff;
   z-index: 0;
   /* position: absolute;
   left: 66%; */
@@ -69,7 +70,7 @@
 
 .nav-bar-button {
   text-decoration: none;
-  background-color: #00202c;
+  background-color: #c0dfff;
   font-weight: 300;
   color: black;
   cursor: pointer;
@@ -84,9 +85,14 @@
 
 .logout-button {
   color: black;
-  background-color: #00202c;
+  background-color: #FF4500;
   font-weight: bold;
+  letter-spacing: .9px;
   margin-top: 5px;
+  padding: 10px;
+  border-color: #FF4500;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-signup-button {
@@ -99,34 +105,34 @@
   font-size: 16px;
   letter-spacing: .8px;
   font-weight: 500;
-  border: 1px solid #ff6a00;
-  background-color: #00202c;
-  color: #ff6a00;
+  border: 1px solid #e80000;
+  background-color: #c0dfff;
+  color: #e80000;
   cursor: pointer;
   transition: transform 0.3s ease;
-  box-shadow: inset 0 0 4px 2px #ff6a00;
+  box-shadow: inset 0 0 4px 2px #e80000;
 }
 
 
 .login-signup-button:hover {
-  border: 1.5px solid #ffffff;
-  background-color: #ffffff;
-  color: #00202c;
+  border: 1.5px solid #333333;
+  background-color: #333333;
+  color: #c0dfff;
   font-weight: 600;
   /* color: #ff6a00; */
   /* transform: scale(1.1); */
-  box-shadow: inset 0 0 0px 0px #ffffff;
+  box-shadow: inset 0 0 0px 0px #c0dfff;
 }
 
 .fauser {
-  color: #ff6a00;
-  background-color: #00202c;
+  color: #e80000;
+  background-color: #c0dfff;
   margin-top: 4px;
 }
 
 .login-signup-button:hover .fauser {
-  background-color: #ffffff;
-  color: #00202c;
+  background-color: #101010;
+  color: #101010;
 }
 
 .loginButton-list {
@@ -140,14 +146,7 @@
   /* background-color: #ffffff50; */
 }
 
-.loginButton-list button {
-  background-color: #ff6a00;
-  color: white;
-  padding: 5px;
-  border-color: #ff6a00;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 
 .loginButton-list button:hover {
   transform: scale(1.1);
@@ -199,14 +198,14 @@
 
 .nav-bar-button:hover {
   transform: scale(1.15);
-  color: #ff6a00;
+  color: #FF4500;
   background-color: #00000000;
 }
 
 .two-buttons {
   cursor: pointer;
-  color: #ff6a00;
-  border-color: #ff6a00;
+  color: #FF4500;
+  border-color: #FF4500;
   padding: 5px 10px;
   margin: 10px;
   font-weight: bold;

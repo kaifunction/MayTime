@@ -59,7 +59,7 @@ function ProfileButton() {
             <div className="loginButton-list">
               <span
                 style={{
-                  color: "#ff6a00",
+                  color: "#FF4500",
                   zIndex: "1000",
                   fontWeight: "bold",
                 }}
@@ -69,7 +69,7 @@ function ProfileButton() {
               <br />
               <span
                 style={{
-                  color: "#ff6a00",
+                  color: "#FF4500",
                   zIndex: "1000",
                   letterSpacing: "0.5px",
                 }}
@@ -88,7 +88,7 @@ function ProfileButton() {
               <span>
                 <div className="icons icons-login">
                   <FaSignInAlt
-                    style={{ color: "#ff6a00", backgroundColor: "transparent" }}
+                    style={{ color: "#FF4500", backgroundColor: "transparent" }}
                   />
                   <OpenModalMenuItem
                     itemText="Log In"
@@ -98,7 +98,7 @@ function ProfileButton() {
                 </div>
                 <div className="icons icons-signup">
                   <FaUserPlus
-                    style={{ color: "#ff6a00", backgroundColor: "transparent" }}
+                    style={{ color: "#FF4500", backgroundColor: "transparent" }}
                   />
                   <OpenModalMenuItem
                     itemText="Sign Up"

@@ -32,7 +32,7 @@
      border-radius: 5px;
      cursor:pointer;
      font-size: 16px;
-     font-weight: 300;
+     font-weight: 500;
      line-height:50px;
      overflow: hidden;
      text-align:center;
@@ -45,7 +45,7 @@
 }
 
 .button-border:not(.outline) a {
-     color:#ffffff!important; /* 文字的颜色 */
+     color: #e80000 !important; /* Navigation links 文字的颜色 */
 }
 
 .button-border span {
@@ -73,7 +73,7 @@
      -webkit-transform: translateY(-100%);
      transform: translateY(-100%);
      transform-origin: 0% 0%;
-     color: #ff6a00;
+     color: #333333;
      /* 鼠标悬浮后控制文字的颜色 */
 }
 
