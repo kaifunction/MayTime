@@ -18,6 +18,7 @@ function LoginFormModal() {
   const { closeModal } = useModal();
   const [showMenu, setShowMenu] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const ulRef = useRef();
 
@@ -71,12 +72,14 @@ function LoginFormModal() {
     e.preventDefault();
     if (!validateEP()) return;
 
+    setIsSubmitting(true);
     const serverResponse = await dispatch(
       thunkLogin({
         email,
         password,
       })
     );
+    setIsSubmitting(false);
 
     if (serverResponse) {
       setErrors(serverResponse);
@@ -87,46 +90,28 @@ function LoginFormModal() {
 
   return (
     <div className="login-container">
-      <h1
-        style={{
-          fontSize: "25px",
-          color: "#ff6a00",
-          backgroundColor: "#00202c",
-          padding: "20px 20px 20px 0",
-          margin: "0px",
-        }}
-      >
+      <h1 className="login-moddal-h1">
         <span style={{ fontWeight: "bold" }}>LOG</span>{" "}
         <span style={{ fontWeight: "lighter", backgroundColor: "transparent" }}>
           IN
         </span>
       </h1>
       <form onSubmit={handleSubmit}>
-        <label style={{ color: "#ff6a00", marginTop: "40px" }}>
+        <label className="login-label">
           <span style={{ display: "inline" }}>
             Email&nbsp;<span style={{ color: "red" }}>*</span>
           </span>
           <input
+            className="login-input"
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email（请输入邮箱）"
-            style={{
-              backgroundColor: "#00202c",
-              fontWeight: "550",
-              color: "white",
-              borderColor: "#ff6a00",
-              borderRadius: "5px",
-              width: "340px",
-              height: "30px",
-              borderWidth: "1px",
-              padding: "5px 10px",
-            }}
           />
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
-        <label style={{ color: "#ff6a00" }}>
+        <label className="login-label">
           <span style={{ display: "inline" }}>
             Password&nbsp;<span style={{ color: "red" }}>*</span>
           </span>
@@ -137,58 +122,34 @@ function LoginFormModal() {
               onChange={(e) => setPassword(e.target.value)}
               required
               placeholder="Enter your password（请输入密码）"
-              style={{
-                backgroundColor: "#00202c",
-                fontWeight: "550",
-                color: "white",
-                borderColor: "#ff6a00",
-                borderRadius: "5px",
-                width: "100%",
-                height: "41px",
-                borderWidth: "1px",
-                padding: "5px 35px 5px 10px", // 注意右边 padding 预留给图标
-                boxSizing: "border-box",
-              }}
+              className="login-input-password"
             />
             {showPassword ? (
               <FaEyeSlash
                 onClick={() => setShowPassword(false)}
-                style={{
-                  position: "absolute",
-                  right: "10px",
-                  top: "50%",
-                  transform: "translateY(-50%)",
-                  cursor: "pointer",
-                  color: "#ff6a00",
-                }}
+                className="faeyeslash"
               />
             ) : (
-              <FaEye
-                onClick={() => setShowPassword(true)}
-                style={{
-                  position: "absolute",
-                  right: "10px",
-                  top: "50%",
-                  transform: "translateY(-50%)",
-                  cursor: "pointer",
-                  color: "#ff6a00",
-                }}
-              />
+              <FaEye onClick={() => setShowPassword(true)} className="faeye" />
             )}
           </div>
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
-        <button type="submit">LOG IN</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Logging in..." : "LOG IN"}
+        </button>
         <div onClick={toggleMenu} className="close-modal">
           {/* <p style={{marginRight:'5px'}}>Forgot your password? </p> */}
           <br />
-          <p>Don&apos;t have an account?</p>
-          <OpenModalMenuItem
-            itemText="Sign Up"
-            onItemClick={closeMenu}
-            modalComponent={<SignupFormModal />}
-            className="two-buttons"
-          />
+          <div className="signup-redirect">
+            <p>Don&apos;t have an account?</p>
+            <OpenModalMenuItem
+              itemText="Sign Up"
+              onItemClick={closeMenu}
+              modalComponent={<SignupFormModal />}
+              className="SignUpModal"
+            />
+          </div>
         </div>
       </form>
     </div>

@@ -122,15 +122,7 @@ function SignupFormModal() {
 
   return (
     <div className="signup-container">
-      <h1
-        style={{
-          fontSize: "25px",
-          color: "#ff6a00",
-          backgroundColor: "#00202c",
-          padding: "20px 20px 20px 0",
-          margin: "0px",
-        }}
-      >
+      <h1 className="signup-moddal-h1">
         <span style={{ fontWeight: "bold", backgroundColor: "transparent" }}>
           SIGN
         </span>{" "}
@@ -144,7 +136,7 @@ function SignupFormModal() {
         </p>
       )}
       <form onSubmit={handleSubmit}>
-        <label style={{ color: "#ff6a00", marginTop: "40px" }}>
+        <label style={{ marginTop: "40px" }} className="sign-up-label">
           <span style={{ display: "inline" }}>
             Email &nbsp;<span style={{ color: "red" }}>*</span>
           </span>
@@ -154,23 +146,13 @@ function SignupFormModal() {
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email（请输入邮箱）"
-            style={{
-              backgroundColor: "#00202c",
-              fontWeight: "550",
-              color: "white",
-              borderColor: "#ff6a00",
-              borderRadius: "5px",
-              width: "340px",
-              height: "30px",
-              borderWidth: "1px",
-              padding: "5px 10px",
-            }}
+            className="sign-up-input"
           />
         </label>
         {errors.email && <p className="error">{errors.email}</p>}
-        <label style={{ color: "#ff6a00" }}>
-          <span style={{display: "inline" }}>
-          Username&nbsp;<span style={{ color: "red" }}>*</span>
+        <label className="sign-up-label">
+          <span style={{ display: "inline" }}>
+            Username&nbsp;<span style={{ color: "red" }}>*</span>
           </span>
           <input
             type="text"
@@ -178,23 +160,13 @@ function SignupFormModal() {
             onChange={(e) => setUsername(e.target.value)}
             required
             placeholder="Enter your username（请输入用户名）"
-            style={{
-              backgroundColor: "#00202c",
-              fontWeight: "550",
-              color: "white",
-              borderColor: "#ff6a00",
-              borderRadius: "5px",
-              width: "340px",
-              height: "30px",
-              borderWidth: "1px",
-              padding: "5px 10px",
-            }}
+            className="sign-up-input"
           />
         </label>
         {errors.username && <p className="error">{errors.username}</p>}
-        <label style={{ color: "#ff6a00" }}>
+        <label className="sign-up-label">
           <span style={{ display: "inline" }}>
-          Password&nbsp;<span style={{ color: "red" }}>*</span>
+            Password&nbsp;<span style={{ color: "red" }}>*</span>
           </span>
           <div style={{ position: "relative" }}>
             <input
@@ -203,17 +175,7 @@ function SignupFormModal() {
               onChange={(e) => setPassword(e.target.value)}
               required
               placeholder="Enter your password（请输入密码）"
-              style={{
-                backgroundColor: "#00202c",
-                fontWeight: "550",
-                color: "white",
-                borderColor: "#ff6a00",
-                borderRadius: "5px",
-                width: "340px",
-                height: "30px",
-                borderWidth: "1px",
-                padding: "5px 10px",
-              }}
+              className="sign-up-input"
             />
             {showPassword ? (
               <FaEyeSlash
@@ -241,9 +203,9 @@ function SignupFormModal() {
           </div>
         </label>
         {errors.password && <p className="error">{errors.password}</p>}
-        <label style={{ color: "#ff6a00" }}>
+        <label  className="sign-up-label">
           <span style={{ display: "inline" }}>
-          Confirm Password&nbsp;<span style={{ color: "red" }}>*</span>
+            Confirm Password&nbsp;<span style={{ color: "red" }}>*</span>
           </span>
           <div style={{ position: "relative" }}>
             <input
@@ -252,17 +214,7 @@ function SignupFormModal() {
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
               placeholder="Enter your password again（请再次输入密码）"
-              style={{
-                backgroundColor: "#00202c",
-                fontWeight: "550",
-                color: "white",
-                borderColor: "#ff6a00",
-                borderRadius: "5px",
-                width: "340px",
-                height: "30px",
-                borderWidth: "1px",
-                padding: "5px 10px",
-              }}
+              className="sign-up-input"
             />
             {showConfirmPassword ? (
               <FaEyeSlash
@@ -272,7 +224,7 @@ function SignupFormModal() {
                   top: "12px",
                   right: "10px",
                   cursor: "pointer",
-                  color: "#ff6a00",
+                  color: "#e80000",
                 }}
               />
             ) : (
@@ -293,7 +245,7 @@ function SignupFormModal() {
           <p className="error">{errors.confirmPassword}</p>
         )}
         <button type="submit">Sign Up</button>
-        <div onClick={toggleMenu} className="close-modal">
+        <div onClick={toggleMenu} className="signup-redirect">
           <p>Already have an account?</p>
           <OpenModalMenuItem
             itemText="Log In"

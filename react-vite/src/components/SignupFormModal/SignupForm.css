@@ -3,8 +3,16 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     padding: 120px 220px;
-     border: 3px solid #ff6a00;
+     padding: 100px 200px;
+     border: 3px solid #e80000;
+}
+
+.signup-moddal-h1{
+     font-size: 45px;
+     color: #e80000;
+     background-color: #c0dfff;
+     padding: 20px 20px 20px 0;
+     margin: 0px;
 }
 
 .signup-container form{
@@ -15,22 +23,34 @@
      gap: 30px;
 }
 
-
-.signup-container form label{
+.sign-up-label{
      display: flex;
      flex-direction: column;
+     color: #e80000;
      gap: 10px;
 }
 
+.sign-up-input{
+     background-color: #c0dfff;
+     font-weight: 550;
+     color: #333333;
+     border: 1px solid #e80000;
+     width: 360px;
+     height: 41px;
+     padding: 5px 10px;
+     border-radius: 5px;
+}
+
+
 .signup-container button{
-     color: #ff6a00;
+     color: #e80000;
      font-weight: bold;
-     border-color: #ff6a00;
+     border-color: #e80000;
      cursor: pointer;
      padding: 5px 10px;
      margin-top: 40px;
      border-radius: 10px;
-     width: 100%;
+     width: 78%;
      height: 30px;
      display: flex;
      justify-content: center;

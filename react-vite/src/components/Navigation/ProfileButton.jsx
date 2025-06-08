@@ -88,7 +88,7 @@ function ProfileButton() {
               <span>
                 <div className="icons icons-login">
                   <FaSignInAlt
-                    style={{ color: "#FF4500", backgroundColor: "transparent" }}
+                    style={{ color: "#e80000", backgroundColor: "transparent" }}
                   />
                   <OpenModalMenuItem
                     itemText="Log In"
@@ -98,7 +98,7 @@ function ProfileButton() {
                 </div>
                 <div className="icons icons-signup">
                   <FaUserPlus
-                    style={{ color: "#FF4500", backgroundColor: "transparent" }}
+                    style={{ color: "#e80000", backgroundColor: "transparent" }}
                   />
                   <OpenModalMenuItem
                     itemText="Sign Up"

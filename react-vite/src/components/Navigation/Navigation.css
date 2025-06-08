@@ -7,6 +7,7 @@
   /* padding: 10px 20px; */
   /* background-color: #ff6a00; */
 }
+
 /* Navigation border */
 /* .nav-bar-container {
   margin: -8px;
@@ -205,8 +206,7 @@
 
 .two-buttons {
   cursor: pointer;
-  color: #FF4500;
-  border-color: #FF4500;
+  border-color: #e80000;
   padding: 5px 10px;
   margin: 10px;
   font-weight: bold;
@@ -215,6 +215,10 @@
   display: flex;
   justify-content: center;
   background-color: transparent;
+  color: #e80000;
+  /* width: 150%; */
+  font-size: 14px;
+  /* Log In & Sign Up按钮的控制*/
 }
 
 .two-buttons:hover {
