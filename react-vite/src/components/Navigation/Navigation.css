@@ -131,8 +131,8 @@
 }
 
 .login-signup-button:hover .fauser {
-  background-color: #101010;
-  color: #101010;
+  background-color: #333333;
+  color: #c0dfff;
 }
 
 .loginButton-list {
@@ -167,6 +167,7 @@
 
 .loginSignup-button span {
   background-color: #ffffff20;
+  width: 10rem;
   font-size: 18px;
   z-index: 10000;
   padding: 5px;

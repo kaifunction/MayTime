@@ -134,55 +134,20 @@ const ContactUs = () => {
       </form>
       <div className="contact-us-contact-info">
         {/* <div className="contact-us-container-right-content"> */}
-        <h3 style={{ color: "#ff6a00", backgroundColor: "transparent" }}>
-          Contact Information:
-        </h3>
-        <p
-          style={{
-            // color: "white",
-            fontSize: "16px",
-            backgroundColor: "transparent",
-            color: "#ff6a00",
-            letterSpacing: ".7px",
-          }}
-        >
+        <h3 className="contact-us-h3">Contact Information:</h3>
+        <p className="contact-us-p">
           <span style={{ fontWeight: "bold" }}>EMAIL / </span>
-          <a
-            href="mailto:maytimestudio@gmail.com"
-            style={{
-              color: "white",
-              textDecoration: "none",
-              letterSpacing: "2px",
-            }}
-          >
-            / maytimestudio@gmail.com
-          </a>
+          <a href="mailto:maytimestudio@gmail.com">/ maytimestudio@gmail.com</a>
           <br />
         </p>
-        <p
-          style={{
-            // color: "white",
-            fontSize: "16px",
-            backgroundColor: "transparent",
-            color: "#ff6a00",
-          }}
-        >
+        <p className="contact-us-p">
           <span style={{ fontWeight: "bold" }}>PHONE /</span>{" "}
-          <span style={{ color: "white", letterSpacing: "2px" }}>
-            / 1231231234
-          </span>
+          <span className="contact-us-phone">/ 1231231234</span>
           <br />
         </p>
-        <p
-          style={{
-            // color: "white",
-            fontSize: "16px",
-            backgroundColor: "transparent",
-            color: "#ff6a00",
-          }}
-        >
+        <p className="contact-us-p">
           <span style={{ fontWeight: "bold" }}>ADDRESS /</span>{" "}
-          <span style={{ color: "white", letterSpacing: "2px" }}>
+          <span className="contact-us-address">
             / Sunnyvale CA
           </span>
           <br />

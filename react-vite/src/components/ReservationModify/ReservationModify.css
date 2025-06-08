@@ -28,29 +28,31 @@
      /* position: relative;
      bottom: 1.6rem;
      right: 16rem; */
-     color: #ff6a00;
+     color: #e80000;
      text-align: center;
      font-size: 2rem;
      font-weight: 600;
+     margin-top: 4rem;
      margin-bottom: 1rem;
 }
 
 .modifyform-submit-button{
      margin: 50px 420px 110px 420px;
-     color: #ff6a00;
+     color: #e80000;
      border-width: 1px;
-     border-color: #ff6a00;
+     border-color: #e80000;
      border-radius: 10px;
      padding: 10px 50px;
      cursor: pointer;
      background-color: transparent;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
      border-style: solid;
      letter-spacing: 1px;
 }
 
 .modifyform-submit-button:hover{
-     background-color: #ff6a00;
-     color: rgb(0, 0, 0);
+     background-color: #e80000;
+     color: #c0dfff;
      font-weight: 600;
      transform: scale(1);
 }

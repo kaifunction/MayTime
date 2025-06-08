@@ -33,7 +33,7 @@
 
 .contact-us-h1 {
      margin: 55px 405px 20px 425px;
-     color: #ff6a00;
+     color: #e80000;
 }
 
 .contact-us-form {
@@ -59,7 +59,7 @@
 }
 
 .contact-us-label {
-     color: #ff6a00;
+     color: #e80000;
      font-size: 1rem;
      font-weight: 300;
      margin-bottom: -5px;
@@ -87,20 +87,20 @@
      height: 40px;
      border-radius: 5px;
      color: rgb(119, 119, 119);
-     border: 1px solid #ff6a00;
+     border: 1px solid #e80000;
      padding: 0 10px;
      margin-bottom: 1rem;
      font-size: .9rem;
 }
 
 .contact-us-input-message {
-     color: #ff6a00;
+     color: #e80000;
      font-weight: 550;
      width: 720px;
      height: 140px;
      margin-bottom: 30px;
      border-radius: 5px;
-     border: 1px solid #ff6a00;
+     border: 1px solid #e80000;
      padding: 10px 10px;
 }
 
@@ -126,22 +126,51 @@
 
 .contact-us-button {
      margin: 10px 420px 50px 420px;
-     color: #ff6a00;
+     color: #e80000;
      border-width: 1px;
-     border-color: #ff6a00;
+     border-color: #e80000;
      border-radius: 10px;
      padding: 10px 50px;
      cursor: pointer;
      background-color: transparent;
      border-style: solid;
      letter-spacing: 1px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .contact-us-button:hover {
-     background-color: #ff6a00;
-     color: rgb(0, 0, 0);
+     background-color: #e80000;
+     color: #c0dfff;
      font-weight: 600;
      transform: scale(1);
+}
+
+.contact-us-h3{
+     color: #e80000;
+     background-color: transparent;
+}
+
+.contact-us-p{
+     font-size: 16px;
+     background-color: transparent;
+     color: #e80000;
+     letter-spacing: .7px;
+}
+
+.contact-us-p a{
+     color: #333333;
+     text-decoration: none;
+     letter-spacing: 1.5px;
+}
+
+.contact-us-phone{
+     color: #333333;
+     letter-spacing: 1.5px;
+}
+
+.contact-us-address{
+     color: #333333;
+     letter-spacing: 1.5px;
 }
 
 /* .contact-us-container-right img {

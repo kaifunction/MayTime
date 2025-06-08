@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useReducer } from "react";
 import { fetchAPI } from "../../api/api";

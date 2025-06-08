@@ -109,11 +109,12 @@ select.input-error {
      background-color: transparent;
      border-style: solid;
      letter-spacing: 1px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .form-submit-button:hover {
-     background-color: #ff6a00;
-     color: rgb(0, 0, 0);
+     background-color: #e80000;
+     color: #c0dfff;
      font-weight: 600;
      transform: scale(1);
 }

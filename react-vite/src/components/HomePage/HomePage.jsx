@@ -14,15 +14,18 @@ const HomePage = () => {
       <div className="overlay">
         <div className="home-page-text-title">
           <div className="maytime-centered-title">
-            {/* <h1 className="home-page-maytime-title">
+            <h1 className="home-page-maytime-title">
+              {/* <p>photography</p> */}
               <span>M</span>AY<span>T</span>IME
-            </h1> */}
+              {/* <p>studio</p> */}
+            </h1>
           </div>
           <div className="text-links">
             <div className="home-page-text">
-              <h1 style={{ letterSpacing: "1px" }}>PRESERVE MEMORIES</h1>
+              <h1 style={{ letterSpacing: "1px"
+               }}>PRESERVE MEMORIES</h1>
               <h2>
-                CAPTURE BEAUTY<span style={{ color: "#e80000" }}>.</span>
+                CAPTURE BEAUTY<span style={{ color: "#FF4500" }}>.</span>
               </h2>
             </div>
             <div className="socialmedialinks">

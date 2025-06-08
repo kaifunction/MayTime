@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import ReservationForm from "../ReservationForm";
 import { submitAPI } from "../../api/api";
 import { fetchAPI } from "../../api/api";
+import { useNavigate } from "react-router-dom";
 import "./Reservation.css";
 
 function initializeTimes() {
@@ -21,6 +22,7 @@ function updateTimes(state, action) {
 }
 
 function Reservation() {
+  const navigate = useNavigate();
   const [availableTimes, dispatch] = useReducer(
     updateTimes,
     [],
