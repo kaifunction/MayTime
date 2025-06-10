@@ -178,11 +178,16 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
+     cursor: pointer;
+     /* border: 1px solid #c0dfff; */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
      /* align-self: center; */
 }
 
 .card:hover {
      transform: translateY(-5px);
+     background-color: #fff5e1;
+     /* border: 2px solid #e8000050; */
      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -194,6 +199,14 @@
      margin-bottom: 8px;
 }
 
+.card:hover .card-header{
+     background-color: #fff5e1;
+}
+
+.card:hover .card-tag{
+     background-color: #fff5e1;
+}
+
 .card-header h2 {
      font-size: 20px;
      margin: 8px 0;
@@ -201,9 +214,17 @@
      color: #000;
 }
 
+.card:hover h2{
+     background-color: #fff5e1;
+}
+
 .card-header .sub {
      font-size: 14px;
      color: #666;
+}
+
+.card:hover .sub{
+     background-color: #fff5e1;
 }
 
 .card-price {
@@ -211,6 +232,10 @@
      font-weight: bold;
      color: #e80000;
      margin: 20px 0;
+}
+
+.card:hover .card-price{
+     background-color: #fff5e1;
 }
 
 .card-details {
@@ -222,22 +247,40 @@
      line-height: 1.6;
 }
 
+.card:hover li{
+     background-color: #fff5e1;
+}
+
+.card:hover .note{
+     background-color: #fff5e1;
+}
+
 .card-button {
      padding: 10px 20px;
      border: none;
      color: #e80000;
+     background-color: #c0dfff;
      border: 2px solid #e80000;
      border-radius: 10px;
      cursor: pointer;
      font-size: 14px;
-     transition: background-color 0.3s ease;
+     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
      z-index: 1000;
      align-self: center;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .card-button:hover {
      background-color: #e80000;
      color: #ffffff;
+     transform: translateY(-2px);
+     /* border-color: #ffffff; */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .card-button{
+     color: #333333;
+     background-color: #e80000;
 }
 
 .popular {
@@ -246,12 +289,9 @@
      /* border:2px solid #e8000080; */
 }
 
-.popular .card-button {
-     background-color: white;
-}
 
 .popular .card-button:hover {
-     background-color: #800000;
+     background-color: #e80000;
 }
 
 /* .highlight {
@@ -275,6 +315,7 @@
      border-left: 5px solid #e80000;
      padding: 20px;
      border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .tips-section h3 {
