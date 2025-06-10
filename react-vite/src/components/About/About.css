@@ -6,7 +6,7 @@
      border-bottom: 3px solid #ff6a00;
 } */
 
- .contact-us-page-h1{
+.contact-us-page-h1 {
      margin: 55px 465px 20px 420px;
      font-weight: bold;
      background-color: transparent;
@@ -24,65 +24,65 @@
 }  */
 
 .about-summary-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-  color: #333333;
-  font-family: 'Arial', sans-serif;
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 40px 20px;
+     text-align: center;
+     color: #333333;
+     font-family: 'Arial', sans-serif;
 }
 
 .about-title {
-  font-size: 32px;
-  color: #e80000;
-  font-weight: bold;
-  margin-bottom: 10px;
+     font-size: 32px;
+     color: #e80000;
+     font-weight: bold;
+     margin-bottom: 10px;
 }
 
 .about-subtitle {
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #333333;
+     font-size: 18px;
+     margin-bottom: 40px;
+     color: #333333;
 }
 
 .about-services {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  line-height: 1.8;
-  max-width: 700px;
-  text-align: left;
+     list-style: none;
+     padding: 0;
+     margin: 0 auto;
+     line-height: 1.8;
+     max-width: 700px;
+     text-align: left;
 }
 
 .about-services li {
-  margin-bottom: 12px;
-  font-size: 16px;
+     margin-bottom: 12px;
+     font-size: 16px;
 }
 
 .about-stats {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-top: 60px;
+     display: flex;
+     justify-content: center;
+     gap: 60px;
+     margin-top: 60px;
 }
 
 .stat-block {
-  text-align: center;
-  color: #e80000;
+     text-align: center;
+     color: #e80000;
 }
 
 .stat-block h3 {
-  font-size: 32px;
-  margin: 0;
+     font-size: 32px;
+     margin: 0;
 }
 
 .stat-block p {
-  font-size: 14px;
-  margin: 0;
-  color: #333333;
+     font-size: 14px;
+     margin: 0;
+     color: #333333;
 }
 
-.contact-us-page-button button{
+.contact-us-page-button {
      margin: 0px 420px -10px 420px;
      color: #e80000;
      border-width: 1px;
@@ -96,7 +96,7 @@
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.contact-us-page-button button:hover{
+.contact-us-page-button button:hover {
      background-color: #e80000;
      color: #c0dfff;
      /* font-weight: bold; */
@@ -108,27 +108,27 @@
 } */
 
 .quotation-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+     max-width: 1100px;
+     margin: auto;
+     padding: 20px;
 }
 
 .quotation-header {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 80px;
-  margin-bottom: 40px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     align-items: center;
+     margin-top: 80px;
+     margin-bottom: 40px;
 }
 
-.quotation-header h4{
+.quotation-header h4 {
      font-size: 30px;
      color: #e80000;
 }
 
-.quotation-header h2{
+.quotation-header h2 {
      font-weight: 400;
      font-size: 18px;
      color: #333333;
@@ -136,146 +136,162 @@
 }
 
 .quotation-title {
-  font-size: 30px;
-  position: relative;
-  margin-top: 5rem;
-  margin-left: 17rem;
-display: flex;
-  align-items: center; /* 让子元素垂直居中对齐 */
-  gap: 10px; /* QUOTATION 与 报价表 之间的间距 */
-  color: #e80000;
+     font-size: 30px;
+     position: relative;
+     margin-top: 5rem;
+     margin-left: 17rem;
+     display: flex;
+     align-items: center;
+     /* 让子元素垂直居中对齐 */
+     gap: 10px;
+     /* QUOTATION 与 报价表 之间的间距 */
+     color: #e80000;
 }
 
-.badge {
-  background: #e80000;
-  color: white;
-  padding: 4px 10px;
-  font-size: 14px;
-  border-radius: 12px;
-  margin-left: 10px;
-  /* vertical-align: middle; */
+/* .badge {
+     background: #e80000;
+     color: white;
+     padding: 4px 10px;
+     font-size: 14px;
+     border-radius: 12px;
+     margin-left: 10px; */
+/* vertical-align: middle; */
 
+/* } */
+
+.card-container {
+     display: flex;
+     justify-content: center;
+     gap: 80px;
+     padding: 40px 0;
+     flex-wrap: wrap;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+.card {
+     background-color: #ffffff;
+     border-radius: 16px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     width: 300px;
+     padding: 30px 20px;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     /* align-self: center; */
 }
 
-.quote-card {
-  background: white;
-  border-radius: 12px;
-  border-top: 4px solid #e80000;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  padding: 30px;
-  transition: 0.3s ease;
+.card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
-.quote-card:hover {
-     transform: translateY(-4px);
-     background-color: #ffccd5;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+.card-header .card-tag {
+     font-size: 14px;
+     color: #e80000;
+     font-weight: 600;
+     display: inline-block;
+     margin-bottom: 8px;
 }
 
-.quote-card h3 {
-  font-size: 20px;
-  margin-bottom: 4px;
-  color: #e80000;
-  background-color: white;
+.card-header h2 {
+     font-size: 20px;
+     margin: 8px 0;
+     font-weight: bold;
+     color: #000;
 }
 
-.quote-card:hover h3{
-     background-color: #ffccd5;
-     color: #333333;
-     transform: translateY(-4px);
+.card-header .sub {
+     font-size: 14px;
+     color: #666;
 }
 
-.quote-card .sub {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 15px;
-  background-color: white;
+.card-price {
+     font-size: 32px;
+     font-weight: bold;
+     color: #e80000;
+     margin: 20px 0;
 }
 
-.quote-card:hover .sub{
-     background-color: #ffccd5;
-     color: #c0dfff;
-     transform: translateY(-4px);
+.card-details {
+     list-style: none;
+     padding: 0;
+     margin: 0 0 20px 0;
+     color: #333;
+     font-size: 15px;
+     line-height: 1.6;
 }
 
-.quote-card ul {
-  padding-left: 20px;
-  background-color: white;
-
+.card-button {
+     padding: 10px 20px;
+     border: none;
+     color: #e80000;
+     border: 2px solid #e80000;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 14px;
+     transition: background-color 0.3s ease;
+     z-index: 1000;
+     align-self: center;
 }
 
-.quote-card:hover ul{
-     background-color: #ffccd5;
-     color: #c0dfff;
-     transform: translateY(-4px);
+.card-button:hover {
+     background-color: #e80000;
+     color: #ffffff;
 }
 
-.quote-card li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  background-color: white;
+.popular {
+     background-color: #c0dfff;
+     color: white;
+     /* border:2px solid #e8000080; */
 }
 
-.quote-card:hover li{
-     background-color: #ffccd5;
-     color: #c0dfff;
-     transform: translateY(-4px);
-}
-
-.quote-card strong{
+.popular .card-button {
      background-color: white;
 }
 
-.quote-card:hover strong{
-     background-color: #ffccd5;
-     color: #c0dfff;
-     transform: translateY(-4px);
+.popular .card-button:hover {
+     background-color: #800000;
 }
 
-.quote-card .note {
-  font-size: 13px;
-  color: #444;
-  margin-top: 10px;
-  font-style: italic;
-  background-color: white;
-}
+/* .highlight {
+  background-color: #e80000;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+} */
 
-.quote-card:hover .note{
-     background-color: #ffccd5;
-     color: #c0dfff;
-     transform: translateY(-4px);
+.note {
+     font-size: 13px;
+     color: #666;
+     margin-top: -10px;
+     margin-bottom: 20px;
 }
 
 .tips-section {
-  margin-top: 50px;
-  background: #fff8f5;
-  border-left: 5px solid #e80000;
-  padding: 20px;
-  border-radius: 8px;
+     margin-top: 50px;
+     background: #fff8f5;
+     border-left: 5px solid #e80000;
+     padding: 20px;
+     border-radius: 8px;
 }
 
 .tips-section h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #e80000;
-  background-color: #fff8f5;
+     margin-bottom: 15px;
+     font-size: 18px;
+     color: #e80000;
+     background-color: #fff8f5;
 }
 
 .tips-section ul {
-  padding-left: 20px;
-  background-color: #fff8f5;
+     padding-left: 20px;
+     background-color: #fff8f5;
 }
 
 .tips-section li {
-  margin-bottom: 8px;
-  font-size: 14px;
-  line-height: 1.6;
-  background-color: #fff8f5;
+     margin-bottom: 8px;
+     font-size: 14px;
+     line-height: 1.6;
+     background-color: #fff8f5;
 }

@@ -11,8 +11,8 @@ const About = () => {
         <span style={{ fontWeight: "lighter" }}>US</span>
       </h1>
 
-      <div className="contact-us-page-button">
-        <button type="button" onClick={handlePDFButtonClick}>
+      <div>
+        <button className="contact-us-page-button" type="button" onClick={handlePDFButtonClick}>
           PRICE LIST
         </button>
 
@@ -118,52 +118,56 @@ const About = () => {
             <h2>Photoshoot Plans to Capture Your Best Moments</h2>
           </header>
 
-          <div class="card-grid">
-            {/* <!-- 卡片 1：亲子/孕妇照 --> */}
-            <section class="quote-card">
-              <h3>亲子照 / 孕妇照</h3>
-              <p class="sub">Family / Maternity Portraits</p>
-              <ul>
-                <li>
-                  $399 - <strong>60分钟</strong>， 10张精修
-                </li>
-                <li>
-                  $559 - <strong>90分钟</strong>， 15张精修
-                </li>
-                <li>
-                  $699 - <strong>120分钟</strong>， 20张精修
-                </li>
+          <div class="card-container">
+            {/* <!-- 卡片 1 --> */}
+            <div class="card popular">
+              <div class="card-header">
+                {/* <span class="card-tag highlight">热门</span><br></br> */}
+                <span class="card-tag">Package 01</span>
+                <h2>亲子照 / 孕妇照</h2>
+                <p class="sub">Family / Maternity Portraits</p>
+              </div>
+              <div class="card-price">$399</div>
+              <ul class="card-details">
+                <li>60分钟，10张精修</li>
+                <li>$559 - 90分钟，15张精修</li>
+                <li>$699 - 120分钟，20张精修</li>
               </ul>
-            </section>
+              <button class="card-button">立即预约</button>
+            </div>
 
-            {/* <!-- 卡片 2：宠物写真 --> */}
-            <section class="quote-card">
-              <h3>宠物写真</h3>
-              <p class="sub">Pet Portraits</p>
-              <ul>
-                <li>
-                  $299 - <strong>60分钟</strong>， 10张精修
-                </li>
-                <li>
-                  $459 - <strong>90分钟</strong>， 15张精修
-                </li>
-                <li>
-                  $599 - <strong>120分钟</strong>， 20张精修
-                </li>
+            {/* <!-- 卡片 2 --> */}
+            <div class="card popular">
+              <div class="card-header">
+                <span class="card-tag">Package 02</span>
+                <h2>宠物写真</h2>
+                <p class="sub">Pet Portraits</p>
+              </div>
+              <div class="card-price">$299</div>
+              <ul class="card-details">
+                <li>60分钟，10张精修</li>
+                <li>$459 - 90分钟，15张精修</li>
+                <li>$599 - 120分钟，20张精修</li>
               </ul>
-            </section>
+              <button class="card-button">立即预约</button>
+            </div>
 
-            {/* <!-- 卡片 3：宝宝写真 --> */}
-            <section class="quote-card">
-              <h3>宝宝上门布景写真</h3>
-              <p class="sub">(周岁、半岁、百天、满月、新生儿)</p>
-              <ul>
-                <li>$399 - 60分钟， 10张精修，2组宝宝造型</li>
-                <li>$559 - 90分钟， 15张精修，3组宝宝造型</li>
-                <li>$699 - 120分钟， 20张精修，3~4组宝宝造型</li>
+            {/* <!-- 卡片 3 --> */}
+            <div class="card popular">
+              <div class="card-header">
+                <span class="card-tag">Package 03</span>
+                <h2>宝宝上门布景写真</h2>
+                <p class="sub">(周岁、半岁、百天、满月、新生儿)</p>
+              </div>
+              <div class="card-price">$399</div>
+              <ul class="card-details">
+                <li>60分钟，10张精修，2组造型</li>
+                <li>$559 - 90分钟，15张精修，3组造型</li>
+                <li>$699 - 120分钟，20张精修，3~4组造型</li>
               </ul>
               <p class="note">全家纪实跟拍，全家福</p>
-            </section>
+              <button class="card-button">立即预约</button>
+            </div>
           </div>
 
           <footer class="tips-section">
