@@ -4,6 +4,18 @@ const About = () => {
   const handlePDFButtonClick = () => {
     window.open("/Quotation.jpg", "_blank");
   };
+
+  const familyReservation = () => {
+    window.location.href = "/reservation";
+  }
+
+  const petReservation = () => {
+    window.location.href = "/reservation";
+  }
+
+  const babyReservation = () => {
+    window.location.href = "/reservation";
+  }
   return (
     <div className="contact-us-page-container">
       <h1 className="contact-us-page-h1">
@@ -15,53 +27,6 @@ const About = () => {
         <button className="contact-us-page-button" type="button" onClick={handlePDFButtonClick}>
           PRICE LIST
         </button>
-
-        {/* <p
-          className="contact-us-page-p"
-        >
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>W</strong>
-          elcome to our photography studio, established in May 2024. We are
-          dedicated to capturing life&apos;s most precious moments with a keen
-          eye for detail and a passion for storytelling. Our team of
-          professional photographers specializes in a diverse range of
-          photography services to cater to your unique needs.
-          <br />
-          <br />
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>O</strong>ur
-          pet photography sessions celebrate the joy and companionship that pets
-          bring into our lives. We create a comfortable and playful environment
-          to capture their true personalities and the bond they share with their
-          owners. <br />
-          <br />
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>F</strong>or
-          couples embarking on the beautiful journey of marriage, we offer
-          exquisite wedding photography, both indoor and outdoor. We understand
-          the significance of this special day and are committed to capturing
-          every heartfelt moment, from the intimate glances to the joyous
-          celebrations. <br />
-          <br />
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>O</strong>ur
-          baby photography services are designed to document the milestones of
-          your little one. Whether it&apos;s a one-year, six-month, daytime,
-          full-month, or newborn session, we provide personalized setups to
-          create timeless keepsakes of your baby&apos;s early years. <br />
-          <br />
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>F</strong>amily
-          photos are a testament to the love and connection shared among family
-          members. We create warm and inviting settings to capture the genuine
-          interactions and smiles that make your family unique. <br />
-          <br />
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>E</strong>
-          xpecting mothers can cherish their journey with our maternity
-          photography. We celebrate the beauty of pregnancy and create elegant,
-          artistic portraits that highlight this special time in your life.{" "}
-          <br />
-          <br />
-          <strong style={{ color: "#ff6a00", fontSize: "18px" }}>A</strong>t our
-          studio, we believe in creating not just photographs but cherished
-          memories that you can treasure for a lifetime. Let us be a part of
-          your story and help you capture the moments that matter most.
-        </p> */}
         <div class="about-summary-container">
           <h2 class="about-title">Turning Moments into Memories</h2>
           <p class="about-subtitle">
@@ -122,18 +87,18 @@ const About = () => {
             {/* <!-- 卡片 1 --> */}
             <div class="card popular">
               <div class="card-header">
-                {/* <span class="card-tag highlight">热门</span><br></br> */}
-                <span class="card-tag">Package 01</span>
-                <h2>亲子照 / 孕妇照</h2>
-                <p class="sub">Family / Maternity Portraits</p>
+                <span class="card-tag">Package 03</span>
+                <h2>宝宝上门布景写真</h2>
+                <p class="sub">(周岁、半岁、百天、满月、新生儿)</p>
               </div>
               <div class="card-price">$399</div>
               <ul class="card-details">
-                <li>60分钟，10张精修</li>
-                <li>$559 - 90分钟，15张精修</li>
-                <li>$699 - 120分钟，20张精修</li>
+                <li>60分钟，10张精修，2组造型</li>
+                <li>$559 - 90分钟，15张精修，3组造型</li>
+                <li>$699 - 120分钟，20张精修，3~4组造型</li>
               </ul>
-              <button class="card-button">立即预约</button>
+              <p class="note">全家纪实跟拍，全家福</p>
+              <button class="card-button" onClick={babyReservation}>立即预约</button>
             </div>
 
             {/* <!-- 卡片 2 --> */}
@@ -149,24 +114,24 @@ const About = () => {
                 <li>$459 - 90分钟，15张精修</li>
                 <li>$599 - 120分钟，20张精修</li>
               </ul>
-              <button class="card-button">立即预约</button>
+              <button class="card-button" onClick={petReservation}>立即预约</button>
             </div>
 
             {/* <!-- 卡片 3 --> */}
             <div class="card popular">
               <div class="card-header">
-                <span class="card-tag">Package 03</span>
-                <h2>宝宝上门布景写真</h2>
-                <p class="sub">(周岁、半岁、百天、满月、新生儿)</p>
+                {/* <span class="card-tag highlight">热门</span><br></br> */}
+                <span class="card-tag">Package 01</span>
+                <h2>亲子照 / 孕妇照</h2>
+                <p class="sub">Family / Maternity Portraits</p>
               </div>
               <div class="card-price">$399</div>
               <ul class="card-details">
-                <li>60分钟，10张精修，2组造型</li>
-                <li>$559 - 90分钟，15张精修，3组造型</li>
-                <li>$699 - 120分钟，20张精修，3~4组造型</li>
+                <li>60分钟，10张精修</li>
+                <li>$559 - 90分钟，15张精修</li>
+                <li>$699 - 120分钟，20张精修</li>
               </ul>
-              <p class="note">全家纪实跟拍，全家福</p>
-              <button class="card-button">立即预约</button>
+              <button class="card-button" onClick={familyReservation}>立即预约</button>
             </div>
           </div>
 
