@@ -1,5 +1,7 @@
 import { useReducer, useState } from "react";
 import ReservationForm from "../ReservationForm";
+import ReservationPet from "../ReservationPet";
+import ReservationFamily from "../ReservationFamily";
 import { submitAPI } from "../../api/api";
 import { fetchAPI } from "../../api/api";
 import { useNavigate } from "react-router-dom";
@@ -92,6 +94,7 @@ function Reservation() {
           <p className="family-description">
             亲子照和孕妇照是我们最受欢迎的摄影类型之一。请填写以下信息以预约您的拍摄时间。
           </p>
+          <ReservationFamily />
           {/* <ReservationForm
             availableTimes={availableTimes}
             dispatch={dispatch}
@@ -109,12 +112,7 @@ function Reservation() {
           <p className="pet-description">
             宠物写真是我们的一项特色服务。请填写以下信息以预约您的拍摄时间。
           </p>
-          {/* <ReservationForm
-            availableTimes={availableTimes}
-            dispatch={dispatch}
-            submitForm={submitForm}
-            selectedType={selectedType}
-          /> */}
+          <ReservationPet />
         </>
       )}
     </div>
