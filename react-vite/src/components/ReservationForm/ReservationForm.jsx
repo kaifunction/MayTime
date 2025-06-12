@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import { useEffect } from "react";
 import * as Yup from "yup";
 // import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
@@ -13,8 +14,13 @@ function ReservationForm(props) {
       email: "",
       phone: "",
       date: "",
-      time: "",
+      // time: "",
       guests: "",
+      babyBirthday: "",
+      babyGender: "",
+      sessionPeriod: "",
+      zipcode: "",
+      address: "",
       message: "",
     },
     enableReinitialize: true,
@@ -31,15 +37,26 @@ function ReservationForm(props) {
         .min(10, "Must be at least 10 digits")
         .max(15, "Must be 15 digits or less."),
       date: Yup.date().required("Date is required."),
-      time: Yup.string().required("Time is required."),
       guests: Yup.number()
         .required("Please enter number of guests")
         .min(2, "At least baby and one parent.")
         .max(6, "Maximum 6 guests."),
+      zipcode: Yup.string()
+        .required("Zipcode is required.")
+        .matches(/^\d{5}$/, "Zipcode must be exactly 5 digits."),
+      address: Yup.string().required("Address is required."),
+      babyBirthday: Yup.string().required("Baby's birthday is required."),
+      // otherwise: Yup.string().notRequired()
+
+      babyGender: Yup.string().required("Please select baby's gender."),
+      // otherwise: Yup.string().notRequired()
+      sessionPeriod: Yup.string().required("Please select a session period."),
+        // otherwise: Yup.string().notRequired()
       message: Yup.string().max(500, "Must be 500 characters or less."),
     }),
 
     onSubmit: (values) => {
+      console.log("Submitting with values:", values);
       navigator("/confirm", {
         state: {
           reservationData: values,
@@ -47,6 +64,14 @@ function ReservationForm(props) {
       });
     },
   });
+
+  useEffect(() => {
+    if (formik.values.category === "baby") {
+      formik.setFieldTouched("babyBirthday", true, false);
+      formik.setFieldTouched("babyGender", true, false);
+      formik.setFieldTouched("sessionPeriod", true, false);
+    }
+  }, [formik.values.category]);
 
   return (
     <form onSubmit={formik.handleSubmit} className="reservation-form">
@@ -147,8 +172,37 @@ function ReservationForm(props) {
           ) : null}
         </div>
 
-        {/* time */}
+        {/* Session Period */}
         <div className="reserve-form-group">
+          <label htmlFor="sessionPeriod" className="form-label">
+            Session Time
+            <span style={{ color: "red" }}> *</span>
+          </label>
+          <select
+            id="sessionPeriod"
+            name="sessionPeriod"
+            className={`form-select ${
+              formik.touched.sessionPeriod && formik.errors.sessionPeriod
+                ? "input-error"
+                : ""
+            }`}
+            value={formik.values.sessionPeriod}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          >
+            <option value="" disabled hidden>
+              Select a session period（请选择拍摄时间段）
+            </option>
+            <option value="上午 9am - 12pm">上午 9am - 12pm</option>
+            <option value="下午 1pm - 4pm">下午 1pm - 4pm</option>
+            {/* <option value="evening">傍晚 5pm - 7pm</option> */}
+          </select>
+          {formik.touched.sessionPeriod && formik.errors.sessionPeriod ? (
+            <div className="form-error" style={{marginTop:'.1px'}}>{formik.errors.sessionPeriod}</div>
+          ) : null}
+        </div>
+        {/* time */}
+        {/* <div className="reserve-form-group">
           <label htmlFor="res-time" className="form-label">
             Choose time<span style={{ color: "red" }}> *</span>
           </label>
@@ -176,7 +230,7 @@ function ReservationForm(props) {
           {formik.touched.time && formik.errors.time ? (
             <div className="form-error time-error">{formik.errors.time}</div>
           ) : null}
-        </div>
+        </div> */}
 
         {/* Guests */}
         <div className="reserve-form-group">
@@ -197,6 +251,113 @@ function ReservationForm(props) {
           />
           {formik.touched.guests && formik.errors.guests ? (
             <div className="form-error">{formik.errors.guests}</div>
+          ) : null}
+        </div>
+
+        {/* Baby Birthday */}
+        <div className="reserve-form-group">
+          <label htmlFor="babyBirthday" className="form-label">
+            Baby&apos;s Birthday
+            <span style={{ color: "red" }}> *</span>
+          </label>
+          <input
+            type="text"
+            id="babyBirthday"
+            name="babyBirthday"
+            className={`form-input ${
+              formik.touched.babyBirthday && formik.errors.babyBirthday
+                ? "input-error"
+                : ""
+            }`}
+            placeholder="Baby's Birthday （请选择宝宝生日）"
+            onFocus={(e) => (e.target.type = "date")}
+            onBlur={(e) => {
+              if (!e.target.value) e.target.type = "text";
+              formik.handleBlur(e);
+            }}
+            value={formik.values.babyBirthday}
+            onChange={formik.handleChange}
+          />
+          {formik.touched.babyBirthday && formik.errors.babyBirthday ? (
+            <div className="form-error">{formik.errors.babyBirthday}</div>
+          ) : null}
+        </div>
+
+        {/* Baby Gender */}
+        <div className="reserve-form-group">
+          <label htmlFor="babyGender" className="form-label">
+            Baby&apos;s Gender
+            <span style={{ color: "red" }}> *</span>
+          </label>
+          <select
+            id="babyGender"
+            name="babyGender"
+            className={`form-select ${
+              formik.touched.babyGender && formik.errors.babyGender
+                ? "input-error"
+                : ""
+            }`}
+            value={formik.values.babyGender}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          >
+            <option value="" disabled hidden>
+              Please select Baby&apos;s Gender（请选择宝宝性别）
+            </option>
+            <option value="boy">男宝宝</option>
+            <option value="girl">女宝宝</option>
+            {/* <option value="other">其他 / 不愿透露</option> */}
+          </select>
+          {formik.touched.babyGender && formik.errors.babyGender ? (
+            <div className="form-error" style={{marginTop:'.1px'}}>{formik.errors.babyGender}</div>
+          ) : null}
+        </div>
+
+        {/* zipcode */}
+        <div className="reserve-form-group">
+          <label htmlFor="zipcode" className="form-label">
+            Zipcode<span style={{ color: "red" }}> *</span>
+          </label>
+          <input
+            type="text"
+            id="zipcode"
+            name="zipcode"
+            className={`form-input ${
+              formik.touched.zipcode && formik.errors.zipcode
+                ? "input-error"
+                : ""
+            }`}
+            placeholder="Enter your zipcode（请输入邮政编码）"
+            value={formik.values.zipcode}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+          {formik.touched.zipcode && formik.errors.zipcode ? (
+            <div className="form-error">{formik.errors.zipcode}</div>
+          ) : null}
+        </div>
+
+        {/* Address */}
+        <div className="reserve-form-group">
+          <label htmlFor="address" className="form-label">
+            Address<span style={{ color: "red" }}> *</span>
+          </label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            className={`form-input ${
+              formik.touched.address && formik.errors.address
+                ? "input-error"
+                : ""
+            }`}
+            placeholder="Enter the shooting address（请输入拍摄地址）"
+            value={formik.values.address}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+          {formik.touched.address && formik.errors.address ? (
+            <div className="form-error">{formik.errors.address}</div>
           ) : null}
         </div>
 

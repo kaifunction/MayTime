@@ -27,13 +27,13 @@ const About = () => {
         <button className="contact-us-page-button" type="button" onClick={handlePDFButtonClick}>
           PRICE LIST
         </button>
-        <div class="about-summary-container">
-          <h2 class="about-title">Turning Moments into Memories</h2>
-          <p class="about-subtitle">
+        <div className="about-summary-container">
+          <h2 className="about-title">Turning Moments into Memories</h2>
+          <p className="about-subtitle">
             Capturing love, life, and laughter — one photo at a time.
           </p>
 
-          <ul class="about-services">
+          <ul className="about-services">
             <li>
               📸 <strong>Since May 2024</strong> - Over 1,000 memories captured
             </li>
@@ -59,16 +59,16 @@ const About = () => {
             </li>
           </ul>
 
-          <div class="about-stats">
-            <div class="stat-block">
+          <div className="about-stats">
+            <div className="stat-block">
               <h3>200+</h3>
               <p>Baby Milestone Sessions</p>
             </div>
-            <div class="stat-block">
+            <div className="stat-block">
               <h3>60+</h3>
               <p>Family Story Projects</p>
             </div>
-            <div class="stat-block">
+            <div className="stat-block">
               <h3>80+</h3>
               <p>Pet Portrait Collections</p>
             </div>
@@ -83,59 +83,59 @@ const About = () => {
             <h2>Photoshoot Plans to Capture Your Best Moments</h2>
           </header>
 
-          <div class="card-container">
+          <div className="card-container">
             {/* <!-- 卡片 1 --> */}
-            <div class="card popular">
-              <div class="card-header">
-                <span class="card-tag">Package 03</span>
+            <div className="card popular">
+              <div className="card-header">
+                <span className="card-tag">Package 01</span>
                 <h2>宝宝上门布景写真</h2>
-                <p class="sub">(周岁、半岁、百天、满月、新生儿)</p>
+                <p className="sub">(周岁、半岁、百天、满月、新生儿)</p>
               </div>
-              <div class="card-price">$399</div>
-              <ul class="card-details">
+              <div className="card-price">$399</div>
+              <ul className="card-details">
                 <li>60分钟，10张精修，2组造型</li>
                 <li>$559 - 90分钟，15张精修，3组造型</li>
                 <li>$699 - 120分钟，20张精修，3~4组造型</li>
               </ul>
-              <p class="note">全家纪实跟拍，全家福</p>
-              <button class="card-button" onClick={babyReservation}>立即预约</button>
+              <p className="note">全家纪实跟拍，全家福</p>
+              <button className="card-button" onClick={babyReservation}>立即预约</button>
             </div>
 
             {/* <!-- 卡片 2 --> */}
-            <div class="card popular">
-              <div class="card-header">
-                <span class="card-tag">Package 02</span>
+            <div className="card popular">
+              <div className="card-header">
+                <span className="card-tag">Package 02</span>
                 <h2>宠物写真</h2>
-                <p class="sub">Pet Portraits</p>
+                <p className="sub">Pet Portraits</p>
               </div>
-              <div class="card-price">$299</div>
-              <ul class="card-details">
+              <div className="card-price">$299</div>
+              <ul className="card-details">
                 <li>60分钟，10张精修</li>
                 <li>$459 - 90分钟，15张精修</li>
                 <li>$599 - 120分钟，20张精修</li>
               </ul>
-              <button class="card-button" onClick={petReservation}>立即预约</button>
+              <button className="card-button" onClick={petReservation}>立即预约</button>
             </div>
 
             {/* <!-- 卡片 3 --> */}
-            <div class="card popular">
-              <div class="card-header">
-                {/* <span class="card-tag highlight">热门</span><br></br> */}
-                <span class="card-tag">Package 01</span>
+            <div className="card popular">
+              <div className="card-header">
+                {/* <span className="card-tag highlight">热门</span><br></br> */}
+                <span className="card-tag">Package 03</span>
                 <h2>亲子照 / 孕妇照</h2>
-                <p class="sub">Family / Maternity Portraits</p>
+                <p className="sub">Family / Maternity Portraits</p>
               </div>
-              <div class="card-price">$399</div>
-              <ul class="card-details">
+              <div className="card-price">$399</div>
+              <ul className="card-details">
                 <li>60分钟，10张精修</li>
                 <li>$559 - 90分钟，15张精修</li>
                 <li>$699 - 120分钟，20张精修</li>
               </ul>
-              <button class="card-button" onClick={familyReservation}>立即预约</button>
+              <button className="card-button" onClick={familyReservation}>立即预约</button>
             </div>
           </div>
 
-          <footer class="tips-section">
+          <footer className="tips-section">
             <h3>📌 预约流程 & 注意事项</h3>
             <ul>
               <li>· 定金预定，拍摄当天付尾款，1天内返底片，7天内返精修。</li>

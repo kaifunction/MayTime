@@ -149,6 +149,45 @@ function Confirm() {
             <span className="details-title">Guests:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.guests}</span>
           </p>
+          {/* photography type */}
+          <p className="details-name">
+            <span className="details-title">Photography Type:</span>&nbsp;&nbsp;&nbsp;
+            <span className="details-info">
+              {reservationData?.category}
+            </span>
+          </p>
+          {/* address */}
+          <p className="details-name">
+            <span className="details-title">Address:</span>&nbsp;&nbsp;&nbsp;
+            <span className="details-info">{reservationData?.address}, {reservationData?.zipcode}</span>
+          </p>
+          {/* baby Birthday */}
+          {reservationData?.babyBirthday ? (
+            <p className="details-name">
+              <span className="details-title">Baby Birthday:</span>&nbsp;&nbsp;&nbsp;
+              <span className="details-info">
+                {reservationData?.babyBirthday}
+              </span>
+            </p>
+          ) : null}
+          {/* baby gender */}
+          {reservationData?.babyGender ? (
+            <p className="details-name">
+              <span className="details-title"> Baby Gender:</span>&nbsp;&nbsp;&nbsp;
+              <span className="details-info">{reservationData?.babyGender}</span>
+            </p>
+          ) : null}
+
+          {/* session period */}
+          {reservationData?.sessionPeriod ? (
+            <p className="details-name">
+              <span className="details-title">Session Period:</span>&nbsp;&nbsp;&nbsp;
+              <span className="details-info">
+                {reservationData?.sessionPeriod}
+              </span>
+            </p>
+          ) : null}
+
           {/* message */}
           {reservationData?.message ? (
             <p className="details-message-full-width">
