@@ -1,0 +1,77 @@
+.reservation-pet-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+     /* margin-top: 1rem; */
+     position: relative;
+     bottom: 1rem;
+}
+
+.reservation-pet-title{
+     color: #e80000;
+}
+
+.reservation-pet-description{
+     color: #e80000;
+}
+
+.reservation-pet-form {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     align-items: center;
+}
+
+
+.pet-form-group {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.pet-reserve-form-group {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.pet-form-label{
+     color: #e80000;
+     font-size: 1rem;
+     font-weight: 300;
+     margin-bottom: -5px;
+}
+
+.pet-form-input{
+     width: 350px;
+     height: 40px;
+     border-radius: 5px;
+     color: rgb(119, 119, 119);
+     border: 1px solid #e80000;
+     padding: 0 10px;
+     margin-bottom: 1rem;
+     font-size: .9rem;
+}
+
+.reservation-pet-submit-button{
+     /* margin: 50px 420px 50px 420px; */
+     width: 10rem;
+     color: #e80000;
+     border-width: 1px;
+     border-color: #e80000;
+     border-radius: 10px;
+     padding: 10px 50px;
+     cursor: pointer;
+     background-color: transparent;
+     border-style: solid;
+     letter-spacing: 1px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.reservation-pet-submit-button:hover{
+     background-color: #e80000;
+     color: #c0dfff;
+     font-weight: 600;
+     transform: scale(1);
+}

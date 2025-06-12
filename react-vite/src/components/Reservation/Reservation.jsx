@@ -88,12 +88,12 @@ function Reservation() {
           <button onClick={() => setSelectedType(null)} className="back-button">
             ← 返回选择摄影类型
           </button>
-          <h3 className="family-title">
+          {/* <h3 className="family-title">
             亲子照 / 孕妇照预约
           </h3>
           <p className="family-description">
             亲子照和孕妇照是我们最受欢迎的摄影类型之一。请填写以下信息以预约您的拍摄时间。
-          </p>
+          </p> */}
           <ReservationFamily />
           {/* <ReservationForm
             availableTimes={availableTimes}
@@ -108,10 +108,10 @@ function Reservation() {
           <button onClick={() => setSelectedType(null)} className="back-button">
             ← 返回选择摄影类型
           </button>
-          <h3 className="pet-title">宠物写真预约</h3>
+          {/* <h3 className="pet-title">宠物写真预约</h3>
           <p className="pet-description">
             宠物写真是我们的一项特色服务。请填写以下信息以预约您的拍摄时间。
-          </p>
+          </p> */}
           <ReservationPet />
         </>
       )}
