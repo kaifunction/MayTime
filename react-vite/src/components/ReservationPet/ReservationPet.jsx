@@ -11,46 +11,53 @@ function ReservationPet() {
         <div className="pet-form-group">
           <div className="pet-reserve-form-group">
             <label htmlFor="petName" className="pet-form-label">
-              宠物名称:
+              Pet Name:
+              <span style={{ color: "red" }}> *</span>
             </label>
             <input
               className="pet-form-input"
               type="text"
               id="petName"
               name="petName"
+              placeholder="Enter your pet's name（请输入宠物的名字）"
               required
             />
           </div>
 
           <div className="pet-reserve-form-group">
             <label htmlFor="ownerName" className="pet-form-label">
-              主人姓名:
+              Owner's Name:
+              <span style={{ color: "red" }}> *</span>
             </label>
             <input
               className="pet-form-input"
               type="text"
               id="ownerName"
               name="ownerName"
+                 placeholder="Enter owner's name（请输入主人的名字）"
               required
             />
           </div>
 
           <div className="pet-reserve-form-group">
             <label htmlFor="contactInfo" className="pet-form-label">
-              联系方式:
+              Contact Information:
+              <span style={{ color: "red" }}> *</span>
             </label>
             <input
               className="pet-form-input"
               type="text"
               id="contactInfo"
               name="contactInfo"
+                 placeholder="Enter contact information（请输入联系方式）"
               required
             />
           </div>
 
           <div className="pet-reserve-form-group">
             <label htmlFor="preferredDate" className="pet-form-label">
-              首选日期:
+              Session Time:
+              <span style={{ color: "red" }}> *</span>
             </label>
             <input
               className="pet-form-input"

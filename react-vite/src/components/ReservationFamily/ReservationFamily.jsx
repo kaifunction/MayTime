@@ -14,27 +14,28 @@ function ReservationFamily() {
               Name:<span style={{ color: "red" }}> *</span>
             </label>
             <input className="family-form-input"
-            type="text" id="familyName" name="familyName" required />
+            type="text" id="familyName" name="familyName" placeholder="Enter your name（请输入姓名）" required />
           </div>
 
           <div className="family-reserve-form-group">
             <label htmlFor="contactPerson" className="family-form-label">
-              联系人姓名:<span style={{ color: "red" }}> *</span>
+              Contact Person:<span style={{ color: "red" }}> *</span>
             </label>
             <input
             className="family-form-input"
               type="text"
               id="contactPerson"
               name="contactPerson"
+              placeholder="Enter contact person name（请输入联系人姓名）"
               required
             />
           </div>
 
           <div className="family-reserve-form-group">
             <label htmlFor="contactInfo" className="family-form-label">
-              联系方式:<span style={{ color: "red" }}> *</span>
+              Contact Information:<span style={{ color: "red" }}> *</span>
             </label>
-            <input className="family-form-input" type="text" id="contactInfo" name="contactInfo" required />
+            <input className="family-form-input" type="text" id="contactInfo" name="contactInfo" placeholder="Enter contact information（请输入联系方式）" required />
           </div>
 
           <div className="family-reserve-form-group">
