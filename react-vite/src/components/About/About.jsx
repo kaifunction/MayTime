@@ -6,15 +6,15 @@ const About = () => {
   };
 
   const familyReservation = () => {
-    window.location.href = "/reservation";
+    window.location.href = "/reservation?type=family";
   }
 
   const petReservation = () => {
-    window.location.href = "/reservation";
+    window.location.href = "/reservation?type=pet";
   }
 
   const babyReservation = () => {
-    window.location.href = "/reservation";
+    window.location.href = "/reservation?type=baby";
   }
   return (
     <div className="contact-us-page-container">

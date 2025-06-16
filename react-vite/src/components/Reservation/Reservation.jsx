@@ -4,7 +4,7 @@ import ReservationPet from "../ReservationPet";
 import ReservationFamily from "../ReservationFamily";
 import { submitAPI } from "../../api/api";
 import { fetchAPI } from "../../api/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Reservation.css";
 
 function initializeTimes() {
@@ -25,7 +25,11 @@ function updateTimes(state, action) {
 
 function Reservation() {
   const navigate = useNavigate();
-  const [selectedType, setSelectedType] = useState(null);
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const typeFromUrl = queryParams.get("type");
+
+  const [selectedType, setSelectedType] = useState(typeFromUrl || null);
   const [availableTimes, dispatch] = useReducer(
     updateTimes,
     [],
