@@ -304,8 +304,8 @@ function ReservationForm(props) {
             <option value="" disabled hidden>
               Please select Baby&apos;s Gender（请选择宝宝性别）
             </option>
-            <option value="boy">男宝宝</option>
-            <option value="girl">女宝宝</option>
+            <option value="男宝宝">男宝宝</option>
+            <option value="女宝宝">女宝宝</option>
             {/* <option value="other">其他 / 不愿透露</option> */}
           </select>
           {formik.touched.babyGender && formik.errors.babyGender ? (

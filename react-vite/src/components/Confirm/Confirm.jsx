@@ -140,22 +140,22 @@ function Confirm() {
             <span className="details-info">{reservationData?.date}</span>
           </p>
           {/* time */}
-          <p className="details-name">
+          {/* <p className="details-name">
             <span className="details-title">Time:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.time}</span>
-          </p>
+          </p> */}
           {/* guests */}
           <p className="details-name">
             <span className="details-title">Guests:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">{reservationData?.guests}</span>
           </p>
           {/* photography type */}
-          <p className="details-name">
+          {/* <p className="details-name">
             <span className="details-title">Photography Type:</span>&nbsp;&nbsp;&nbsp;
             <span className="details-info">
               {reservationData?.category}
             </span>
-          </p>
+          </p> */}
           {/* address */}
           <p className="details-name">
             <span className="details-title">Address:</span>&nbsp;&nbsp;&nbsp;
