@@ -106,7 +106,7 @@ function ConfirmFamily() {
   };
   return (
     <div className="confirm-family-container">
-      <div className="confirm-family-text-conatiner">
+      <div className="confirm-family-text-container">
         <h1 className="confirm-family-title">
           Your Family Reservation has been confirmed
         </h1>
@@ -117,7 +117,7 @@ function ConfirmFamily() {
         <div className="family-details-info-container">
           {/* familyName */}
           <p className="family-details-name">
-            <span className="family-details-title">Family&apos;Name: </span>
+            <span className="family-details-title">Family&apos;s Name: </span>
             &nbsp;&nbsp;&nbsp;
             <span className="family-details-info">
               {reservationFamilyData?.familyName}
