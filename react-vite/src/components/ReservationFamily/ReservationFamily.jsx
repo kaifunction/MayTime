@@ -26,9 +26,9 @@ function ReservationFamily() {
       preferredDate: Yup.date().required("Session Time is required."),
     }),
     onSubmit: (values) => {
-      navigate("/confirm", {
+      navigate("/confirm_family", {
         state: {
-          reservationData: values,
+          reservationFamilyData: values,
         },
       });
     },

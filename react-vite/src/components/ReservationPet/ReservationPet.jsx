@@ -27,9 +27,9 @@ function ReservationPet() {
       preferredDate: Yup.date().required("Session Time is required."),
     }),
     onSubmit: (values) => {
-      navigator("/confirm", {
+      navigator("/confirm_pet", {
         state: {
-          reservationData: values,
+          reservationPetData: values,
           //   availableTimes: availableTimes,
         },
       });
