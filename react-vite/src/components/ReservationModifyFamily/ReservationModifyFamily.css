@@ -1,4 +1,4 @@
-.modify-reservation-form{
+.reservation-family-form{
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -12,19 +12,7 @@
      border-bottom: 3px solid #ff6a00; */
 }
 
-.modify-form-container{
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     gap: 20px;
-}
-
-.modify-form-group{
-     display: flex;
-     flex-direction: column;
-     gap: 1rem;
-}
-
-.modify-h1{
+.reservation-family-h1{
      /* position: relative;
      bottom: 1.6rem;
      right: 16rem; */
@@ -36,7 +24,19 @@
      margin-bottom: 1rem;
 }
 
-.modifyform-submit-button{
+.family-modify-form-container{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.family-modify-form-group{
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.family-modify-submit-button{
      margin: 50px 420px 110px 420px;
      color: #e80000;
      border-width: 1px;
@@ -50,7 +50,7 @@
      letter-spacing: 1px;
 }
 
-.modifyform-submit-button:hover{
+.family-modify-submit-button:hover{
      background-color: #e80000;
      color: #c0dfff;
      font-weight: 600;

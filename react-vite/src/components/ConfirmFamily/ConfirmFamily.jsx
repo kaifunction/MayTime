@@ -29,14 +29,14 @@ function ConfirmFamily() {
     });
     if (modifyReservationResult.isConfirmed) {
       if (reservationFamilyData) {
-        navigate("/reservation_modify", {
+        navigate("/reservation_modify_family", {
           // 上面一行需要改成/reservation_modify_family
           state: {
             reservationFamilyData,
           },
         });
       } else {
-        navigate("/reservation_modify");
+        navigate("/reservation_modify_family");
         // 上面一行需要改成/reservation_modify_family
       }
     }

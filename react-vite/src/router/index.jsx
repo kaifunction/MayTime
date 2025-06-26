@@ -6,6 +6,7 @@ import Photos from '../components/Photos/Photo';
 import Abouts from '../components/About/About';
 import Reservation from '../components/Reservation/Reservation'
 import ReservationModify from '../components/ReservationModify/ReservationModify';
+import ReservationModifyFamily from '../components/ReservationModifyFamily';
 import Confirm from '../components/Confirm';
 import ConfirmPet from "../components/ConfirmPet";
 import ConfirmFamily from '../components/ConfirmFamily';
@@ -59,6 +60,10 @@ export const router = createBrowserRouter([
       {
         path: "reservation_modify",
         element: <ReservationModify />
+      },
+      {
+        path: "reservation_modify_family",
+        element: <ReservationModifyFamily />
       },
 
     ],
