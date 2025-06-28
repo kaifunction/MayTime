@@ -9,6 +9,7 @@ function ReservationPet() {
   const formik = useFormik({
     initialValues: {
       petName: "",
+      petType: "",
       ownerName: "",
       contactInfo: "",
       preferredDate: "",
@@ -17,6 +18,10 @@ function ReservationPet() {
     validationSchema: Yup.object({
       petName: Yup.string()
         .required("Pet Name is required.")
+        .max(50, "Must be 50 characters or less"),
+      petType: Yup.string()
+        .required("Pet Type is required.")
+        .matches(/^[a-zA-Z\s]+$/, "Pet Type must contain only letters and spaces")
         .max(50, "Must be 50 characters or less"),
       ownerName: Yup.string()
         .required("Owner's Name is required.")
@@ -67,6 +72,31 @@ function ReservationPet() {
               <div className="form-error">{formik.errors.petName}</div>
             ) : null}
           </div>
+
+          <div className="pet-reserve-form-group">
+            <label htmlFor="petType" className="pet-form-label">
+              Pet Type:
+              <span style={{ color: "red" }}> *</span>
+            </label>
+            <input
+              className={`pet-form-input ${
+                formik.touched.petType && formik.errors.petType
+                  ? "input-error"
+                  : ""
+              }`}
+              type="text"
+              id="petType"
+              name="petType"
+              value={formik.values.petType}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              placeholder="Enter your pet's type（请输入宠物的类型）"
+            />
+            {formik.touched.petType && formik.errors.petType ? (
+              <div className="form-error">{formik.errors.petType}</div>
+            ) : null}
+          </div>
+
 
           <div className="pet-reserve-form-group">
             <label htmlFor="ownerName" className="pet-form-label">

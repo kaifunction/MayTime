@@ -7,6 +7,7 @@ import Abouts from '../components/About/About';
 import Reservation from '../components/Reservation/Reservation'
 import ReservationModify from '../components/ReservationModify/ReservationModify';
 import ReservationModifyFamily from '../components/ReservationModifyFamily';
+import ReservationModifyPet from '../components/ReservationModifyPet/ReservationModifyPet';
 import Confirm from '../components/Confirm';
 import ConfirmPet from "../components/ConfirmPet";
 import ConfirmFamily from '../components/ConfirmFamily';
@@ -65,7 +66,22 @@ export const router = createBrowserRouter([
         path: "reservation_modify_family",
         element: <ReservationModifyFamily />
       },
-
+      {
+        path: "reservation_modify_pet",
+        element: <ReservationModifyPet />
+      },
+      {
+        path: "*",
+        element: (
+          <div style={{ textAlign: 'center', marginTop: '50px', fontSize: '24px', color: '#e80000' }}>
+            <h1>404 Not Found</h1>
+            <div style={{ fontSize: '18px', color: '#ff6a00', marginTop: '50px', letterSpacing: '.6px', lineHeight: '1.5' }}>
+            <p>The page you are looking for does not exist.</p>
+            <p>Please check the URL or return to the <a href="/" style={{textDecoration:'none', cursor:'pointer', color:'#e80000'}}>home page</a>.</p>
+            </div>
+          </div>
+        ),
+      }
     ],
   },
 ]);

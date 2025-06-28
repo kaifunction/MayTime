@@ -29,14 +29,14 @@ function ConfirmPet() {
     });
     if (modifyReservationResult.isConfirmed) {
       if (reservationPetData) {
-        navigate("/reservation_modify", {
+        navigate("/reservation_modify_pet", {
           // 上面一行需要改成/reservation_modify_pet
           state: {
             reservationPetData,
           },
         });
       } else {
-        navigate("/reservation_modify");
+        navigate("/reservation_modify_pet");
         // 上面一行需要改成/reservation_modify_pet
       }
     }
@@ -124,6 +124,14 @@ function ConfirmPet() {
             <span className="pet-details-info">
               {reservationPetData?.petName}
             </span>
+          </p>
+          {/* pet's type */}
+          <p className="pet-details-name">
+               <span className="pet-details-title">Pet&apos;s Type:</span>
+               &nbsp;&nbsp;&nbsp;
+               <span className="pet-details-info">
+                     {reservationPetData?.petType}
+               </span>
           </p>
           {/* owner's name */}
           <p className="pet-details-name">

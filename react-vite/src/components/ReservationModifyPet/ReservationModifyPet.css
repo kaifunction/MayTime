@@ -1,0 +1,58 @@
+.reservation-pet-form{
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+     margin-top: 5rem;
+     position: relative;
+     margin: -8px;
+     padding: 0px;
+     /* border-left: 3px solid #ff6a00;
+     border-right: 3px solid #ff6a00;
+     border-bottom: 3px solid #ff6a00; */
+}
+
+.reservation-pet-h1{
+      /* position: relative;
+     bottom: 1.6rem;
+     right: 16rem; */
+     color: #e80000;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: 600;
+     margin-top: 4rem;
+     margin-bottom: 1rem;
+}
+
+.pet-modify-form-container{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.pet-modify-form-group{
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.pet-modify-submit-button{
+     margin: 50px 420px 110px 420px;
+     color: #e80000;
+     border-width: 1px;
+     border-color: #e80000;
+     border-radius: 10px;
+     padding: 10px 50px;
+     cursor: pointer;
+     background-color: transparent;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+     border-style: solid;
+     letter-spacing: 1px;
+}
+
+.pet-modify-submit-button:hover{
+     background-color: #e80000;
+     color: #c0dfff;
+     font-weight: 600;
+     transform: scale(1);
+}
