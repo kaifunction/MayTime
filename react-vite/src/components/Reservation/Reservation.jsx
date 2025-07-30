@@ -73,7 +73,7 @@ function Reservation() {
       {selectedType === "baby" && (
         <>
           <button onClick={() => setSelectedType(null)} className="back-button">
-            ← Back（返回选择摄影类型）
+            ← Back（返回选择摄影类型
           </button>
           {/* <h3 className="baby-title">宝宝上门布景写真预约</h3>
           <p className="baby-description">
