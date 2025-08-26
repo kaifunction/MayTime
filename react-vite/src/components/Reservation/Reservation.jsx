@@ -90,7 +90,7 @@ function Reservation() {
       {selectedType === "family" && (
         <>
           <button onClick={() => setSelectedType(null)} className="back-button">
-            ← Back（返回选择摄影类型）
+            ← Back（返回选择摄影类型
           </button>
           {/* <h3 className="family-title">
             亲子照 / 孕妇照预约
